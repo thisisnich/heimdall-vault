@@ -18,6 +18,8 @@ status: Completed
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/23S2 EGE351 Lab 3 - Automation - Combination Logic 1.md|Lab 3]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/23S2 EGE351 Lab 3 - Automation - Combination Logic 1.md|Lab 3]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 Official (Open)
 Subject
 Tutorial 3
