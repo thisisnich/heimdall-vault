@@ -14,6 +14,8 @@ type: Lesson
 status: Completed
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson1Introduction.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson 1-Introduction.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 

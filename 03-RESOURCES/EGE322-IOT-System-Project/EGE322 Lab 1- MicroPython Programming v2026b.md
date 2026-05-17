@@ -15,6 +15,8 @@ type: Lab
 status: Completed
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Week 1.md|Week 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE322-IOT-System-Project/ESP32_Programming_Guide.md|ESP32 Programming Guide]]
 
 Official (Open)

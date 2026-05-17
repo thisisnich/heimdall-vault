@@ -14,6 +14,8 @@ type: Exercise
 status: Completed
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/EGE322 Lab 1- MicroPython Programming v2026b.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/ESP32_Programming_Guide.md|ESP32 Programming Guide]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Python Programming Exercises
