@@ -17,6 +17,8 @@ status: Completed
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/tutorial1.md|Tutorial 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/tutorial1.md|Tutorial 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 Course
 : Diploma in Electronic Systems (EGDF18)
 Diploma in Electronic & Computer Engineering (EGDF20)

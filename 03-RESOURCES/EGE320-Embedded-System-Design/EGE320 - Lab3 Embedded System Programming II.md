@@ -16,6 +16,8 @@ status: Completed
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Tutorial2.md|Tutorial 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Tutorial2.md|Tutorial 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/Tutorial 3 - Embedded System Programming II.md|Tutorial 3]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lab 3 - Embedded System Programming II
