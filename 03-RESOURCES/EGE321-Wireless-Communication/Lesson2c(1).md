@@ -16,6 +16,7 @@ source: Lesson2c(1).pptx
 converted: 2026-05-07
 type: Lesson
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson1c.md|Lesson 1c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

@@ -11,6 +11,7 @@ source: EGE320 - Tutorial2.pdf
 converted: 2026-04-30
 type: Tutorial
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/tutorial1.md|Tutorial 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

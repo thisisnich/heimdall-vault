@@ -12,6 +12,7 @@ source: EGE320-Chapter3_v2.pdf
 converted: 2026-05-07
 type: Chapter
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/EGE320-Chapter1.md|Chapter 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

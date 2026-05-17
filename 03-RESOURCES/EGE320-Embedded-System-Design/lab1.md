@@ -13,6 +13,7 @@ source: EGE320 - Lab1 Embedded System Development Environment.pdf
 converted: 2026-04-23
 type: Lab
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/tutorial1.md|Tutorial 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
