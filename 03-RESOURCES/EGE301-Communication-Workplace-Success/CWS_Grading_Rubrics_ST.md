@@ -6,6 +6,7 @@ tags:
   - ICA
 course: EGE301 Communication & Workplace Success
 type: Grading Rubric
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[CWS_ICA_Brief|ICA Brief]] | [[lesson 1|Lesson 1 Notes]]

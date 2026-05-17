@@ -7,6 +7,7 @@ tags:
 course: EGE301 Communication & Workplace Success
 unit: 1
 topic: Workplace Culture and Ethics
+source: NYPY3 Import
 ---
 
 # Unit 1: Workplace Culture and Ethics

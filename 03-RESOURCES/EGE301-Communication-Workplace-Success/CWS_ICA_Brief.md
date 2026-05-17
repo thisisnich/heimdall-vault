@@ -6,6 +6,7 @@ tags:
   - assessment
 course: EGE301 Communication & Workplace Success
 type: ICA Brief
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[lesson 1|Lesson 1 Notes]] | [[CWS_Grading_Rubrics_ST|Grading Rubrics]]

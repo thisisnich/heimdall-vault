@@ -12,6 +12,7 @@ source: Lesson 2 Robot Operating System ROS.pdf
 converted: 2026-05-07
 type: Lesson
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson1Introduction.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

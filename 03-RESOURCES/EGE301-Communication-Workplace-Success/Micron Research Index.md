@@ -9,6 +9,7 @@ course: EGE301 Communication & Workplace Success
 type: research-index
 company: Micron Technology
 status: in-progress
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

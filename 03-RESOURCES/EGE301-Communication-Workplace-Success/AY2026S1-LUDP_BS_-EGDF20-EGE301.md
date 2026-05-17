@@ -7,6 +7,7 @@ tags:
 course: EGE301 Communication & Workplace Success
 type: Module Schedule
 topic: Learning Unit Delivery Plan
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[lesson 1|Lesson 1 Notes]] | [[CWS_ICA_Brief|ICA Brief]] | [[CWS_Grading_Rubrics_ST|Grading Rubrics]]
