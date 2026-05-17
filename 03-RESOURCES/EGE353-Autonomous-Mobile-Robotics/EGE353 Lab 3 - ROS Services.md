@@ -13,6 +13,7 @@ source: Lab 3 Ros services.pdf
 converted: 2026-04-28
 type: Lab
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 2 - ROS Nodes and Topics.md|Lab 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

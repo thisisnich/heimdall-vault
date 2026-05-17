@@ -12,6 +12,7 @@ source: Module assessment - Copy.pdf
 converted: 2026-04-28
 type: Assessment
 status: Active
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Weekly Lesson Plan - E2.md|Weekly Lesson Plan]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

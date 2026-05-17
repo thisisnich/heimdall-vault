@@ -13,6 +13,7 @@ source: Lab2 Ros nodes and Topics.pdf
 converted: 2026-04-28
 type: Lab
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

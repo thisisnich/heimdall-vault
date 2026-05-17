@@ -12,6 +12,7 @@ source: Co-certification .pdf
 converted: 2026-04-28
 type: Certification
 status: Active
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Assessment Breakdown.md|Assessment Breakdown]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
