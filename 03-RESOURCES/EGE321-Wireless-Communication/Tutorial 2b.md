@@ -12,6 +12,7 @@ source: Tutorial 2b.pdf
 converted: 2026-04-30
 type: Tutorial
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Lesson 2c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

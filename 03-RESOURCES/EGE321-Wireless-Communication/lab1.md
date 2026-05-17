@@ -14,6 +14,7 @@ source: EGE321 Lab1 Loopback Test within SPA.pdf
 converted: 2026-04-24
 type: Lab
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE321-Wireless-Communication/WCnN Lesson 1.md|Lesson 1 Notes]]
