@@ -13,6 +13,7 @@ source: EGE322 Lab 1- MicroPython Programming v2026b.pdf
 converted: 2026-05-07
 type: Lab
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Week 1.md|Week 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
