@@ -5,13 +5,22 @@ tags:
   - communication
   - RF
   - system-design
+  - chapter-1
+  - lesson-1c
 course: EGE321 Wireless Communication & Networking
 chapter: 1
 topic: System Design Considerations
+source: NYPY3 Import
+created: 2026-05-17
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Tutorial_1b.md|Tutorial 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 # EGE321 – Wireless Communication & Networking
 ## Chapter 1: System Design Considerations
-> 📚 **Related:** [[Lesson2c|Chapter 2: Multiple Access]] | [[Tutorial_1b|Tutorial 1]]
+> 📚 **Related:** [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Chapter 2: Multiple Access]] | [[03-RESOURCES/EGE321-Wireless-Communication/Tutorial_1b.md|Tutorial 1]]
 ---
 ## Contents
 1. System Design Considerations

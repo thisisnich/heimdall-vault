@@ -4,11 +4,17 @@ tags:
   - lesson5c
   - wireless-systems
   - digital-modulation
+  - chapter-2
+  - modulation-techniques
 course: EGE321 Wireless Communication & Networking
 topic: Lesson 5c - Digital Modulation Technique (Chapter 2.3)
 source: Lesson5c.pptx
 converted: 2026-05-07
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Chapter 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lesson 5c - Digital Modulation Technique (Chapter 2.3)
 

@@ -5,12 +5,18 @@ tags:
   - project-management
   - schedule
   - assessment-schedule
+  - week-1
+  - module-overview
 course: EGE322 IoT System Project
 week: 1
 topic: Module Overview, Lesson Plan, Assessment Rubrics
+source: NYPY3 Import
+created: 2026-05-17
+type: Week
+status: Completed
 ---
 
-> 📚 **Related:** [[Tutorials|Tutorials 1-3]] | [[Chap2_ProjectMgt|Chapter 2: Project Management]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Tutorials.md|Tutorials 1-3]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 **Under Year 3 Diploma in Electronic & Computer Engineering**
 

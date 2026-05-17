@@ -4,11 +4,17 @@ tags:
   - lesson3c
   - wireless-systems
   - digital-modulation
+  - chapter-2
+  - communications-system
 course: EGE321 Wireless Communication & Networking
 topic: Lesson 3c - Wireless Communications System (Chapter 2)
 source: Lesson3c.pptx
 converted: 2026-05-07
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Chapter 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lesson 3c - Wireless Communications System (Chapter 2)
 

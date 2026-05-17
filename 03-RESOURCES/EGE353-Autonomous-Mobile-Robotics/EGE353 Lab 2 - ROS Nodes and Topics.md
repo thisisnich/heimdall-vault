@@ -5,13 +5,17 @@ tags:
   - ROS2
   - nodes
   - topics
+  - lab2
+  - robotics
 course: EGE353 Autonomous Robotics
 topic: Lab 2 - ROS2 Nodes and Topics
 source: Lab2 Ros nodes and Topics.pdf
 converted: 2026-04-28
+type: Lab
+status: Completed
 ---
 
-> **Related:** [[EGE353 Lab 1 Notes|Lab 1]] | [[EGE353 Lab 3 - ROS Services|Lab 3]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lab 2: ROS2 Nodes and Topics
 

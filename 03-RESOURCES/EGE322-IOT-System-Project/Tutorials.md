@@ -4,11 +4,16 @@ tags:
   - IoT
   - project-management
   - tutorial
+  - tutorials-1-3
 course: EGE322 IoT System Project
 topic: Tutorials 1-3 — Project Management
+source: NYPY3 Import
+created: 2026-05-17
+type: Tutorial
+status: Completed
 ---
 
-> 📚 **Related:** [[Week 1|Week 1 Overview]] | [[Chap2_ProjectMgt|Chapter 2: Project Management]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Week 1.md|Week 1 Overview]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 ---
 

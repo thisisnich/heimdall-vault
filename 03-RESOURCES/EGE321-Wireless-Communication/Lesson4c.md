@@ -4,11 +4,17 @@ tags:
   - lesson4c
   - wireless-systems
   - radio-propagation
+  - link-budget
+  - chapter-2
 course: EGE321 Wireless Communication & Networking
 topic: Lesson 4c - Radio Propagation and Link Budget (Chapter 2.2)
 source: Lesson4c.pptx
 converted: 2026-05-07
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson3c.md|Chapter 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lesson 4c - Radio Propagation and Link Budget (Chapter 2.2)
 

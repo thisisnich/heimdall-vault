@@ -6,13 +6,17 @@ tags:
   - rosbag
   - gazebo
   - simulation
+  - lab4
+  - robotics
 course: EGE353 Autonomous Robotics
 topic: Lab 4 - ROS Bag Files and Gazebo
 source: Lab4 Ros bag files.pdf
 converted: 2026-05-08
+type: Lab
+status: Completed
 ---
 
-> **Related:** [[EGE353 Lab 1 Notes|Lab 1]] | [[EGE353 Lab 2 - ROS Nodes and Topics|Lab 2]] | [[EGE353 Lab 3 - ROS Services|Lab 3]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 3 - ROS Services.md|Lab 3]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lab 4: ROS Bag Files and Gazebo
 

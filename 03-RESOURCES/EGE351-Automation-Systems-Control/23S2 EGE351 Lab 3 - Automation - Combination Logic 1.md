@@ -4,11 +4,17 @@ tags:
   - lab
   - PLC
   - combination-logic
-course: EGE351
+  - lab3
+  - automation
+course: EGE351 Automation Systems & Control
 topic: Lab 3 - Combination Logic 1
 source: 23S2 EGE351 Lab 3 - Automation - Combination Logic 1.pdf
 converted: 2026-05-05
+type: Lab
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lab 2.md|Lab 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 Official (Open)
 School of Engineering
