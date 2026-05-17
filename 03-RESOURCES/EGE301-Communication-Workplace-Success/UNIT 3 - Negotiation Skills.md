@@ -3,9 +3,17 @@ tags:
   - EGE301
   - negotiation
   - communication
+  - unit-3
+  - professional-skills
 course: EGE301 Communication & Workplace Success
 topic: Unit 3 - Negotiation Skills
+source: NYPY3 Import
+created: 2026-05-17
+type: Unit
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1 Notes]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Unit 3: Negotiation Skills
 

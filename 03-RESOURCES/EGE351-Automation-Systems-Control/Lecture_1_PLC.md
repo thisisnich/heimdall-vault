@@ -5,10 +5,17 @@ tags:
   - PLC
   - ladder-diagram
   - control-systems
+  - lecture-1
 course: EGE351 Automation Systems & Control
 lecture: 1
 topic: Programmable Logic Controller (PLC)
+source: NYPY3 Import
+created: 2026-05-17
+type: Lecture
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Programmable Logic Controller (PLC)
 ### PLC Flowchart to Ladder Diagram

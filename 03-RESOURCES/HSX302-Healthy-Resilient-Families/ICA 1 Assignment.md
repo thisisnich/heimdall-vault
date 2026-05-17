@@ -3,13 +3,17 @@ tags:
   - HSX302
   - elective
   - ICA
+  - assignment
+  - family-health
 course: HSX302 Healthy and Resilient Families
 topic: ICA 1 Assignment (40%)
 source: HSX302_ICA1_AY26S1.docx
 converted: 2026-04-29
+type: Assignment
+status: Pending
 ---
 
-> **Related:** [[HSX302 Healthy and Resilient Families - MOC|HSX302 MOC]] | [[HSX302 schedule AY26S1|Module Schedule]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]]
 
 
 # **HSX302 HEALTHY AND RESILIENT FAMILIES**

@@ -1,0 +1,1 @@
+- User's vault has PARA structure: 00-RAW (red), 00-INBOX (blue), 01-PROJECTS (green), 02-AREAS (purple), 03-RESOURCES (yellow), 04-ARCHIVE (gray) <!-- id:16802deb-d864-4289-b140-97a6db77ab31 ts:2026-05-17 07:49 -->

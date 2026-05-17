@@ -1,3 +1,22 @@
+---
+tags:
+  - AP-Computer-Science-A
+  - study-plan
+  - programming
+  - Java
+  - exam-prep
+course: AP Computer Science A
+topic: 12 Month Study Plan
+target-exam: May 2027
+start-date: May 2026
+source: Personal Study Plan
+created: 2026-05-17
+type: Study Plan
+status: Active
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[AP_Study_Resources.md|AP Study Resources]] | [[AP_Calculus_BC_Study_Plan.md|AP Calculus BC]]
+
 # AP Computer Science A - 12 Month Study Plan
 **Target Exam Date:** May 2027  
 **Start Date:** May 2026  

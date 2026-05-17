@@ -1,3 +1,22 @@
+---
+tags:
+  - AP-Calculus-BC
+  - study-plan
+  - mathematics
+  - calculus
+  - exam-prep
+course: AP Calculus BC
+topic: 12 Month Study Plan
+target-exam: May 2027
+start-date: May 2026
+source: Personal Study Plan
+created: 2026-05-17
+type: Study Plan
+status: Active
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[AP_Study_Resources.md|AP Study Resources]] | [[AP_Computer_Science_A_Study_Plan.md|AP Computer Science A]]
+
 # AP Calculus BC - 12 Month Study Plan
 **Target Exam Date:** May 2027  
 **Start Date:** May 2026  

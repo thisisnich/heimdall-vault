@@ -5,10 +5,18 @@ tags:
   - IoT
   - microcontroller
   - C-programming
+  - chapter-0
+  - module-introduction
 course: EGE320 Embedded System Design and Technology
 chapter: 0
 topic: Module Introduction
+source: NYPY3 Import
+created: 2026-05-17
+type: Chapter
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE320 Embedded System Design and Technology
 ### Module Introduction

@@ -1,0 +1,15 @@
+---
+id: "fac6ea7b-e38a-424c-bb83-e98bfd68e1c3"
+title: "Me My Optimal Levels For"
+type: vault_note
+vault: wiki
+created: 2026-05-17
+updated: 2026-05-17
+checksum: "sha256:aba25bc9389af965"
+source: heimdall/auto
+---
+
+# Me My Optimal Levels For
+
+- me my optimal levels for the day. So right now like I'm kind of peaking and then it'll go down around here. Let's say I, you know, take a a stimulant. So I'll add a Velo and this will make it go up and this is something that is very, very cool, but is also very hard to make and this connects a lot of things like my current stimulants, the water I'm drinking, my sleep, my sleep debt, stuff like this. So we'll get into this stuff later. This is um some pretty complicating stuff I'd say, but right now if you see my main tab, this is what we're going to make. We are going to make uh this goals tab right here that it's kind of like a a Nasdaq like thing where when you're just looking through your dashboard maybe at your finances or your health metrics or something, you might see above, "Oh, I have a goal here and I should get it done." Okay, so this is the dashboard that we're going to be basically copy and pasting in. If you can't tell, this looks exactly like mine and is. So if you don't have VS Code or Cloud Code installed on your computer yet, um I'm going to let this beautiful specimen show y'all exactly how to download this and the link's in the description. It's a 5-minute video and once that's done, just come back here and I'll show you guys exactly what to do next. Okay, so now we're on Netlify. <!-- id:fac6ea7b-e38a-424c-bb83-e98bfd68e1c3 ts:2026-05-17 07:49 -->
+- me my optimal levels for the day. So right now like I'm kind of peaking and then it'll go down around here. Let's say I, you know, take a a stimulant. So I'll add a Velo and this will make it go up and this is something that is very, very cool, but is also very hard to make and this connects a lot of things like my current stimulants, the water I'm drinking, my sleep, my sleep debt, stuff like this. So we'll get into this stuff later. This is um some pretty complicating stuff I'd say, but right now if you see my main tab, this is what we're going to make. We are going to make uh this goals tab right here that it's kind of like a a Nasdaq like thing where when you're just looking through your dashboard maybe at your finances or your health metrics or something, you might see above, "Oh, I have a goal here and I should get it done." Okay, so this is the dashboard that we're going to be basically copy and pasting in. If you can't tell, this looks exactly like mine and is. So if you don't have VS Code or Cloud Code installed on your computer yet, um I'm going to let this beautiful specimen show y'all exactly how to download this and the link's in the description. It's a 5-minute video and once that's done, just come back here and I'll show you guys exactly what to do next. Okay, so now we're on Netlify. <!-- id:fac6ea7b-e38a-424c-bb83-e98bfd68e1c3 ts:2026-05-17 07:49 -->

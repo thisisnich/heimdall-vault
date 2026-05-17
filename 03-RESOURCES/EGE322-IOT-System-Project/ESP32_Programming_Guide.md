@@ -5,9 +5,17 @@ tags:
   - programming
   - MicroPython
   - guide
+  - IoT
+  - reference
 course: EGE322 IoT System Project
 topic: ESP32 Programming Guide
+source: NYPY3 Import
+created: 2026-05-17
+type: Guide
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/EGE322 Lab 1- MicroPython Programming v2026b.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # ESP32 Programming Guide - EGE322 IoT System Project
 

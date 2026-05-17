@@ -1,12 +1,20 @@
 ---
 tags:
   - EGE353
-  - FILL_IN
-course: EGE353
-topic: FILL_IN
+  - robotics
+  - autonomous
+  - ROS
+  - lesson-1
+  - introduction
+course: EGE353 Autonomous Mobile Robotics
+topic: Lesson 1 - Introduction to Autonomous Robotics
 source: Lesson 1-Introduction.pdf
 converted: 2026-05-08
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 
 # EGE353
