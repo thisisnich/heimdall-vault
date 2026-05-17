@@ -13,6 +13,8 @@ source: Micron Alumni Network
 status: scraped
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 # Micron Alumni Stories
 
 > **Source:** [Micron Alumni Network](https://www.micron.com/about/careers/alumni)

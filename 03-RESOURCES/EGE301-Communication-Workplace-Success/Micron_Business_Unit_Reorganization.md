@@ -13,6 +13,8 @@ source: Benzinga Business News
 status: scraped
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 # Micron Business Unit Reorganization
 
 > **Source:** [Benzinga - Chip Maker Micron Splits Into Four Business Units To Accelerate AI Strategy](https://www.benzinga.com/25/04/44867319/chip-maker-micron-splits-into-four-business-units-to-accelerate-ai-strategy)

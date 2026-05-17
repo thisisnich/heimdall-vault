@@ -13,6 +13,8 @@ company: Micron Technology
 status: compiled
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 # EGE301 Assignment Summary - Micron Technology Company Culture
 
 > **Purpose:** Focused summary for ICA 1 assignment covering CEO profile, mission, values, practices, environments, and staff insights

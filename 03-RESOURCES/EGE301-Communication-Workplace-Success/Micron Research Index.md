@@ -11,6 +11,8 @@ company: Micron Technology
 status: in-progress
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 > 📚 **Related:** [[CWS_ICA_Brief|ICA 1 Brief]] | [[1_Workplace_Culture_and_Ethics|Unit 1 Notes]]
 >
 > **ICA 1 Due:** Week 4 (15 May 2026, 23:59) | **Weight:** 30%
