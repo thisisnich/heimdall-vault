@@ -11,7 +11,7 @@ tags:
 course: EGE301 Communication & Workplace Success
 type: Source
 company: Micron Technology
-source: Micron Global Culture Page
+source: NYPY3 Import
 status: Completed
 created: 2026-05-17
 ---

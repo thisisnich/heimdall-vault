@@ -12,6 +12,7 @@ source: EGE320 - Lab3 Embedded System Programming II.pdf
 converted: 2026-05-07
 type: Lab
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Tutorial2.md|Tutorial 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
