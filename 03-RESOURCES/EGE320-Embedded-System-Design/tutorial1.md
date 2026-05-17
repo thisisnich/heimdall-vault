@@ -5,13 +5,17 @@ tags:
   - embedded-systems
   - microcontroller
   - peripherals
+  - tutorial-1
+  - development-tools
 course: EGE320 Embedded System Design and Technology
 topic: Tutorial 1 - Embedded system definition, peripherals and development tools
 source: EGE320 - Tutorial1.pdf
 converted: 2026-04-23
+type: Tutorial
+status: Completed
 ---
 
-> 📚 **Related:** [[EGE320 Embedded System Design &Technology/ch0|Chapter 0]] | [[EGE320 Embedded Systems - MOC|EGE320 MOC]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/ch0.md|Chapter 0]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Tutorial 1: Embedded System Definition, Peripherals and Development Tools
 

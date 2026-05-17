@@ -1,3 +1,21 @@
+---
+tags:
+  - FGX312
+  - elective
+  - presentation
+  - japanese-culture
+  - slide-content
+  - coming-of-age-day
+course: FGX312 Discovering Japanese Culture & Society
+topic: Slide Content for Coming of Age Day Presentation
+source: NYPY3 Import
+created: 2026-05-17
+type: Content
+status: Completed
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 # FGX312 Presentation - Coming of Age Day
 # Copy this content to Claude to create PowerPoint slides
 

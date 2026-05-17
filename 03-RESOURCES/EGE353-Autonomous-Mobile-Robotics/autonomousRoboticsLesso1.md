@@ -5,14 +5,22 @@ tags:
   - ROS
   - SLAM
   - assessment-schedule
+  - lesson-1
+  - module-overview
 course: EGE353 Autonomous Mobile Robotics
 lesson: 1
 topic: Module Overview and ROS Basics
+source: NYPY3 Import
+created: 2026-05-17
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson1Introduction.md|Lesson 1 Slides]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE353 Autonomous Mobile Robotics — Lesson 1 Notes
 
-> 📚 **Related:** [[Lesson1Introduction|Lesson 1 Slides]] | [[EGE353 Autonomous Robotics/lab1|Lab 1: ROS Nodes]]
+> 📚 **Related:** [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson1Introduction.md|Lesson 1 Slides]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/lab1.md|Lab 1: ROS Nodes]]
 
 ---
 

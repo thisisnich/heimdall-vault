@@ -3,14 +3,18 @@ tags:
   - EGE301
   - networking
   - communication
+  - unit-4
+  - professional-skills
+  - PDF-version
 course: EGE301 Communication & Workplace Success
 topic: Unit 4 - Networking Skills
 source: UNIT 4 - 0. NETWORKING SKILLS [16 MAR] [KC] [PDF].pdf
 converted: 2026-04-29
+type: Unit
+status: Completed
 ---
 
-
-> **Related:** [[lesson 1|Lesson 1 Notes]] | [[CWS_ICA_Brief|ICA Brief]] | [[1_Workplace_Culture_and_Ethics|Unit 1 Notes]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1 Notes]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 
 # 4. NETWORKING SKILLS
