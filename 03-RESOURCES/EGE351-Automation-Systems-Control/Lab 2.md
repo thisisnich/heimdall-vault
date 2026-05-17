@@ -5,6 +5,7 @@ tags:
   - PLC
   - lab2
   - programming
+  - PLC-programming-2
 course: EGE351 Automation Systems & Control
 topic: Lab 2 - PLC Programming 2
 source: 14S1 EGE351 Lab 2 - Automation - PLC Programming 2_v1-1.pdf
@@ -12,6 +13,8 @@ converted: 2026-04-29
 type: Lab
 status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lab 2.md|Lab 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 

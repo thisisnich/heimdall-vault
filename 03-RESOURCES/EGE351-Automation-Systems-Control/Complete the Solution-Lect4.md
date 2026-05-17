@@ -6,6 +6,7 @@ tags:
   - ladder-logic
   - solutions
   - practical-examples
+  - lecture-4
 course: EGE351 Automation Systems & Control
 topic: Lecture 4 - Complete the Solution (PLC Ladder Logic)
 source: Complete the Solution-Lect4.pdf
@@ -13,6 +14,8 @@ converted: 2026-05-07
 type: Solution
 status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 

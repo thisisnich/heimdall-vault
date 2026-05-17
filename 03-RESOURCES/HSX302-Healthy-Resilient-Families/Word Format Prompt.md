@@ -1,3 +1,20 @@
+---
+tags:
+  - HSX302
+  - elective
+  - assignment-format
+  - document-prompt
+  - formatting-guide
+course: HSX302 Healthy and Resilient Families
+topic: Word Document Format Prompt for ICA 1 Assignment
+source: NYPY3 Import
+created: 2026-05-17
+type: Guide
+status: Completed
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/ICA 1 Assignment.md|ICA 1 Assignment]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 # Word Document Format Prompt for Claude
 
 Please format the following content as a Microsoft Word document (.docx) for HSX302 ICA 1 Assignment submission.

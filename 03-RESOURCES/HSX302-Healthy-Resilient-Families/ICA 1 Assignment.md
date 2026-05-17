@@ -5,13 +5,16 @@ tags:
   - ICA
   - assignment
   - family-health
+  - ICA-1
 course: HSX302 Healthy and Resilient Families
 topic: ICA 1 Assignment (40%)
 source: HSX302_ICA1_AY26S1.docx
 converted: 2026-04-29
 type: Assignment
-status: Pending
+status: Active
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]]
 

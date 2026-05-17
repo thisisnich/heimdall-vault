@@ -5,14 +5,18 @@ tags:
   - PLC
   - IoT
   - control-systems
+  - lesson-1
+  - module-overview
 course: EGE351 Automation Systems & Control
 lesson: 1
 topic: Module Overview
+source: NYPY3 Import
+created: 2026-05-17
+type: Lesson
+status: Completed
 ---
 
-# EGE351 - Automation Systems & Control
-
-> **Related:** [[Lecture_1_PLC|Lecture 1: PLC]] | [[EGE351 Automatino Systems & Control/lab1|Lab 1 Notes]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1: PLC]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 ---
 

@@ -5,6 +5,7 @@ tags:
   - example
   - business-cards
   - japanese-business
+  - business-etiquette
 course: FGX312 Discovering Japanese Culture & Society
 topic: Example - Exchange of Business Cards
 source: __xid-48514489_1.pdf
@@ -12,6 +13,8 @@ converted: 2026-04-29
 type: Example
 status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Guide.md|Presentation Guide]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Guide.md|Presentation Guide]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 

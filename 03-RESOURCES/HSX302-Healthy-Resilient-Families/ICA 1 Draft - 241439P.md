@@ -1,3 +1,21 @@
+---
+tags:
+  - HSX302
+  - elective
+  - ICA-1
+  - assignment
+  - draft
+  - family-communication
+course: HSX302 Healthy and Resilient Families
+topic: ICA 1 Assignment Draft - Family Communication Analysis
+source: NYPY3 Import
+created: 2026-05-17
+type: Assignment
+status: Draft
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/ICA 1 Assignment.md|ICA 1 Assignment]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 # HSX302 ICA 1 Assignment (40%)
 
 **Admin No:** 241439P
