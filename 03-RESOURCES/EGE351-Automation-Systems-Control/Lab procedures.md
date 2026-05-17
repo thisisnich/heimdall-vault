@@ -5,11 +5,17 @@ tags:
   - PLC
   - automation
   - FPWIN
+  - lab-procedures
+  - I/O-addressing
 course: EGE351 Automation Systems & Control
 topic: Lab Procedures - PLC I/O Address Assignment and Timer Reference
+source: NYPY3 Import
+created: 2026-05-17
+type: Guide
+status: Completed
 ---
 
-> 📚 **Related:** [[EGE351 Automation Systems & Control - MOC|EGE351 MOC]] | [[EGE351 Automatino Systems & Control/EGE351_Lab_1_PLC_Programming|Lab 1 PLC Programming]] | [[ladder|Ladder Logic Reference Guide]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351_Lab_1_PLC_Programming.md|Lab 1 PLC Programming]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE351 Lab Procedures
 

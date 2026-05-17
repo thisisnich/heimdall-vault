@@ -4,10 +4,18 @@ tags:
   - robotics
   - autonomous-systems
   - ROS
+  - lesson-1
+  - introduction
 course: EGE353 Autonomous Mobile Robotics
 lesson: 1
 topic: Introduction to Autonomous Mobile Robotics
+source: NYPY3 Import
+created: 2026-05-17
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson 1-Introduction.md|Lesson 1 Main]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE353 Autonomous Mobile Robotics
 ### Lesson 1: Introduction

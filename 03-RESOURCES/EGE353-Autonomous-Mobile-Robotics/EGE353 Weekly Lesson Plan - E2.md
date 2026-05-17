@@ -5,13 +5,16 @@ tags:
   - lesson-plan
   - E2
   - weekly-plan
+  - class-schedule
 course: EGE353 Autonomous Mobile Robotics
 topic: AY2026 Semester 1 Weekly Lesson Plan for E2 Class
 source: 26S1_plan_E2 - Copy.pdf
 converted: 2026-04-28
+type: Schedule
+status: Active
 ---
 
-> 📚 **Related:** [[EGE353 Autonomous Mobile Robotics - MOC|EGE353 MOC]] | [[📅 Schedule & Assessments Dashboard|Schedule Dashboard]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Assessment Breakdown.md|Assessment Breakdown]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE353 Weekly Lesson Plan — E2 Class
 

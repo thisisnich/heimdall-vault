@@ -8,11 +8,17 @@ tags:
   - CDMA
   - OFDMA
   - SDMA
+  - lesson2c-duplicate
+  - multiple-access-techniques
 course: EGE321 Wireless Communication and Networking
 topic: Wireless System Design Considerations - Multiple Access Techniques
 source: Lesson2c(1).pptx
 converted: 2026-04-30
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Lesson 2c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 > 📚 **Related:** [[EGE321 Wireless Communication & Networking - MOC|EGE321 MOC]] | [[Lesson2c|Lesson 2c]]
 Wireless System Design Considerations
 Multiple Access Techniques

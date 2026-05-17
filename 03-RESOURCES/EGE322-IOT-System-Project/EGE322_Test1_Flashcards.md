@@ -1,13 +1,21 @@
-ca---
+---
 tags:
   - EGE322
   - flashcards
   - quiz-prep
   - project-management
+  - test1
+  - assessment-prep
 course: EGE322 IoT System Project
 topic: Test 1 Flashcards — Chapter 2.1 & 2.2
 quiz-date: 27 Apr 2026
+source: NYPY3 Import
+created: 2026-05-17
+type: Flashcards
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Chap2_ProjectMgt.md|Chapter 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE322 Test 1 Flashcards
 **Quiz Date:** 27 Apr 2026 (Tuesday)  
