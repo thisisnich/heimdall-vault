@@ -4,11 +4,17 @@ tags:
   - lab2
   - ESP32
   - GPIO
+  - IoT
+  - microcontroller
 course: EGE322 IoT System Project
 topic: Lab 2 - Controlling the ESP32 GPIOs
 source: EGE322 Lab 2- Controlling the ESP32 GPIOs v2026-1.pdf
 converted: 2026-05-07
+type: Lab
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/EGE322 Lab 1- MicroPython Programming v2026b.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 Official (Open)
 School of Engineering

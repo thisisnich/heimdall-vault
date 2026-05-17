@@ -4,11 +4,18 @@ tags:
   - lab3
   - ESP32
   - GPIO
+  - IoT
+  - microcontroller
+  - sensor-interaction
 course: EGE322 IoT System Project
 topic: Lab 3 - Interacting with the ESP32 GPIOs
 source: EGE322 Lab 3- Interacting with the ESP32 GPIOs v2026-1.pdf
 converted: 2026-05-07
+type: Lab
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/EGE322 Lab 2- Controlling the ESP32 GPIOs v2026-1.md|Lab 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 Official (Open)
 School of Engineering

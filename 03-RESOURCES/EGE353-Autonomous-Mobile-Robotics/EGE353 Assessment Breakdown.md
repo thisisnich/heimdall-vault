@@ -5,13 +5,16 @@ tags:
   - weightage
   - breakdown
   - grading
+  - module-assessment
 course: EGE353 Autonomous Mobile Robotics
 topic: Module Assessment Weightage Breakdown
 source: Module assessment - Copy.pdf
 converted: 2026-04-28
+type: Assessment
+status: Active
 ---
 
-> � **Related:** [[EGE353 Autonomous Mobile Robotics - MOC|EGE353 MOC]] | [[📅 Schedule & Assessments Dashboard|Schedule Dashboard]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/lab1.md|Lab 1]]
 
 # EGE353 Module Assessment Breakdown
 

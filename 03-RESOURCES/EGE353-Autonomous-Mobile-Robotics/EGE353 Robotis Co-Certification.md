@@ -5,13 +5,16 @@ tags:
   - Robotis
   - co-certification
   - competency
+  - industry-certification
 course: EGE353 Autonomous Mobile Robotics
 topic: Robotis Co-Certification Announcement
 source: Co-certification .pdf
 converted: 2026-04-28
+type: Certification
+status: Active
 ---
 
-> � **Related:** [[EGE353 Autonomous Mobile Robotics - MOC|EGE353 MOC]] | [[📅 Schedule & Assessments Dashboard|Schedule Dashboard]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Assessment Breakdown.md|Assessment Breakdown]]
 
 # Robotis Co-Certification Announcement
 
