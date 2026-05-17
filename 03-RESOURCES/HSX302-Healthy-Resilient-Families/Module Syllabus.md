@@ -13,6 +13,8 @@ type: Syllabus
 status: Completed
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Schedule.md|Module Schedule]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/ICA 1 Assignment.md|ICA 1 Assignment]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 **HSX302 Healthy and Resilient Families**
