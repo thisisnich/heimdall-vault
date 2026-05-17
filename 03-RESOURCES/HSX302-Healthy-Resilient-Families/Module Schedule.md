@@ -10,6 +10,7 @@ source: HSX302 schedule AY26S1 .docx
 converted: 2026-04-29
 type: Schedule
 status: Active
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

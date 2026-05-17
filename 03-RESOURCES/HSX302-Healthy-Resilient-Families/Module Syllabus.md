@@ -11,6 +11,7 @@ source: HSX302 - Module Syllabus.docx
 converted: 2026-04-29
 type: Syllabus
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Schedule.md|Module Schedule]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

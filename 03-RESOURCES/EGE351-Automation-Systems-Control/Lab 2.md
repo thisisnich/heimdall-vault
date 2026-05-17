@@ -12,6 +12,7 @@ source: 14S1 EGE351 Lab 2 - Automation - PLC Programming 2_v1-1.pdf
 converted: 2026-04-29
 type: Lab
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351_Lab_1_PLC_Programming.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]

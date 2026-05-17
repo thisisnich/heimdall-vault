@@ -12,6 +12,7 @@ source: FGX312_PRESENTATION GUIDE_2025_S2_V1.pdf
 converted: 2026-04-29
 type: Guide
 status: Completed
+source: NYPY3 Import
 ---
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
