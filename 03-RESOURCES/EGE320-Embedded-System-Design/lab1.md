@@ -5,13 +5,17 @@ tags:
   - embedded-systems
   - CCS
   - development-environment
+  - Tiva-C
+  - programming
 course: EGE320 Embedded System Design and Technology
 topic: Lab 1 - Embedded System Development Environment
 source: EGE320 - Lab1 Embedded System Development Environment.pdf
 converted: 2026-04-23
+type: Lab
+status: Completed
 ---
 
-> 📚 **Related:** [[EGE320 Embedded System Design &Technology/ch0|Chapter 0]] | [[EGE320 Embedded Systems - MOC|EGE320 MOC]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE320-Embedded-System-Design/ch0.md|Chapter 0]]
 
 # Lab 1: Embedded System Development Environment
 

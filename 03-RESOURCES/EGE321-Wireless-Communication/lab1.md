@@ -6,13 +6,17 @@ tags:
   - spectrum-analyser
   - dB
   - dBm
+  - signal-analysis
+  - RF-measurements
 course: EGE321 Wireless Communications & Networking
 topic: Lab 1 — Loopback Test within Spectrum Analyser
 source: EGE321 Lab1 Loopback Test within SPA.pdf
 converted: 2026-04-24
+type: Lab
+status: Completed
 ---
 
-> 📚 **Related:** [[EGE321 Wireless Communication & Networking - MOC|EGE321 MOC]] | [[EGE321 Wireless Communication & Networking/Lesson1c|Chapter 1 Notes]] | [[EGE321 Wireless Communication & Networking/Tutorial_1b|Tutorial 1]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE321-Wireless-Communication/WCnN Lesson 1.md|Lesson 1 Notes]]
 
 # EGE321 / LAB 1 — Loopback Test within Spectrum Analyser
 

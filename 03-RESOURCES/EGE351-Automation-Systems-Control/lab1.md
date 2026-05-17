@@ -5,14 +5,17 @@ tags:
   - PLC
   - lab
   - ladder-diagram
+  - lab1
 course: EGE351 Automation Systems & Control
 lab: 1
 topic: Ladder Diagram Basics
+source: NYPY3 Import
+created: 2026-05-17
+type: Lab
+status: Completed
 ---
 
-# EGE351 Lab 1 Notes
-
-> **Related:** [[Lecture_1_PLC|Lecture 1: PLC]] | [[lesson1|Module Overview]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1: PLC]]
 
 ---
 

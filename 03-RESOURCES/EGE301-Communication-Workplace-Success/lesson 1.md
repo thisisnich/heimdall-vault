@@ -4,12 +4,17 @@ tags:
   - communication
   - workplace
   - ICA
+  - lesson-1
 course: EGE301 Communication & Workplace Success
 lesson: 1
 topic: Module Overview and ICA Briefing
+source: NYPY3 Import
+created: 2026-05-17
+type: Lesson
+status: Completed
 ---
 
-> 📚 **Related:** [[AY2026S1-LUDP_BS_-EGDF20-EGE301|Module Schedule]] | [[CWS_ICA_Brief|ICA Brief]] | [[CWS_Grading_Rubrics_ST|Grading Rubrics]] | [[1_Workplace_Culture_and_Ethics|Unit 1 Notes]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/UNIT 4 - Networking Skills.md|Unit 4: Networking Skills]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lesson 1 Notes
 

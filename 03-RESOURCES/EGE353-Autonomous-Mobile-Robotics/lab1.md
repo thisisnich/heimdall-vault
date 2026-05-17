@@ -6,10 +6,17 @@ tags:
   - lab
   - turtlesim
   - practical
+  - lab1
 course: EGE353 Autonomous Mobile Robotics
 lab: 1
 topic: Understanding ROS Nodes and TurtleSim
+source: NYPY3 Import
+created: 2026-05-17
+type: Lab
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson 1-Introduction.md|Lesson 1: Introduction]]
 
 # EGE353 Autonomous Mobile Robotics
 ### Lab 1: Understanding ROS Nodes and TurtleSim

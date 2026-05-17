@@ -4,11 +4,18 @@ tags:
   - lab1
   - MicroPython
   - IDE
+  - ESP32
+  - IoT
+  - programming
 course: EGE322 IoT System Project
 topic: Lab 1 - MicroPython IDE Setup
 source: EGE322 Lab 1- MicroPython Programming v2026b.pdf
 converted: 2026-05-07
+type: Lab
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE322-IOT-System-Project/ESP32_Programming_Guide.md|ESP32 Programming Guide]]
 
 Official (Open)
 School of Engineering
