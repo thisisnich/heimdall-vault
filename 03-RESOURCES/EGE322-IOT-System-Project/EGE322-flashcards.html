@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGE322 IoT Project Management - Flashcards</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F7F6F3;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #373530;
+        }
+
+        .container {
+            background: #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+            max-width: 900px;
+            width: 100%;
+            padding: 48px;
+            border: 1px solid rgba(55, 53, 48, 0.08);
+        }
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            text-align: center;
+            color: #373530;
+            margin-bottom: 8px;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #787774;
+            margin-bottom: 32px;
+            font-size: 1em;
+            font-weight: 400;
+        }
+
+        .quiz-info {
+            background: #FAF3DD;
+            border-left: 3px solid #C29343;
+            padding: 16px 20px;
+            margin-bottom: 32px;
+            border-radius: 6px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .quiz-info strong {
+            color: #976D57;
+            font-weight: 600;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 14px;
+            font-size: 14px;
+            background: #F1F1EF;
+            color: #373530;
+            border: 1px solid rgba(55, 53, 48, 0.12);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover {
+            background: #E9E9E7;
+        }
+
+        .filter-btn.active {
+            background: #373530;
+            color: #FFFFFF;
+            border-color: #373530;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 32px;
+            padding: 24px;
+            background: #F7F6F3;
+            border-radius: 8px;
+            border: 1px solid rgba(55, 53, 48, 0.08);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #787774;
+            margin-bottom: 6px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #373530;
+        }
+
+        .critical-badge {
+            background: #D44C47;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .card-container {
+            perspective: 1000px;
+            margin-bottom: 32px;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            min-height: 380px;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            min-height: 380px;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(55, 53, 48, 0.12);
+        }
+
+        .card-front {
+            background: #FFFFFF;
+            color: #373530;
+        }
+
+        .card-back {
+            background: #EEF3ED;
+            color: #373530;
+            transform: rotateY(180deg);
+            border-left: 4px solid #548164;
+        }
+
+        .card-label {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #787774;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .card-content {
+            font-size: 20px;
+            line-height: 1.7;
+            max-width: 100%;
+            overflow-y: auto;
+            max-height: 280px;
+            color: #373530;
+        }
+
+        .card-content ul, .card-content ol {
+            text-align: left;
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .card-content li {
+            margin: 10px 0;
+        }
+
+        .card-content table {
+            margin: 16px auto;
+            border-collapse: collapse;
+            font-size: 15px;
+            border: 1px solid rgba(55, 53, 48, 0.16);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .card-content th, .card-content td {
+            border: 1px solid rgba(55, 53, 48, 0.12);
+            padding: 12px 16px;
+        }
+
+        .card-content th {
+            background: #F7F6F3;
+            font-weight: 600;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .nav-btn {
+            padding: 12px 24px;
+            font-size: 15px;
+            background: #373530;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            font-weight: 500;
+        }
+
+        .nav-btn:hover {
+            background: #55534E;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            padding: 8px 16px;
+            font-size: 14px;
+            background: #F1F1EF;
+            color: #373530;
+            border: 1px solid rgba(55, 53, 48, 0.12);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            font-weight: 500;
+        }
+
+        .action-btn:hover {
+            background: #E9E9E7;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #F1F1EF;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 32px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #548164;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .card-content {
+                font-size: 17px;
+            }
+
+            .card-face {
+                padding: 32px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 EGE322 Flashcards</h1>
+        <div class="subtitle">IoT System Project - Test 1 Prep</div>
+
+        <div class="quiz-info">
+            <strong>📅 Quiz Date:</strong> 27 Apr 2026 (Tuesday)<br>
+            <strong>📖 Scope:</strong> Chapter 2.1 & 2.2 only<br>
+            <strong>💻 Format:</strong> Brightspace eQuiz (LDB)
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterCards('all')">All Cards (36)</button>
+            <button class="filter-btn active" onclick="filterCards('critical')">⚠️ Critical Quiz Answers (6)</button>
+            <button class="filter-btn" onclick="filterCards('chapter2.1')">Chapter 2.1</button>
+            <button class="filter-btn" onclick="filterCards('chapter2.2')">Chapter 2.2</button>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-label">Card</div>
+                <div class="stat-value" id="currentCard">1/36</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Studied</div>
+                <div class="stat-value" id="studiedCount">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Remaining</div>
+                <div class="stat-value" id="remainingCount">36</div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="flashcard" onclick="flipCard()">
+                <div class="card-face card-front">
+                    <div class="card-label">Question <span id="criticalBadge"></span></div>
+                    <div class="card-content" id="questionText">Click to start</div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="card-label">Answer</div>
+                    <div class="card-content" id="answerText">Answer appears here</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-btn" onclick="previousCard()">← Previous</button>
+            <button class="nav-btn" onclick="nextCard()">Next →</button>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-btn" onclick="shuffleDeck()" style="background: #dc3545;">🔀 Shuffle</button>
+            <button class="action-btn" onclick="resetProgress()">🔄 Reset</button>
+            <button class="action-btn" onclick="showHelp()">❓ Help</button>
+        </div>
+    </div>
+
+    <script>
+        const allCards = [
+            // Chapter 2.1 Cards
+            { question: "What is a project?", answer: "A unique effort with:<ul><li>Defined beginning and end</li><li>Specific deliverables</li><li>Defined resources</li></ul>", critical: false, chapter: "2.1" },
+            { question: "What are the 3 key differences between a Project and a Business Process?", answer: "<table><tr><th>Project</th><th>Business Process</th></tr><tr><td>Has beginning and end</td><td>Repeated over and over</td></tr><tr><td>Different output each time</td><td>Same output each time</td></tr><tr><td>No regular work assignments</td><td>Regular work assignments</td></tr></table><p><strong>Example:</strong> Custom house (project) vs Standard house (business process)</p>", critical: false, chapter: "2.1" },
+            { question: "What are the 3 constraints in project management (Triple Constraint)?", answer: "<ol><li><strong>Time</strong> (schedule/duration)</li><li><strong>Cost</strong> (budget)</li><li><strong>Scope</strong> (features/deliverables)</li></ol><p>These must be balanced to maintain quality.</p>", critical: true, chapter: "2.1" },
+            { question: "⚠️ QUIZ: What happens when the duration of the project is DECREASED?", answer: "<ul><li><strong>Increase the cost</strong> (hire more people/resources), AND/OR</li><li><strong>Decrease the scope</strong> (reduce features)</li></ul>", critical: true, chapter: "2.1" },
+            { question: "⚠️ QUIZ: What happens if the budget (cost) of the project is DECREASED?", answer: "<ul><li><strong>Increase the project duration</strong> (reduce manpower), AND/OR</li><li><strong>Decrease the scope</strong> (reduce features)</li></ul>", critical: true, chapter: "2.1" },
+            { question: "⚠️ QUIZ: What happens if project scope is INCREASED?", answer: "<ul><li><strong>Increase project cost</strong> (more resources needed), AND/OR</li><li><strong>Increase project duration</strong> (more time needed)</li></ul>", critical: true, chapter: "2.1" },
+            { question: "What are the 3 main goals of project management?", answer: "<ol><li>Complete project <strong>on time</strong></li><li>Finish <strong>within budget</strong></li><li>Achieve <strong>customer satisfaction</strong></li></ol>", critical: false, chapter: "2.1" },
+            { question: "What are the 5 phases in the full cycle of a project?", answer: "<ol><li>Project initiation and organising</li><li>Project planning</li><li>Project execution</li><li>Project control and monitoring</li><li>Project closure</li></ol>", critical: false, chapter: "2.1" },
+            
+            // Chapter 2.2 Cards
+            { question: "What are the 4 main phases of project management (simplified)?", answer: "<ol><li><strong>Initiation & Organisation</strong></li><li><strong>Planning</strong></li><li><strong>Execution, Monitoring & Control</strong></li><li><strong>Closure</strong></li></ol>", critical: false, chapter: "2.2" },
+            { question: "What are the 3 steps for organising a project team?", answer: "<ol><li>Identify a <strong>sponsor</strong></li><li>Appoint a <strong>project manager (PM)</strong></li><li>Identify <strong>core team</strong> (max 7 members)</li></ol>", critical: true, chapter: "2.2" },
+            { question: "What are the key responsibilities of a project sponsor?", answer: "<ul><li>Appoint project manager</li><li>Set strategic direction</li><li>Approve plan and budget</li><li>Support team members</li><li>Approve project changes</li><li>Set priorities and resolve conflicts</li></ul>", critical: false, chapter: "2.2" },
+            { question: "What are the key responsibilities of a project manager?", answer: "<ul><li>Define project management process</li><li>Prepare and obtain approval of project plan</li><li>Ensure team understands responsibilities</li><li>Expend resources according to plan</li><li>Analyse actual vs planned performance</li><li>Establish priorities</li><li>Provide status reports</li><li>Resolve conflicts</li></ul>", critical: false, chapter: "2.2" },
+            { question: "What is the maximum recommended size for a core project team?", answer: "<h3>At most 7 members</h3><p>Core members make major decisions; extended members provide specific expertise (no limit).</p>", critical: true, chapter: "2.2" },
+            { question: "Name 5 reasons why projects are authorized.", answer: "<ol><li><strong>Technology advances</strong> (e.g., efficient car)</li><li><strong>Social needs</strong> (e.g., new substation)</li><li><strong>Market demands</strong> (e.g., new video game)</li><li><strong>Business needs</strong> (e.g., compliance)</li><li><strong>Customer requests</strong> (e.g., water project)</li></ol>", critical: false, chapter: "2.2" },
+            { question: "What does SWOT stand for and what is its purpose?", answer: "<ul><li><strong>S</strong>trengths</li><li><strong>W</strong>eaknesses</li><li><strong>O</strong>pportunities</li><li><strong>T</strong>hreats</li></ul><p><strong>Purpose:</strong> Identify suitable projects by analyzing internal capabilities and external factors.</p>", critical: false, chapter: "2.2" },
+            { question: "What should a Project Objective Statement include?", answer: "<ul><li><strong>What</strong> you're going to do (scope)</li><li><strong>By when</strong> (schedule)</li><li><strong>With how many</strong> (resources/costs)</li></ul><p><strong>Max 25 words, only 1 target, clear and precise</strong></p>", critical: false, chapter: "2.2" },
+            { question: "What are the 3 flexibility levels in a Flexibility Matrix?", answer: "<ol><li><strong>Least Flexible</strong> — cannot be exceeded</li><li><strong>Moderately Flexible</strong> — can be adjusted</li><li><strong>Most Flexible</strong> — can exceed original goal</li></ol><p>Used for trade-offs among scope, schedule, resources.</p>", critical: false, chapter: "2.2" },
+            { question: "What is a Project Charter?", answer: "<p><strong>Definition:</strong> Document that formally authorizes a project and gives PM authority.</p><p><strong>Contains:</strong> Title, PM assigned, objective, business case, deliverables</p>", critical: false, chapter: "2.2" },
+            { question: "What 4 areas should a project framework encompass?", answer: "<ol><li><strong>Planning</strong> (tools, who develops)</li><li><strong>Tracking</strong> (meetings, progress)</li><li><strong>Practices</strong> (files, approvals)</li><li><strong>Relationships</strong> (communication, conflicts)</li></ol>", critical: false, chapter: "2.2" },
+            { question: "What are the key activities in Project Planning?", answer: "<ol><li>Develop <strong>Work Breakdown Structure (WBS)</strong></li><li>Approximate <strong>duration of tasks</strong></li><li>Generate <strong>Gantt Chart</strong></li></ol>", critical: false, chapter: "2.2" },
+            { question: "What is a Work Breakdown Structure (WBS)?", answer: "<p>A tool for identifying and presenting project work in a <strong>hierarchical and logically structured manner</strong>.</p><p><strong>Purpose:</strong> Ensure all work is properly identified, defined, and assigned.</p>", critical: false, chapter: "2.2" },
+            { question: "What are the 4 key elements of WBS?", answer: "<ol><li>Sequence is <strong>NOT</strong> important</li><li>Completeness <strong>IS</strong> important</li><li>Verb/noun symbolizes task & activity</li><li>Each breakdown needs minimum <strong>2 tasks</strong></li></ol>", critical: false, chapter: "2.2" },
+            { question: "What approach is used to develop a WBS?", answer: "<p><strong>Top-down approach:</strong></p><ol><li>Identify 4 to 7 major components</li><li>Group by deliverables, phases, functions, or location</li><li>Validate using bottom-up</li><li>WBS is <strong>team process</strong> (not PM alone)</li></ol>", critical: false, chapter: "2.2" },
+            { question: "Who assigns the duration of tasks in a project?", answer: "<p>Durations assigned by <strong>task owners</strong> (not PM).</p><p><strong>Key principles:</strong></p><ul><li>Avoid padding</li><li>Document assumptions</li><li>Document persons and training needed</li></ul>", critical: false, chapter: "2.2" },
+            { question: "Explain: Effort → Duration → Calendar Time", answer: "<ul><li><strong>Effort</strong> — total work (person-hours)</li><li><strong>Duration</strong> — time to complete (considers productivity)</li><li><strong>Calendar Time</strong> — real elapsed time (considers weekends, holidays)</li></ul><p><strong>Formula:</strong> Effort ÷ Resources = Duration</p>", critical: false, chapter: "2.2" },
+            { question: "What is a Gantt Chart?", answer: "<p><strong>Definition:</strong> Simple representation showing time and resources for each activity.</p><p><strong>Purpose:</strong></p><ul><li>Communication tool</li><li>Easy to understand</li><li>Shows responsibility and progress</li></ul>", critical: false, chapter: "2.2" },
+            { question: "What are the 4 main activities in Execution, Monitoring & Control?", answer: "<ol><li><strong>Monitor</strong> environment (collect info)</li><li><strong>Manage</strong> change (analyze variance)</li><li><strong>Track</strong> progress (adaptive action)</li><li><strong>Communicate</strong> progress (report)</li></ol>", critical: false, chapter: "2.2" },
+            { question: "What is variance in project management?", answer: "<p>When actual activities <strong>deviate from planned activities</strong>.</p><p>PM must identify causes, impacts, and plan <strong>adaptive action</strong>.</p>", critical: false, chapter: "2.2" },
+            { question: "What to do when planning adaptive action?", answer: "<ul><li>Involve team members</li><li>Review change control process</li><li>Re-visit assumptions</li><li>Check data accuracy</li><li>Implement contingency plan</li><li>Hold key milestones</li><li>Re-plan/re-estimate</li></ul>", critical: false, chapter: "2.2" },
+            { question: "What to do when taking adaptive action?", answer: "<ul><li>Implement new plan</li><li>Communicate changes</li><li>Get team buy-in</li><li>Document all changes</li></ul><p><strong>Remember:</strong> Changes affect all constraints!</p>", critical: false, chapter: "2.2" },
+            { question: "How often should project status be reported?", answer: "<p><strong>Frequency:</strong> At least <strong>once a month</strong></p><p><strong>Include:</strong> % completion, tasks completed, variance analysis, next tasks, outstanding issues</p>", critical: false, chapter: "2.2" },
+            { question: "What are key considerations before project closure?", answer: "<ul><li><strong>Announce</strong> end</li><li><strong>Conduct</strong> final review</li><li><strong>Debrief</strong> learning</li><li><strong>Deliver</strong> rewards</li><li><strong>Closing ritual</strong></li><li><strong>Complete paperwork</strong></li></ul>", critical: false, chapter: "2.2" },
+            { question: "What is the purpose of conducting a project review?", answer: "<ul><li>Highlight what went right AND wrong</li><li><strong>NOT</strong> finger pointing</li><li>Continuous improvement</li><li>Identify success elements</li><li>Capture key learning</li></ul>", critical: false, chapter: "2.2" },
+            { question: "What steps are involved in closing the project file?", answer: "<ul><li>Complete final review documents</li><li>Bundle and label status reports</li><li>Send files for archiving</li><li><strong>PM is responsible</strong> for storage</li></ul>", critical: false, chapter: "2.2" },
+            { question: "KEY NUMBERS: What to memorize?", answer: "<ul><li>Core team: <strong>Max 7</strong></li><li>Objective statement: <strong>Max 25 words, 1 target</strong></li><li>WBS components: <strong>4 to 7</strong></li><li>WBS min tasks: <strong>2 tasks</strong></li><li>Status reporting: <strong>Once a month</strong></li></ul>", critical: true, chapter: "2.2" },
+            { question: "KEY ROLES: Sponsor vs PM vs Team?", answer: "<ul><li><strong>Sponsor:</strong> Approves, sets direction, resolves conflicts</li><li><strong>PM:</strong> Plans, executes, monitors, reports</li><li><strong>Core Team:</strong> Major decisions (max 7)</li><li><strong>Extended:</strong> Expertise (no limit)</li></ul>", critical: false, chapter: "2.2" }
+        ];
+
+        let currentDeck = [...allCards];
+        let currentIndex = 0;
+        let studiedCards = new Set();
+        let isFlipped = false;
+        let currentFilter = 'critical';
+
+        window.onload = function() {
+            filterCards('critical');
+        };
+
+        function filterCards(type) {
+            currentFilter = type;
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            if (type === 'all') {
+                currentDeck = [...allCards];
+            } else if (type === 'critical') {
+                currentDeck = allCards.filter(card => card.critical);
+            } else if (type === 'chapter2.1') {
+                currentDeck = allCards.filter(card => card.chapter === '2.1');
+            } else if (type === 'chapter2.2') {
+                currentDeck = allCards.filter(card => card.chapter === '2.2');
+            }
+
+            currentIndex = 0;
+            studiedCards.clear();
+            showCard();
+            updateStats();
+        }
+
+        function showCard() {
+            if (currentDeck.length === 0) return;
+
+            const card = document.getElementById('flashcard');
+            card.classList.remove('flipped');
+            isFlipped = false;
+
+            const currentCard = currentDeck[currentIndex];
+            document.getElementById('questionText').innerHTML = currentCard.question;
+            document.getElementById('answerText').innerHTML = currentCard.answer;
+            
+            const badge = currentCard.critical ? '<span class="critical-badge">⚠️ QUIZ ANSWER</span>' : '';
+            document.getElementById('criticalBadge').innerHTML = badge;
+
+            studiedCards.add(currentIndex);
+            updateStats();
+        }
+
+        function flipCard() {
+            const card = document.getElementById('flashcard');
+            card.classList.toggle('flipped');
+            isFlipped = !isFlipped;
+        }
+
+        function nextCard() {
+            if (currentIndex < currentDeck.length - 1) {
+                currentIndex++;
+                showCard();
+            }
+        }
+
+        function previousCard() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showCard();
+            }
+        }
+
+        function shuffleDeck() {
+            for (let i = currentDeck.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [currentDeck[i], currentDeck[j]] = [currentDeck[j], currentDeck[i]];
+            }
+            currentIndex = 0;
+            studiedCards.clear();
+            showCard();
+        }
+
+        function resetProgress() {
+            currentIndex = 0;
+            studiedCards.clear();
+            showCard();
+        }
+
+        function updateStats() {
+            document.getElementById('currentCard').textContent = `${currentIndex + 1}/${currentDeck.length}`;
+            document.getElementById('studiedCount').textContent = studiedCards.size;
+            document.getElementById('remainingCount').textContent = currentDeck.length - studiedCards.size;
+            
+            const progress = ((currentIndex + 1) / currentDeck.length) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function showHelp() {
+            alert('🎯 STUDY TIPS:\n\n' +
+                  '⚠️ Focus on CRITICAL cards first (marked with red badge)\n' +
+                  '📖 Use filters to study by chapter\n' +
+                  '🔀 Shuffle to test yourself randomly\n' +
+                  '⌨️ Keyboard shortcuts:\n' +
+                  '  • Space/Enter = Flip card\n' +
+                  '  • Left Arrow = Previous\n' +
+                  '  • Right Arrow = Next\n\n' +
+                  'Good luck on your quiz! 🍀');
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    previousCard();
+                    break;
+                case 'ArrowRight':
+                    nextCard();
+                    break;
+                case ' ':
+                case 'Enter':
+                    e.preventDefault();
+                    flipCard();
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

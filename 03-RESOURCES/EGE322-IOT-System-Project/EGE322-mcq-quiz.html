@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGE322 IoT Project Management - MCQ Quiz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F7F6F3;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #373530;
+        }
+
+        .container {
+            background: #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+            max-width: 900px;
+            width: 100%;
+            padding: 48px;
+            border: 1px solid rgba(55, 53, 48, 0.08);
+        }
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            text-align: center;
+            color: #373530;
+            margin-bottom: 8px;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #787774;
+            margin-bottom: 32px;
+            font-size: 1em;
+            font-weight: 400;
+        }
+
+        .quiz-info {
+            background: #FAF3DD;
+            border-left: 3px solid #C29343;
+            padding: 16px 20px;
+            margin-bottom: 32px;
+            border-radius: 6px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .quiz-info strong {
+            color: #976D57;
+            font-weight: 600;
+        }
+
+        .quiz-select {
+            margin-bottom: 32px;
+        }
+
+        select, button {
+            padding: 12px 18px;
+            border-radius: 6px;
+            border: 1px solid rgba(55, 53, 48, 0.16);
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        select {
+            width: 100%;
+            background: #FFFFFF;
+            color: #373530;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        select:hover {
+            border-color: rgba(55, 53, 48, 0.24);
+        }
+
+        button {
+            background: #373530;
+            color: #FFFFFF;
+            font-weight: 600;
+            width: 100%;
+            border: none;
+        }
+
+        button:hover {
+            background: #55534E;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            padding: 24px;
+            background: #F7F6F3;
+            border-radius: 8px;
+            border: 1px solid rgba(55, 53, 48, 0.08);
+        }
+
+        .quiz-info-item {
+            display: flex;
+            gap: 32px;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-label {
+            font-size: 13px;
+            color: #787774;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .info-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #373530;
+            margin-top: 6px;
+        }
+
+        .timer {
+            font-size: 28px;
+            font-weight: 700;
+            color: #373530;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #F1F1EF;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 32px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #487CA5;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .question-card {
+            background: #FFFFFF;
+            padding: 32px;
+            border-radius: 10px;
+            margin-bottom: 32px;
+            border: 1px solid rgba(55, 53, 48, 0.12);
+        }
+
+        .question-number {
+            font-size: 13px;
+            color: #787774;
+            margin-bottom: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .question-text {
+            font-size: 19px;
+            color: #373530;
+            line-height: 1.7;
+            margin-bottom: 28px;
+            font-weight: 500;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option {
+            padding: 18px 20px;
+            border: 1.5px solid rgba(55, 53, 48, 0.16);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .option:hover {
+            border-color: #373530;
+            background: #F7F6F3;
+            transform: translateX(2px);
+        }
+
+        .option-letter {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            background: #F1F1EF;
+            color: #373530;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+
+        .option-text {
+            flex: 1;
+            font-size: 15px;
+            color: #373530;
+            line-height: 1.5;
+        }
+
+        .option.selected {
+            border-color: #373530;
+            background: #F7F6F3;
+        }
+
+        .option.selected .option-letter {
+            background: #373530;
+            color: #FFFFFF;
+        }
+
+        .option.correct {
+            border-color: #548164;
+            background: #EEF3ED;
+        }
+
+        .option.correct .option-letter {
+            background: #548164;
+            color: #FFFFFF;
+        }
+
+        .option.incorrect {
+            border-color: #D44C47;
+            background: #FAECEC;
+        }
+
+        .option.incorrect .option-letter {
+            background: #D44C47;
+            color: #FFFFFF;
+        }
+
+        .option.disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .explanation {
+            margin-top: 24px;
+            padding: 18px 20px;
+            background: #E9F3F7;
+            border-left: 3px solid #487CA5;
+            border-radius: 6px;
+            display: none;
+        }
+
+        .explanation.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 600;
+            color: #337EA9;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .explanation-text {
+            color: #373530;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .nav-btn {
+            padding: 12px 32px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .results-screen {
+            text-align: center;
+            padding: 48px 24px;
+        }
+
+        .results-screen h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 2em;
+            color: #373530;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+
+        .results-score {
+            font-size: 72px;
+            font-weight: 700;
+            color: #548164;
+            margin: 32px 0;
+        }
+
+        .results-message {
+            font-size: 20px;
+            color: #787774;
+            margin-bottom: 32px;
+            font-weight: 500;
+        }
+
+        .results-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            padding: 24px;
+            background: #F7F6F3;
+            border-radius: 8px;
+            border: 1px solid rgba(55, 53, 48, 0.08);
+        }
+
+        .stat-card-label {
+            font-size: 13px;
+            color: #787774;
+            margin-bottom: 8px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .stat-card-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #373530;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 64px 24px;
+            color: #787774;
+        }
+
+        .empty-state h2 {
+            font-family: 'Fraunces', serif;
+            color: #373530;
+            margin-bottom: 16px;
+            font-size: 1.8em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .quiz-header {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .results-score {
+                font-size: 56px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✏️ EGE322 MCQ Quiz</h1>
+        <div class="subtitle">IoT System Project - Test 1 Prep</div>
+
+        <div id="quizSelect" class="quiz-select">
+            <div class="quiz-info">
+                <strong>📅 Quiz Date:</strong> 27 Apr 2026 (Tuesday)<br>
+                <strong>📖 Scope:</strong> Chapter 2.1 & 2.2<br>
+                <strong>💻 Format:</strong> Brightspace eQuiz (LDB)
+            </div>
+            <select id="quizDropdown">
+                <option value="">Select a quiz...</option>
+            </select>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="quizArea" style="display: none;">
+            <div class="quiz-header">
+                <div class="quiz-info-item">
+                    <div class="info-item">
+                        <div class="info-label">Question</div>
+                        <div class="info-value" id="questionCounter">1/15</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Score</div>
+                        <div class="info-value" id="currentScore">0</div>
+                    </div>
+                </div>
+                <div class="timer" id="timer">--:--</div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-number" id="questionNumber">Question 1 of 15</div>
+                <div class="question-text" id="questionText"></div>
+                <div class="options" id="optionsContainer"></div>
+                <div class="explanation" id="explanation">
+                    <div class="explanation-title">💡 Explanation</div>
+                    <div class="explanation-text" id="explanationText"></div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn" id="nextBtn" onclick="nextQuestion()">Next Question →</button>
+            </div>
+        </div>
+
+        <div id="resultsArea" style="display: none;">
+            <div class="results-screen">
+                <h2>🎉 Quiz Complete!</h2>
+                <div class="results-score" id="finalScore">0%</div>
+                <div class="results-message" id="resultsMessage"></div>
+
+                <div class="results-stats">
+                    <div class="stat-card">
+                        <div class="stat-card-label">Correct</div>
+                        <div class="stat-card-value" id="correctCount">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-label">Incorrect</div>
+                        <div class="stat-card-value" id="incorrectCount">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-label">Time Taken</div>
+                        <div class="stat-card-value" id="timeTaken">0:00</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-label">Grade</div>
+                        <div class="stat-card-value" id="gradeValue">-</div>
+                    </div>
+                </div>
+
+                <button onclick="restartQuiz()">Take Another Quiz</button>
+            </div>
+        </div>
+
+        <div id="emptyState" class="empty-state">
+            <h2>Welcome to EGE322 MCQ Quiz!</h2>
+            <p>Select a quiz from the dropdown above to start testing your knowledge.</p>
+            <p style="margin-top: 15px;"><strong>Good luck on your quiz! 🍀</strong></p>
+        </div>
+    </div>
+
+    <script>
+        const builtInQuizzes = {
+            "Chapter 2.1 - Project Management Basics (10 questions)": [
+                {
+                    question: "What is a project?",
+                    options: [
+                        "A repeated business process",
+                        "A unique effort with defined beginning, end, and deliverables",
+                        "An ongoing operational activity",
+                        "A standard procedure"
+                    ],
+                    correct: 1,
+                    explanation: "A project is a unique effort with a defined beginning and end, specific deliverables, and defined resources. It's different from business processes which are repeated."
+                },
+                {
+                    question: "Which of the following is a key difference between a project and a business process?",
+                    options: [
+                        "Projects are repeated over and over",
+                        "Business processes have a defined end date",
+                        "Projects produce different outputs each time",
+                        "Business processes have no regular work assignments"
+                    ],
+                    correct: 2,
+                    explanation: "Projects produce different outputs/deliverables each time, while business processes produce the same output repeatedly. Example: Custom house (project) vs Standard house (business process)."
+                },
+                {
+                    question: "What are the three constraints in the Triple Constraint of project management?",
+                    options: [
+                        "Quality, Resources, Stakeholders",
+                        "Time, Cost, Scope",
+                        "Planning, Execution, Closure",
+                        "Budget, Schedule, Team"
+                    ],
+                    correct: 1,
+                    explanation: "The Triple Constraint consists of Time (schedule/duration), Cost (budget), and Scope (features/deliverables). These must be balanced to maintain quality."
+                },
+                {
+                    question: "⚠️ CRITICAL: If the duration of a project is DECREASED, what should happen?",
+                    options: [
+                        "Decrease cost and increase scope",
+                        "Increase cost AND/OR decrease scope",
+                        "Keep cost and scope the same",
+                        "Increase scope only"
+                    ],
+                    correct: 1,
+                    explanation: "When duration decreases, you must either increase the cost (hire more resources) AND/OR decrease the scope (reduce features). This maintains the balance of the Triple Constraint."
+                },
+                {
+                    question: "⚠️ CRITICAL: If the budget (cost) of a project is DECREASED, what happens?",
+                    options: [
+                        "Increase duration AND/OR decrease scope",
+                        "Decrease duration and increase scope",
+                        "Increase scope only",
+                        "Nothing changes"
+                    ],
+                    correct: 0,
+                    explanation: "When cost decreases, you must either increase the project duration (reduce manpower) AND/OR decrease the scope (reduce features)."
+                },
+                {
+                    question: "⚠️ CRITICAL: If project scope is INCREASED, what must happen?",
+                    options: [
+                        "Decrease cost and duration",
+                        "Increase cost AND/OR increase duration",
+                        "Keep cost and duration the same",
+                        "Decrease duration only"
+                    ],
+                    correct: 1,
+                    explanation: "When scope increases, you need more resources (increase cost) AND/OR more time (increase duration) to complete the additional work."
+                },
+                {
+                    question: "What are the three main goals of project management?",
+                    options: [
+                        "Hire team, Create plan, Execute tasks",
+                        "Complete on time, Within budget, Customer satisfaction",
+                        "Define scope, Allocate resources, Monitor progress",
+                        "Initiate, Plan, Close"
+                    ],
+                    correct: 1,
+                    explanation: "The three main goals are: 1) Complete project on time, 2) Finish within budget, 3) Achieve customer satisfaction."
+                },
+                {
+                    question: "How many phases are in the full cycle of a project?",
+                    options: [
+                        "3 phases",
+                        "4 phases",
+                        "5 phases",
+                        "6 phases"
+                    ],
+                    correct: 2,
+                    explanation: "The full cycle has 5 phases: 1) Initiation and organising, 2) Planning, 3) Execution, 4) Control and monitoring, 5) Closure."
+                },
+                {
+                    question: "Which is an example of a project (not a business process)?",
+                    options: [
+                        "Manufacturing standard smartphones daily",
+                        "Processing monthly payroll",
+                        "Building a custom house for a client",
+                        "Daily inventory management"
+                    ],
+                    correct: 2,
+                    explanation: "Building a custom house is a project because it's unique with a defined start and end. Manufacturing standard products, payroll, and inventory are repeated business processes."
+                },
+                {
+                    question: "What must be balanced in the Triple Constraint to maintain quality?",
+                    options: [
+                        "Only time and cost",
+                        "Only scope and resources",
+                        "Time, cost, and scope together",
+                        "Quality is independent of constraints"
+                    ],
+                    correct: 2,
+                    explanation: "All three constraints (time, cost, scope) must be balanced together to maintain quality. Changing one affects the others."
+                }
+            ],
+            "Chapter 2.2 - Project Phases & Planning (15 questions)": [
+                {
+                    question: "What are the 4 main phases of project management (simplified version)?",
+                    options: [
+                        "Define, Design, Develop, Deploy",
+                        "Initiation & Organisation, Planning, Execution/Monitoring/Control, Closure",
+                        "Start, Middle, End, Review",
+                        "Concept, Development, Implementation, Termination"
+                    ],
+                    correct: 1,
+                    explanation: "The 4 simplified phases are: 1) Initiation & Organisation, 2) Planning, 3) Execution, Monitoring & Control, 4) Closure."
+                },
+                {
+                    question: "⚠️ CRITICAL: What are the 3 steps for organising a project team?",
+                    options: [
+                        "Hire staff, Train team, Assign tasks",
+                        "Identify sponsor, Appoint PM, Identify core team",
+                        "Define roles, Set budget, Create schedule",
+                        "Plan work, Execute plan, Monitor progress"
+                    ],
+                    correct: 1,
+                    explanation: "The 3 steps are: 1) Identify a sponsor, 2) Appoint a project manager (PM), 3) Identify core team (max 7 members)."
+                },
+                {
+                    question: "⚠️ CRITICAL: What is the maximum recommended size for a core project team?",
+                    options: [
+                        "5 members",
+                        "7 members",
+                        "10 members",
+                        "No limit"
+                    ],
+                    correct: 1,
+                    explanation: "Core team should have at most 7 members. Core members make major decisions. Extended members provide specific expertise and have no limit."
+                },
+                {
+                    question: "Which is a key responsibility of the project sponsor?",
+                    options: [
+                        "Write code and develop products",
+                        "Approve plan and budget, resolve conflicts",
+                        "Create detailed task schedules",
+                        "Manage day-to-day operations"
+                    ],
+                    correct: 1,
+                    explanation: "Sponsor responsibilities include: appoint PM, set strategic direction, approve plan/budget, support team, approve changes, set priorities, and resolve conflicts."
+                },
+                {
+                    question: "Which is a key responsibility of the project manager (PM)?",
+                    options: [
+                        "Approve the project budget",
+                        "Prepare and obtain approval of project plan",
+                        "Hire all team members",
+                        "Set company strategic direction"
+                    ],
+                    correct: 1,
+                    explanation: "PM responsibilities include: define PM process, prepare/approve plan, ensure team understands roles, manage resources, analyze performance, set priorities, report status, resolve conflicts."
+                },
+                {
+                    question: "What does SWOT stand for?",
+                    options: [
+                        "Strategy, Work, Objectives, Timeline",
+                        "Strengths, Weaknesses, Opportunities, Threats",
+                        "Scope, Work, Organization, Tasks",
+                        "Schedule, Workflow, Operations, Tracking"
+                    ],
+                    correct: 1,
+                    explanation: "SWOT = Strengths, Weaknesses, Opportunities, Threats. It's used to identify suitable projects by analyzing internal capabilities and external factors."
+                },
+                {
+                    question: "What should a Project Objective Statement include?",
+                    options: [
+                        "Only the project name",
+                        "What you're doing, by when, with how many resources",
+                        "Just the budget amount",
+                        "Only the timeline"
+                    ],
+                    correct: 1,
+                    explanation: "Project Objective Statement must include: WHAT (scope), BY WHEN (schedule), WITH HOW MANY (resources/costs). Max 25 words, only 1 target, clear and precise."
+                },
+                {
+                    question: "What is a Work Breakdown Structure (WBS)?",
+                    options: [
+                        "A list of team members",
+                        "A hierarchical and logically structured presentation of project work",
+                        "A budget breakdown",
+                        "A timeline chart"
+                    ],
+                    correct: 1,
+                    explanation: "WBS is a tool for identifying and presenting project work in a hierarchical and logically structured manner. It ensures all work is properly identified, defined, and assigned."
+                },
+                {
+                    question: "In WBS, which is MORE important?",
+                    options: [
+                        "Sequence of tasks",
+                        "Completeness of tasks",
+                        "Task names",
+                        "Task colors"
+                    ],
+                    correct: 1,
+                    explanation: "In WBS: Sequence is NOT important, but Completeness IS important. Also: use verb/noun for tasks, and each breakdown needs minimum 2 tasks."
+                },
+                {
+                    question: "What approach is used to develop a WBS?",
+                    options: [
+                        "Bottom-up only",
+                        "Top-down approach",
+                        "Middle-out approach",
+                        "Random approach"
+                    ],
+                    correct: 1,
+                    explanation: "WBS uses top-down approach: identify 4-7 major components, group them, then validate using bottom-up. WBS is a team process, not PM alone."
+                },
+                {
+                    question: "Who assigns the duration of tasks in a project?",
+                    options: [
+                        "The project manager only",
+                        "The sponsor",
+                        "The task owners",
+                        "External consultants"
+                    ],
+                    correct: 2,
+                    explanation: "Durations are assigned by the task owners (not the PM). Key principles: avoid padding, document assumptions, document persons and training requirements."
+                },
+                {
+                    question: "What is a Gantt Chart used for?",
+                    options: [
+                        "Financial accounting",
+                        "Communication tool showing time and resources for activities",
+                        "Team performance evaluation",
+                        "Risk assessment"
+                    ],
+                    correct: 1,
+                    explanation: "Gantt Chart is a simple representation showing time taken and resources required for each activity. It's a useful communication tool that's easy to understand and shows responsibility and progress."
+                },
+                {
+                    question: "What does 'variance' mean in project management?",
+                    options: [
+                        "Project budget",
+                        "When actual activities deviate from planned activities",
+                        "Team size changes",
+                        "Schedule flexibility"
+                    ],
+                    correct: 1,
+                    explanation: "Variance is when actual activities deviate from planned activities. After identifying causes and impacts, the PM must plan for adaptive action."
+                },
+                {
+                    question: "How often should project status be reported?",
+                    options: [
+                        "Daily",
+                        "Weekly",
+                        "At least once a month",
+                        "Only at project end"
+                    ],
+                    correct: 2,
+                    explanation: "Project status should be reported at least once a month. Include: % completion, tasks completed, variance analysis, next tasks, and outstanding issues."
+                },
+                {
+                    question: "What is the purpose of conducting a project review at closure?",
+                    options: [
+                        "To blame team members for mistakes",
+                        "To highlight what went right AND wrong for continuous improvement",
+                        "To celebrate only successes",
+                        "To assign new projects"
+                    ],
+                    correct: 1,
+                    explanation: "Project review highlights what went right AND wrong. Purpose is NOT finger pointing but to minimize future problems, ensure continuous improvement, and capture key learning."
+                }
+            ],
+            "Mixed Topics - Comprehensive (20 questions)": [
+                {
+                    question: "What defines a project as different from a business process?",
+                    options: [
+                        "Projects are cheaper",
+                        "Projects have a defined beginning and end",
+                        "Projects require fewer people",
+                        "Projects are always successful"
+                    ],
+                    correct: 1,
+                    explanation: "Projects have a defined beginning and end, produce different outputs, and have no regular work assignments. Business processes are repeated continuously."
+                },
+                {
+                    question: "⚠️ If you decrease project duration, you must:",
+                    options: [
+                        "Increase cost AND/OR decrease scope",
+                        "Decrease cost and scope",
+                        "Keep everything the same",
+                        "Only increase team size"
+                    ],
+                    correct: 0,
+                    explanation: "Decreasing duration requires increasing cost (more resources) AND/OR decreasing scope (fewer features) to maintain the Triple Constraint balance."
+                },
+                {
+                    question: "The Triple Constraint consists of:",
+                    options: [
+                        "People, Process, Technology",
+                        "Time, Cost, Scope",
+                        "Planning, Execution, Closure",
+                        "Budget, Resources, Quality"
+                    ],
+                    correct: 1,
+                    explanation: "Triple Constraint = Time (schedule), Cost (budget), Scope (deliverables). These must be balanced to maintain quality."
+                },
+                {
+                    question: "Maximum size of a core project team:",
+                    options: [
+                        "5 members",
+                        "7 members",
+                        "10 members",
+                        "15 members"
+                    ],
+                    correct: 1,
+                    explanation: "Core team: max 7 members who make major decisions. Extended team has no limit and provides expertise."
+                },
+                {
+                    question: "Who appoints the project manager?",
+                    options: [
+                        "The team votes",
+                        "The sponsor",
+                        "HR department",
+                        "The PM self-appoints"
+                    ],
+                    correct: 1,
+                    explanation: "The sponsor appoints the project manager as one of their key responsibilities."
+                },
+                {
+                    question: "Project Objective Statement should be:",
+                    options: [
+                        "As long as possible",
+                        "Max 25 words, 1 target, clear and precise",
+                        "Vague and flexible",
+                        "At least 100 words"
+                    ],
+                    correct: 1,
+                    explanation: "Project Objective Statement: max 25 words, only 1 target, clear and precise. Must include what, by when, with how many resources."
+                },
+                {
+                    question: "In WBS, what is MORE important?",
+                    options: [
+                        "Sequence",
+                        "Completeness",
+                        "Colors used",
+                        "Font size"
+                    ],
+                    correct: 1,
+                    explanation: "In WBS: Sequence is NOT important, Completeness IS important."
+                },
+                {
+                    question: "How many major components should WBS have?",
+                    options: [
+                        "1 to 3",
+                        "4 to 7",
+                        "8 to 10",
+                        "As many as possible"
+                    ],
+                    correct: 1,
+                    explanation: "WBS should identify 4 to 7 major components using top-down approach."
+                },
+                {
+                    question: "Who assigns task durations?",
+                    options: [
+                        "Project manager",
+                        "Sponsor",
+                        "Task owners",
+                        "External consultants"
+                    ],
+                    correct: 2,
+                    explanation: "Task owners assign durations (not PM). They should avoid padding and document all assumptions."
+                },
+                {
+                    question: "Effort → Duration → Calendar Time. What is Duration?",
+                    options: [
+                        "Total work required in person-hours",
+                        "Time to complete task considering productivity",
+                        "Real elapsed time including weekends",
+                        "Budget allocation"
+                    ],
+                    correct: 1,
+                    explanation: "Effort = total work (person-hours), Duration = time to complete (considers productivity), Calendar Time = real elapsed time (includes non-working days)."
+                },
+                {
+                    question: "What is a Gantt Chart?",
+                    options: [
+                        "Financial report",
+                        "Simple representation showing time and resources for activities",
+                        "Risk assessment tool",
+                        "Team roster"
+                    ],
+                    correct: 1,
+                    explanation: "Gantt Chart shows time taken and resources required for each activity. It's a communication tool that's easy to understand."
+                },
+                {
+                    question: "The 4 main project phases are:",
+                    options: [
+                        "Start, Middle, End, Review",
+                        "Initiation, Planning, Execution/Monitoring, Closure",
+                        "Design, Build, Test, Deploy",
+                        "Concept, Development, Launch, Maintenance"
+                    ],
+                    correct: 1,
+                    explanation: "4 phases: 1) Initiation & Organisation, 2) Planning, 3) Execution/Monitoring/Control, 4) Closure."
+                },
+                {
+                    question: "What does variance mean?",
+                    options: [
+                        "Project budget",
+                        "Actual activities deviate from planned",
+                        "Team size",
+                        "Project scope"
+                    ],
+                    correct: 1,
+                    explanation: "Variance = when actual activities deviate from planned activities. PM must plan adaptive action."
+                },
+                {
+                    question: "Status reporting frequency:",
+                    options: [
+                        "Daily",
+                        "Weekly",
+                        "At least once a month",
+                        "Only when problems occur"
+                    ],
+                    correct: 2,
+                    explanation: "Project status should be reported at least once a month, including completion %, tasks, variance, and issues."
+                },
+                {
+                    question: "Purpose of project review:",
+                    options: [
+                        "Blame people",
+                        "Highlight what went right AND wrong for improvement",
+                        "Celebrate only",
+                        "Assign blame"
+                    ],
+                    correct: 1,
+                    explanation: "Review highlights successes AND failures for continuous improvement. NOT for finger pointing."
+                },
+                {
+                    question: "SWOT stands for:",
+                    options: [
+                        "Strategy, Work, Objectives, Timeline",
+                        "Strengths, Weaknesses, Opportunities, Threats",
+                        "Schedule, Workflow, Operations, Tasks",
+                        "Scope, Work, Organization, Tracking"
+                    ],
+                    correct: 1,
+                    explanation: "SWOT = Strengths, Weaknesses, Opportunities, Threats. Used to analyze project feasibility."
+                },
+                {
+                    question: "Minimum tasks per WBS breakdown:",
+                    options: [
+                        "1 task",
+                        "2 tasks",
+                        "3 tasks",
+                        "5 tasks"
+                    ],
+                    correct: 1,
+                    explanation: "Each WBS breakdown needs minimum of 2 tasks."
+                },
+                {
+                    question: "WBS development approach:",
+                    options: [
+                        "Bottom-up only",
+                        "Top-down",
+                        "Random",
+                        "Alphabetical"
+                    ],
+                    correct: 1,
+                    explanation: "WBS uses top-down approach, validated with bottom-up. It's a team process."
+                },
+                {
+                    question: "What is a Project Charter?",
+                    options: [
+                        "Team roster",
+                        "Document that formally authorizes project and gives PM authority",
+                        "Budget spreadsheet",
+                        "Risk assessment"
+                    ],
+                    correct: 1,
+                    explanation: "Project Charter formally authorizes the project and gives PM authority. Contains title, PM, objectives, business case, deliverables."
+                },
+                {
+                    question: "3 main project management goals:",
+                    options: [
+                        "Hire, Plan, Execute",
+                        "On time, Within budget, Customer satisfaction",
+                        "Define, Design, Deploy",
+                        "Start, Monitor, Close"
+                    ],
+                    correct: 1,
+                    explanation: "3 goals: 1) Complete on time, 2) Within budget, 3) Customer satisfaction."
+                }
+            ]
+        };
+
+        let currentQuiz = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let selectedAnswer = null;
+        let answered = false;
+        let startTime = null;
+        let timerInterval = null;
+
+        window.onload = function() {
+            populateQuizSelect();
+        };
+
+        function populateQuizSelect() {
+            const select = document.getElementById('quizDropdown');
+            Object.keys(builtInQuizzes).forEach(quizName => {
+                const option = document.createElement('option');
+                option.value = quizName;
+                option.textContent = quizName;
+                select.appendChild(option);
+            });
+        }
+
+        function startQuiz() {
+            const selectedQuiz = document.getElementById('quizDropdown').value;
+            if (!selectedQuiz) {
+                alert('Please select a quiz first!');
+                return;
+            }
+
+            currentQuiz = [...builtInQuizzes[selectedQuiz]];
+            currentQuestionIndex = 0;
+            score = 0;
+            startTime = Date.now();
+
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('quizSelect').style.display = 'none';
+            document.getElementById('quizArea').style.display = 'block';
+
+            startTimer();
+            showQuestion();
+        }
+
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - startTime) / 1000);
+                const minutes = Math.floor(elapsed / 60);
+                const seconds = elapsed % 60;
+                document.getElementById('timer').textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            }, 1000);
+        }
+
+        function showQuestion() {
+            const question = currentQuiz[currentQuestionIndex];
+            answered = false;
+            selectedAnswer = null;
+
+            document.getElementById('questionNumber').textContent = 
+                `Question ${currentQuestionIndex + 1} of ${currentQuiz.length}`;
+            document.getElementById('questionText').textContent = question.question;
+            document.getElementById('questionCounter').textContent = 
+                `${currentQuestionIndex + 1}/${currentQuiz.length}`;
+            document.getElementById('explanation').classList.remove('show');
+
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+
+            const letters = ['A', 'B', 'C', 'D'];
+            question.options.forEach((option, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option';
+                optionDiv.onclick = () => selectAnswer(index);
+                optionDiv.innerHTML = `
+                    <div class="option-letter">${letters[index]}</div>
+                    <div class="option-text">${option}</div>
+                `;
+                optionsContainer.appendChild(optionDiv);
+            });
+
+            updateProgress();
+        }
+
+        function selectAnswer(index) {
+            if (answered) return;
+
+            selectedAnswer = index;
+            const question = currentQuiz[currentQuestionIndex];
+            const options = document.querySelectorAll('.option');
+
+            options.forEach(opt => opt.classList.remove('selected'));
+            options[index].classList.add('selected');
+
+            answered = true;
+            const isCorrect = index === question.correct;
+            
+            if (isCorrect) {
+                score++;
+                options[index].classList.add('correct');
+            } else {
+                options[index].classList.add('incorrect');
+                options[question.correct].classList.add('correct');
+            }
+
+            options.forEach(opt => opt.classList.add('disabled'));
+
+            document.getElementById('currentScore').textContent = score;
+            document.getElementById('explanationText').textContent = question.explanation;
+            document.getElementById('explanation').classList.add('show');
+        }
+
+        function nextQuestion() {
+            if (!answered) {
+                alert('Please select an answer first!');
+                return;
+            }
+
+            if (currentQuestionIndex < currentQuiz.length - 1) {
+                currentQuestionIndex++;
+                showQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function updateProgress() {
+            const progress = ((currentQuestionIndex + 1) / currentQuiz.length) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function showResults() {
+            clearInterval(timerInterval);
+            const elapsed = Math.floor((Date.now() - startTime) / 1000);
+            const minutes = Math.floor(elapsed / 60);
+            const seconds = elapsed % 60;
+
+            document.getElementById('quizArea').style.display = 'none';
+            document.getElementById('resultsArea').style.display = 'block';
+
+            const percentage = Math.round((score / currentQuiz.length) * 100);
+            document.getElementById('finalScore').textContent = percentage + '%';
+            document.getElementById('correctCount').textContent = score;
+            document.getElementById('incorrectCount').textContent = currentQuiz.length - score;
+            document.getElementById('timeTaken').textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+            let grade = 'F';
+            if (percentage >= 90) grade = 'A';
+            else if (percentage >= 80) grade = 'B';
+            else if (percentage >= 70) grade = 'C';
+            else if (percentage >= 60) grade = 'D';
+            document.getElementById('gradeValue').textContent = grade;
+
+            let message = '';
+            if (percentage >= 90) message = 'Outstanding! You\'re ready for the quiz! 🌟';
+            else if (percentage >= 80) message = 'Excellent work! Keep it up! 🎯';
+            else if (percentage >= 70) message = 'Good job! Review weak areas. 👍';
+            else if (percentage >= 60) message = 'Not bad, but more practice needed! 📚';
+            else message = 'Keep studying! You can do this! 💪';
+
+            document.getElementById('resultsMessage').textContent = message;
+        }
+
+        function restartQuiz() {
+            clearInterval(timerInterval);
+            document.getElementById('resultsArea').style.display = 'none';
+            document.getElementById('quizSelect').style.display = 'block';
+            document.getElementById('emptyState').style.display = 'block';
+            document.getElementById('quizDropdown').value = '';
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('quizArea').style.display === 'none') return;
+
+            if (e.key >= '1' && e.key <= '4') {
+                const index = parseInt(e.key) - 1;
+                if (index < currentQuiz[currentQuestionIndex].options.length) {
+                    selectAnswer(index);
+                }
+            } else if (e.key === 'Enter' && answered) {
+                nextQuestion();
+            }
+        });
+    </script>
+</body>
+</html>

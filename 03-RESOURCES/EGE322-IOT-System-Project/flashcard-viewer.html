@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGE322 Test 1 Flashcards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 15px 25px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-card .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .flashcard-container {
+            perspective: 1000px;
+            margin-bottom: 30px;
+        }
+
+        .flashcard {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            min-height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+        }
+
+        .card-front {
+            background: white;
+        }
+
+        .card-back {
+            background: #f8f9fa;
+            transform: rotateY(180deg);
+        }
+
+        .card-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .card-label {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-content {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: #2d3748;
+        }
+
+        .card-content h3 {
+            margin-bottom: 15px;
+            color: #1a202c;
+        }
+
+        .card-content ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .card-content li {
+            margin-bottom: 8px;
+        }
+
+        .card-content table {
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+        .card-content th,
+        .card-content td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #e2e8f0;
+            font-size: 1rem;
+        }
+
+        .card-content th {
+            background: #f7fafc;
+            font-weight: bold;
+        }
+
+        .card-hint {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #a0aec0;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-prev {
+            background: #718096;
+            color: white;
+        }
+
+        .btn-flip {
+            background: #667eea;
+            color: white;
+            flex: 2;
+        }
+
+        .btn-next {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn:disabled:hover {
+            transform: none;
+        }
+
+        .knowledge-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-know {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-learning {
+            background: #ed8936;
+            color: white;
+        }
+
+        .btn-unknown {
+            background: #f56565;
+            color: white;
+        }
+
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.2);
+            height: 8px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #48bb78, #38a169);
+            height: 100%;
+            transition: width 0.3s;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-filter {
+            padding: 10px 20px;
+            border: 2px solid white;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn-filter:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-filter.active {
+            background: white;
+            color: #667eea;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .flashcard {
+                min-height: 350px;
+            }
+
+            .card-content {
+                font-size: 1.1rem;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>EGE322 Test 1 Flashcards</h1>
+            <p>Chapter 2.1 and 2.2 Quiz 27 Apr 2026</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span class="number" id="currentCard">1</span>
+                <span class="label">Current Card</span>
+            </div>
+            <div class="stat-card">
+                <span class="number" id="totalCards">36</span>
+                <span class="label">Total Cards</span>
+            </div>
+            <div class="stat-card">
+                <span class="number" id="knownCount">0</span>
+                <span class="label">Known</span>
+            </div>
+            <div class="stat-card">
+                <span class="number" id="unknownCount">0</span>
+                <span class="label">Learning</span>
+            </div>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="btn-filter active" onclick="filterCards('all')">All Cards</button>
+            <button class="btn-filter" onclick="filterCards('unknown')">Learning Only</button>
+            <button class="btn-filter" onclick="filterCards('known')">Known Only</button>
+            <button class="btn-filter" onclick="filterCards('critical')">Critical</button>
+            <button class="btn-filter" onclick="shuffleCards()">Shuffle</button>
+        </div>
+
+        <div class="flashcard-container">
+            <div class="flashcard" id="flashcard" onclick="flipCard()">
+                <div class="card-face card-front">
+                    <div class="card-number" id="cardNumber">1 / 36</div>
+                    <div class="card-label">QUESTION</div>
+                    <div class="card-content" id="questionContent"></div>
+                    <div class="card-hint">Click to flip</div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="card-number" id="cardNumberBack">1 / 36</div>
+                    <div class="card-label">ANSWER</div>
+                    <div class="card-content" id="answerContent"></div>
+                    <div class="card-hint">Click to flip back</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-prev" onclick="previousCard()" id="prevBtn">Previous</button>
+            <button class="btn btn-flip" onclick="flipCard()">Flip Card</button>
+            <button class="btn btn-next" onclick="nextCard()" id="nextBtn">Next</button>
+        </div>
+
+        <div class="knowledge-buttons">
+            <button class="btn btn-know" onclick="markCard('known')">I Know This</button>
+            <button class="btn btn-learning" onclick="markCard('learning')">Still Learning</button>
+            <button class="btn btn-unknown" onclick="markCard('unknown')">Do not Know</button>
+        </div>
+    </div>
+
+    <script src="flashcard-data.js"></script>
+    <script src="flashcard-app.js"></script>
+</body>
+</html>
