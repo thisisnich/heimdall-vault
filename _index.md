@@ -1,11 +1,11 @@
 ---
 title: Heimdall Vault Index
-updated: 2026-05-17 12:19
+updated: 2026-05-17 12:49
 ---
 
 # Heimdall Vault
 
-> Last synced: 2026-05-17 12:19 — 1047 total memory entries across 4 tables
+> Last synced: 2026-05-17 12:49 — 1100 total memory entries across 4 tables
 
 ## Sections
 
@@ -18,8 +18,8 @@ updated: 2026-05-17 12:19
 
 ## Memory Table Counts
 
-- `vector_memory`: 211 entries
-- `vector_notes`: 836 entries
+- `vector_memory`: 250 entries
+- `vector_notes`: 850 entries
 - `vector_chat_summaries`: 0 entries
 - `vector_code_chunks`: 0 entries
 
