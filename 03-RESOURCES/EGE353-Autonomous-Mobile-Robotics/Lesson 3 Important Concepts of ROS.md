@@ -4,11 +4,17 @@ tags:
   - lesson3
   - ROS
   - concepts
+  - lesson-3
+  - robotics-concepts
 course: EGE353 Autonomous Mobile Robotics
 topic: Lesson 3 - Important Concepts of ROS
 source: Lesson 3 Important Concepts of ROS.pdf
 converted: 2026-05-07
+type: Lesson
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson 2 Robot Operating System ROS.md|Lesson 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 
 # EGE353

@@ -4,13 +4,17 @@ tags:
   - tutorial
   - multiple-access
   - communication-system
+  - tutorial-2b
+  - system-architecture
 course: EGE321 Wireless Communication and Networking
 topic: Tutorial 2b - Communication System Architecture
 source: Tutorial 2b.pdf
 converted: 2026-04-30
+type: Tutorial
+status: Completed
 ---
 
-> 📚 **Related:** [[EGE321 Wireless Communication & Networking - MOC|EGE321 MOC]] | [[Lesson2c|Lesson 2c]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Lesson 2c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 
 # SCHOOL OF ENGINEERING

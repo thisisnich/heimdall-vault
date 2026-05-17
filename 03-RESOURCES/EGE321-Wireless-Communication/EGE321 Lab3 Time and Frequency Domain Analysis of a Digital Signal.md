@@ -6,13 +6,17 @@ tags:
   - spectrum-analyzer
   - time-domain
   - frequency-domain
+  - lab3
+  - signal-analysis
 course: EGE321 Wireless Communication & Networking
 topic: Lab 3 - Time and Frequency Domain Analysis of a Digital Signal
 source: EGE321 Lab3 Time and Frequency Domain Analysis of a Digital Signal.pdf
 converted: 2026-05-08
+type: Lab
+status: Completed
 ---
 
-> **Related:** [[EGE321 Lab1 Loopback Test within SPA|Lab 1]] | [[EGE321 Lab3 Time and Frequency Domain Analysis of a digital signal- Appendix|Lab 3 Appendix]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lab 3: Time and Frequency Domain Analysis of a Digital Signal
 

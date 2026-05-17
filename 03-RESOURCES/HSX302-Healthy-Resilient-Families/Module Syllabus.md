@@ -3,13 +3,17 @@ tags:
   - HSX302
   - elective
   - family
+  - syllabus
+  - module-overview
 course: HSX302 Healthy and Resilient Families
 topic: Module Syllabus
 source: HSX302 - Module Syllabus.docx
 converted: 2026-04-29
+type: Syllabus
+status: Completed
 ---
 
-> **Related:** [[Schedule Dashboard]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/ICA 1 Assignment.md|ICA 1 Assignment]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 **HSX302 Healthy and Resilient Families**
 Duration: 15 Hrs

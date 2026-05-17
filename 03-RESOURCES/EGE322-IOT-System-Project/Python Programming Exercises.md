@@ -5,13 +5,16 @@ tags:
   - programming
   - exercises
   - IoT
+  - microcontroller
 course: EGE322 IoT System Project
 topic: Python Programming Exercises
 source: Python Programming Exercises.pdf
 converted: 2026-04-29
+type: Exercise
+status: Completed
 ---
 
-> 📚 **Related:** [[EGE322 IoT System Project - MOC|EGE322 MOC]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/ESP32_Programming_Guide.md|ESP32 Programming Guide]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Python Programming Exercises
 

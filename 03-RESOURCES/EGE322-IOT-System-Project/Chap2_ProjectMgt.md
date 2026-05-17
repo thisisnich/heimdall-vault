@@ -5,11 +5,18 @@ tags:
   - project-management
   - WBS
   - gantt-chart
+  - chapter-2
+  - project-overview
 course: EGE322 IoT System Project
 chapter: 2
 topic: Overview of Project Management
+source: NYPY3 Import
+created: 2026-05-17
+type: Chapter
+status: Completed
 ---
-x
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Tutorials.md|Tutorials]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 # Chapter 2: Overview of Project Management
 **Nanyang Polytechnic | School of Engineering | SEG/SCSC**
 *Effective Date: 19 Oct 2020*
