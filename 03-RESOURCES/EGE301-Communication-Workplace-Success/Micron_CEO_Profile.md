@@ -6,12 +6,16 @@ tags:
   - CEO
   - Sanjay-Mehrotra
   - research-source
+  - executive-profile
 course: EGE301 Communication & Workplace Success
-type: source-material
+type: Source
 company: Micron Technology
 source: Micron Official Leadership Page
-status: scraped
+status: Completed
+created: 2026-05-17
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Micron CEO Profile - Sanjay Mehrotra
 
