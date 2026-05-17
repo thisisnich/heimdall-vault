@@ -5,13 +5,19 @@ tags:
   - PLC
   - lab
   - ladder-diagram
+  - lab1
+  - I/O-addressing
 course: EGE351 Automation Systems & Control
 lab: 1
 topic: PLC Programming — I/O Addressing and Ladder Logic
 submitted: 2026-04-22
+source: NYPY3 Import
+created: 2026-05-17
+type: Lab
+status: Completed
 ---
 
-> 📚 **Related:** [[Lecture_1_PLC|Lecture 1: PLC Theory]] | [[EGE351 Automatino Systems & Control/lab1|Lab 1 Notes]] | [[lesson1|Module Overview]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1: PLC Theory]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE351 / LAB 1 — Automation: PLC Programming
 

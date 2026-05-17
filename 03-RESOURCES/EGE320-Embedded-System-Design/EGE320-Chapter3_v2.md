@@ -4,11 +4,17 @@ tags:
   - chapter3
   - RTOS
   - embedded-systems
+  - chapter-3
+  - software-architecture
 course: EGE320 Embedded System Design & Technology
 topic: Chapter 3 - Embedded System Software (RTOS)
 source: EGE320-Chapter3_v2.pdf
 converted: 2026-05-07
+type: Chapter
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/ch0.md|Chapter 0]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 Official (Open)
 Chapter 3

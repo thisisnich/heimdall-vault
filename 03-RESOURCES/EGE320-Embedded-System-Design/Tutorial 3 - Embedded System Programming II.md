@@ -4,9 +4,17 @@ tags:
   - tutorial
   - C-programming
   - embedded-systems
+  - tutorial-3
+  - programming-advanced
 course: EGE320 Embedded System Design & Technology
 topic: Tutorial 3 - Embedded System Programming II
+source: NYPY3 Import
+created: 2026-05-17
+type: Tutorial
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/tutorial1.md|Tutorial 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Tutorial 3: Embedded System Programming II
 

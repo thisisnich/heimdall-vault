@@ -3,13 +3,17 @@ tags:
   - EGE320
   - tutorial
   - C-programming
+  - tutorial-2
+  - programming-fundamentals
 course: EGE320 Embedded System Design and Technology
 topic: Tutorial 2 - Embedded System Programming I
 source: EGE320 - Tutorial2.pdf
 converted: 2026-04-30
+type: Tutorial
+status: Completed
 ---
 
-> 📚 **Related:** [[EGE320 Embedded Systems - MOC|EGE320 MOC]] | [[EGE320 Embedded System Design &Technology/tutorial1|Tutorial 1]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/tutorial1.md|Tutorial 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 Course
 : Diploma in Electronic Systems (EGDF18)

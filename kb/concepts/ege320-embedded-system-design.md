@@ -1,3 +1,83 @@
+- # EGE320 Embedded System Design and Technology — Map of Content
+
+> 💻 **Course Overview:** This module covers embedded system design, C programming, hardware interfacing, and IoT integration.
+
+> 🚫 **Note:** Do not use images or assets for EGE320 notes. All content should be text-based only.
+
+---
+
+## 👨‍🏫 Course Information
+
+**Unit Leader:** Alex Oh Jun Yong  
+**Email:** Alex_oh@nyp.edu.sg  
+**Tel:** 6550 0550  
+**Room:** S.506
+
+---
+
+## 📚 Chapters & Content
+
+- [[ch0|Chapter 0: Module Introduction]]
+  - IoT cluster overview
+  - Embedded system market and industry
+  - Module linkages
+  - Tools: Code Composer Studio, development boards
+  - Assessment plan and delivery schedule
+
+- [[EGE320-Chapter1|Chapter 1: Overview of Embedded System Design & Technology]]
+  - 1.1 Embedded system definition, processors, peripherals (GPIO, ADC, PWM, UART, SPI, I²C, RTC)
+  - 1.2 Development tools: Host PC, Development Board, Debug Probe, IDE (Assembler, Compiler, Linker, Debugger)
+  - 1.3 C Programming: data types, operators, conditionals, loops, functions, pass by value vs reference
+
+## 🧪 Labs & Tutorials
+
+- [[EGE320 Embedded System Design &Technology/lab1|Lab 1: Embedded System Development Environment]]
+  - CCS IDE setup and configuration
+  - Project creation, import, export, and flashing
+  - Hardware setup with Tiva TM4C129ENCPDT
+  - Touch panel and RGB LED programming
+
+- [[EGE320 Embedded System Design &Technology/EGE320 - Lab3 Embedded System Programming II|Lab 3: Embedded System Programming II <!-- id:79d5cba7-a017-4a92-baba-7a7a33f4b4dc ts:2026-05-17 08:19 -->
+- # EGE320 Embedded System Design and Technology — Map of Content
+
+> 💻 **Course Overview:** This module covers embedded system design, C programming, hardware interfacing, and IoT integration.
+
+> 🚫 **Note:** Do not use images or assets for EGE320 notes. All content should be text-based only.
+
+---
+
+## 👨‍🏫 Course Information
+
+**Unit Leader:** Alex Oh Jun Yong  
+**Email:** Alex_oh@nyp.edu.sg  
+**Tel:** 6550 0550  
+**Room:** S.506
+
+---
+
+## 📚 Chapters & Content
+
+- [[ch0|Chapter 0: Module Introduction]]
+  - IoT cluster overview
+  - Embedded system market and industry
+  - Module linkages
+  - Tools: Code Composer Studio, development boards
+  - Assessment plan and delivery schedule
+
+- [[EGE320-Chapter1|Chapter 1: Overview of Embedded System Design & Technology]]
+  - 1.1 Embedded system definition, processors, peripherals (GPIO, ADC, PWM, UART, SPI, I²C, RTC)
+  - 1.2 Development tools: Host PC, Development Board, Debug Probe, IDE (Assembler, Compiler, Linker, Debugger)
+  - 1.3 C Programming: data types, operators, conditionals, loops, functions, pass by value vs reference
+
+## 🧪 Labs & Tutorials
+
+- [[EGE320 Embedded System Design &Technology/lab1|Lab 1: Embedded System Development Environment]]
+  - CCS IDE setup and configuration
+  - Project creation, import, export, and flashing
+  - Hardware setup with Tiva TM4C129ENCPDT
+  - Touch panel and RGB LED programming
+
+- [[EGE320 Embedded System Design &Technology/EGE320 - Lab3 Embedded System Programming II|Lab 3: Embedded System Programming II <!-- id:79d5cba7-a017-4a92-baba-7a7a33f4b4dc ts:2026-05-17 08:19 -->
 - # EGE320 Embedded System Design and Technology
 ### Module Introduction
 
@@ -35,7 +115,7 @@ The IoT ecosystem spans from embedded applications at the device level, through 
 
 ### Key Market Players
 
-Intel, Renesas, STMicroelectronics, NXP Semiconductors, Texas Instrument <!-- id:01fdcd2a-ab30-41a9-8760-5e1b0691c6c4 ts:2026-05-17 07:49 -->
+Intel, Renesas, STMicroelectronics, NXP Semiconductors, Texas Instrument <!-- id:01fdcd2a-ab30-41a9-8760-5e1b0691c6c4 ts:2026-05-17 08:19 -->
 - # EGE320 Embedded System Design and Technology
 ### Module Introduction
 
@@ -73,7 +153,7 @@ The IoT ecosystem spans from embedded applications at the device level, through 
 
 ### Key Market Players
 
-Intel, Renesas, STMicroelectronics, NXP Semiconductors, Texas Instrument <!-- id:01fdcd2a-ab30-41a9-8760-5e1b0691c6c4 ts:2026-05-17 07:49 -->
+Intel, Renesas, STMicroelectronics, NXP Semiconductors, Texas Instrument <!-- id:01fdcd2a-ab30-41a9-8760-5e1b0691c6c4 ts:2026-05-17 08:19 -->
 - - EGE320 Embedded System Design &Technology/lab1.md | Lab 1 — CCS IDE setup, project creation/import/export/flashing, sample C program
   - EGE320 Embedded System Design &Technology/tutorial1.md | Tutorial 1 — MCQ: embedded system definition, peripherals, microcontrollers, development tools
   - EGE320 Embedded System Design &Technology/EGE320 - Tutorial2.md | Tutorial 2 — C programming structure, data types, operators, conditionals, loops, functions
@@ -93,4 +173,4 @@ Intel, Renesas, STMicroelectronics, NXP Semiconductors, Texas Instrument <!-- id
 | A4 | 11-13 | 29 Jun-13 Jul 2026 | Practical 2: Dockers | 20% | TBA | UPCOMING |
 | A5 | 14 | 20 Jul 2026 | Proctored Quiz-2 | 15% | TBA | UPCOMING |
 | A6 | 15-17 | 27 Jul-10 Aug 2026 | Project Part A: Robot design | 35% | Full module | UPCOMING |
-| A7 | 15-17 | 27 Jul-10 Aug 2026 | Project Part B: SLAM | 3 <!-- id:5b37833d-686e-4b34-bff8-3fa544f42686 ts:2026-05-17 07:49 -->
+| A7 | 15-17 | 27 Jul-10 Aug 2026 | Project Part B: SLAM | 3 <!-- id:5b37833d-686e-4b34-bff8-3fa544f42686 ts:2026-05-17 08:19 -->

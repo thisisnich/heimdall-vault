@@ -4,11 +4,17 @@ tags:
   - lab
   - C-programming
   - embedded-systems
+  - lab3
+  - programming-advanced
 course: EGE320 Embedded System Design & Technology
 topic: Lab 3 - Embedded System Programming II
 source: EGE320 - Lab3 Embedded System Programming II.pdf
 converted: 2026-05-07
+type: Lab
+status: Completed
 ---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/Tutorial 3 - Embedded System Programming II.md|Tutorial 3]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lab 3 - Embedded System Programming II
 

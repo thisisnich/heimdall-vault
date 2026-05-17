@@ -5,12 +5,18 @@ tags:
   - C-programming
   - microcontroller
   - chapter-notes
+  - chapter-1
+  - introduction
 course: EGE320 Embedded System Design and Technology
 topic: Chapter 1 — Introduction to Embedded Systems, Development Tools, C Programming
 source: EGE320 Chapter 1 slides
+source: NYPY3 Import
+created: 2026-05-17
+type: Chapter
+status: Completed
 ---
 
-> 📚 **Related:** [[EGE320 Embedded Systems - MOC|EGE320 MOC]] | [[EGE320 Embedded System Design &Technology/tutorial1|Tutorial 1]] | [[EGE320 Embedded System Design &Technology/lab1|Lab 1]]
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/tutorial1.md|Tutorial 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Chapter 1: Overview of Embedded System Design & Technology
 
