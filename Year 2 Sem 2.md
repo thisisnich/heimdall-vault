@@ -1,0 +1,5 @@
+[[CSDP|25S2-EGE205 - CONNECTED SYSTEM DESIGN PROJECT]]
+[[Computer Networking|25S2-EGE203 - COMPUTER NETWORKING]]
+[[Application Programming|Application Programming]]
+[[ECA|Electric Circuit Analysis]]
+[[DE|Difrentail Equations]]
