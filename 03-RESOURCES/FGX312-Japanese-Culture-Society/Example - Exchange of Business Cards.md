@@ -24,6 +24,8 @@ status: Completed
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Guide.md|Presentation Guide]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Guide.md|Presentation Guide]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 # FGX312-XX
 
 Exchange Of
