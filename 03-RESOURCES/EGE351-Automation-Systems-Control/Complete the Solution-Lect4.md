@@ -21,6 +21,8 @@ status: Completed
 
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 Question 1
 A PLC is used to control a flood light Y6. When a
 motion sensor X2 with a normally open contact detects
