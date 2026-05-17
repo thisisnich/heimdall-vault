@@ -13,6 +13,12 @@ tags:
 course: EGE321 Wireless Communication and Networking
 topic: Wireless System Design Considerations - Multiple Access Techniques
 source: Lesson2c(1).pptx
+converted: 2026-05-07
+type: Lesson
+status: Completed
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson1c.md|Lesson 1c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 converted: 2026-04-30
 type: Lesson
 status: Completed
