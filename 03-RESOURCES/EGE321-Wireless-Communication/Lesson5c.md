@@ -14,6 +14,8 @@ type: Lesson
 status: Completed
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Lesson 4c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Chapter 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lesson 5c - Digital Modulation Technique (Chapter 2.3)

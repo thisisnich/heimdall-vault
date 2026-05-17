@@ -14,6 +14,8 @@ type: Chapter
 status: Completed
 ---
 
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/EGE320-Chapter1.md|Chapter 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+
 > 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE320-Embedded-System-Design/ch0.md|Chapter 0]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 Official (Open)

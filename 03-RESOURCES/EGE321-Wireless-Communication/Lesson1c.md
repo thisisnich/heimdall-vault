@@ -13,6 +13,9 @@ topic: System Design Considerations
 source: NYPY3 Import
 created: 2026-05-17
 type: Lesson
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 status: Completed
 ---
 

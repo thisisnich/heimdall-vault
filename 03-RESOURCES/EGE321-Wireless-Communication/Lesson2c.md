@@ -13,6 +13,9 @@ tags:
 course: EGE321 Wireless Communication & Networking
 chapter: 2
 topic: Multiple Access Techniques
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson1c.md|Lesson 1c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 source: NYPY3 Import
 created: 2026-05-17
 type: Lesson

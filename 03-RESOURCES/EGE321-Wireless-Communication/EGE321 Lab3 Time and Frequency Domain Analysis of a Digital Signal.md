@@ -13,6 +13,9 @@ topic: Lab 3 - Time and Frequency Domain Analysis of a Digital Signal
 source: EGE321 Lab3 Time and Frequency Domain Analysis of a Digital Signal.pdf
 converted: 2026-05-08
 type: Lab
+---
+
+> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
 status: Completed
 ---
 
