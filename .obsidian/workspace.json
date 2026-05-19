@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "754c382a3a812fde",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b9e562070f10215",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "098fddb7f77f2d64",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "54e7565e5490ac72",
+    "type": "split",
+    "children": [
+      {
+        "id": "09c447d89bdf7198",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3543a3ce80a01e45",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "06b0346703d93d46",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "77cc18eda48373ea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9bc7e3db9fe33f25",
+    "type": "split",
+    "children": [
+      {
+        "id": "130d67fdd07fc469",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87ad4a3ebcd5ab55",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "0423b1d6a965b797",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "52dae49df9635877",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "bb826f898a439520",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "226689799b921224",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "f5426385b503c69e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "git-view"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "098fddb7f77f2d64",
+  "lastOpenFiles": [
+    "wiki/concepts/the-morning-ya-kun-kaya.md",
+    "03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Touch Screen Technology.md",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/Lab 5 - Automation.md",
+    "03-RESOURCES/EGE320-Embedded-System-Design/YouTube Lesson.md",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/Lab 5 - Automation.pdf",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/Lab procedures.md",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/23S2 EGE351 Tutorial 4 Combination Traffic Light.md",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/23S2 EGE351 Lab 4 - Automation .md",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 Lab 5 Notes.md",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md",
+    "kb/people/Benjamin.md",
+    "kb/people/Ben.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Electric-Circuit-Analysis/ND - Week 2.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Electric-Circuit-Analysis/ND - Week 1.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Electric-Circuit-Analysis/LabVolt Training System.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Electric-Circuit-Analysis/ECA.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/Planning.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/ND - Week 2.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/ND - Week 1.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/EGE205 User And Data Collection (Project Report Part 1) Week 2.pdf",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/EGE205 Project Briefing and Discussion - Copy (5).pdf",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/EGE205 - Lab1a - Copy (1).pdf",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/CSDP.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/CSDP Plannign slides.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking/ND - Week 2.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking/ND - Week 1.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking/Computer Networking.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Differential-Equations/ND - Week 2.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Differential-Equations/DE.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Application-Programming/ND - Week 2 1.md",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Electric-Circuit-Analysis",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Differential-Equations",
+    "04-ARCHIVE/Year-2-Sem-2-Previous/Application-Programming",
+    "04-ARCHIVE/Year-2-Sem-2-Previous"
+  ]
+}
