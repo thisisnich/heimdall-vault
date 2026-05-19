@@ -30,7 +30,7 @@ status: Active
 
 ## 📚 Course Maps of Content (MOCs)
 
-### [[EGE322 IoT System Project - MOC|🌐 EGE322: IoT System Project]]
+### [[03-RESOURCES/EGE322-IOT-System-Project/EGE322 - Index|🌐 EGE322: IoT System Project]]
 **Focus:** IoT applications, project management, ESP32/MicroPython, MQTT, Edge Impulse ML
 
 **Key Topics:**
@@ -43,7 +43,7 @@ status: Active
 
 ---
 
-### [[EGE301 Communication & Workplace Success - MOC|💬 EGE301: Communication & Workplace Success]]
+### [[03-RESOURCES/EGE301-Communication-Workplace-Success/EGE301 - Index|💬 EGE301: Communication & Workplace Success]]
 **Focus:** Workplace culture, ethics, interpersonal skills, negotiation, networking
 
 **Key Topics:**
@@ -58,7 +58,7 @@ status: Active
 
 ---
 
-### [[EGE353 Autonomous Mobile Robotics - MOC|🤖 EGE353: Autonomous Mobile Robotics]]
+### [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 - Index|🤖 EGE353: Autonomous Mobile Robotics]]
 **Focus:** ROS, SLAM, path planning, navigation, obstacle avoidance
 
 **Key Topics:**
@@ -72,7 +72,7 @@ status: Active
 
 ---
 
-### [[EGE321 Wireless Communication & Networking - MOC|📡 EGE321: Wireless Communication & Networking]]
+### [[03-RESOURCES/EGE321-Wireless-Communication/EGE321 - Index|📡 EGE321: Wireless Communication & Networking]]
 **Focus:** RF systems, multiple access techniques, wireless system design
 
 **Key Topics:**
@@ -84,7 +84,7 @@ status: Active
 
 ---
 
-### [[EGE351 Automation Systems & Control - MOC|⚙️ EGE351: Automation Systems & Control]]
+### [[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 - Index|⚙️ EGE351: Automation Systems & Control]]
 **Focus:** PLC programming, industrial automation, IoT integration
 
 **Key Topics:**
@@ -96,7 +96,7 @@ status: Active
 
 ---
 
-### [[EGE320 Embedded Systems - MOC|💻 EGE320: Embedded System Design and Technology]]
+### [[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Index|💻 EGE320: Embedded System Design]]
 **Focus:** Embedded C programming, hardware interfacing, RTOS
 
 **Key Topics:**
@@ -141,7 +141,7 @@ The four courses form an integrated **IoT cluster**:
 **Sensors & Actuators:**
 - [[Lesson1Introduction#Sensors|Robotics Sensors]]
 - [[Lecture_1_PLC#PLC Inputs and Outputs|PLC I/O]]
-- [[ch0#Embedded System Components (Example: Smartwatch)|Embedded Sensors]]
+- [[03-RESOURCES/EGE320-Embedded-System-Design/ch0#Embedded System Components (Example: Smartwatch)|Embedded Sensors]]
 
 **Communication & Networking:**
 - [[Lesson1c|Wireless Fundamentals]]
@@ -150,7 +150,7 @@ The four courses form an integrated **IoT cluster**:
 
 **Computing Platforms:**
 - [[Lesson1Introduction#Computing Devices|Robotics Computing]]
-- [[ch0|Embedded Microcontrollers]]
+- [[03-RESOURCES/EGE320-Embedded-System-Design/ch0|Embedded Microcontrollers]]
 - [[Lecture_1_PLC#PLC vs Other Control Systems|PLC Comparison]]
 
 ---
@@ -170,12 +170,12 @@ The four courses form an integrated **IoT cluster**:
 ## 🎯 Learning Pathways
 
 ### Hardware Track
-1. [[ch0|Embedded Systems]] → Hardware fundamentals
+1. [[03-RESOURCES/EGE320-Embedded-System-Design/ch0|Embedded Systems]] → Hardware fundamentals
 2. [[Lecture_1_PLC|Automation]] → Industrial hardware
 3. [[Lesson1Introduction|Robotics]] → Mobile platforms
 
 ### Software Track
-1. [[ch0|Embedded Systems]] → C programming
+1. [[03-RESOURCES/EGE320-Embedded-System-Design/ch0|Embedded Systems]] → C programming
 2. [[EGE353 Autonomous Robotics/lab1|Robotics Labs]] → ROS programming
 3. [[Lecture_1_PLC|Automation]] → Ladder logic
 
@@ -207,7 +207,7 @@ The four courses form an integrated **IoT cluster**:
 
 Check individual MOC pages for detailed assessment schedules:
 - [[EGE353 Autonomous Mobile Robotics - MOC#Assessment Structure|EGE353 Assessments]]
-- [[EGE320 Embedded Systems - MOC#Assessment Structure|EGE320 Assessments]]
+- [[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Index#Assessment Structure|EGE320 Assessments]]
 
 ---
 

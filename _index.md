@@ -15,6 +15,7 @@ updated: 2026-05-17 12:49
 - 📍 **[[places/|Places]]** — 0 file(s)
 - 📓 **[[journal/|Journal]]** — 0 file(s)
 - 📚 **[[wiki/|Wiki / Facts]]** — 0 file(s)
+- 🎓 **[[AP-Studies/AP Studies Index|AP Studies]]** — 3 file(s)
 
 ## Memory Table Counts
 
