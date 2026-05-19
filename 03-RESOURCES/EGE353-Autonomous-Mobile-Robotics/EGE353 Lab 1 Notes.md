@@ -14,7 +14,11 @@ type: Lab
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[EGE353 Lab 2 - ROS Nodes and Topics|Lab 2]] | [[EGE353 Lab 3 - ROS Services|Lab 3]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]]
+>
+> **Lab Materials:**
+> - 📄 [[Lab 1 - ROS Nodes and TurtleSim.pdf|PDF Document]]
+> - 📝 [[Lab 1 - ROS Nodes and TurtleSim.md|Markdown Version]]
 
 # Lab 1: ROS2 Topics
 
