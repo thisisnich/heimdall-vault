@@ -111,6 +111,56 @@ A PLC is used to control a display light system. Write a program to simulate the
 
 The above cycle continues until a STOP (NC) pushbutton is pressed, and all the above LEDs are turned off.
 
+**Solution:**
+
+```
+Rung 1:
+|--[X103]--[/R2]--[/R3]--[/R4]--+----------------(R1)--|
+                                 |
+|--[R1]--[/T1]--[X100]----------+
+                                 |
+|--[T4]--------------------------+
+
+Rung 2:
+|--[R1]-----------------------------[TMY1 | U5]--|
+
+Rung 3:
+|--[R1]--[SR1B]----------------------------------(Y120)--|
+
+Rung 4:
+|--[T1]--------------------------+-------------(R2)--|
+                                 |
+|--[R2]--[/T2]--[X100]----------+
+
+Rung 5:
+|--[R2]-----------------------------[TMY2 | U3]--|
+
+Rung 6:
+|--[R2]--[SR1B]----------------------------------(Y122)--|
+
+Rung 7:
+|--[T2]--------------------------+-------------(R3)--|
+                                 |
+|--[R3]--[/T3]--[X100]----------+
+
+Rung 8:
+|--[R3]-----------------------------[TMY3 | U4]--|
+
+Rung 9:
+|--[R3]--[SR1B]----------------------------------(Y123)--|
+
+Rung 10:
+|--[T3]--------------------------+-------------(R4)--|
+                                 |
+|--[R4]--[/T4]--[X100]----------+
+
+Rung 11:
+|--[R4]-----------------------------[TMY4 | U3]--|
+
+Rung 12:
+|--[R4]--[SR1B]----------------------------------(Y121)--|
+```
+
 ### Question 3
 
 When PB1 is pressed 3 times, a green LED turns on. When PB1 is pressed 5 times, an amber LED turns on. When PB1 is pressed 7 times, a red LED turns on. After this, a right gantry is raised. 3 seconds later, the gantry is lowered and all LEDs are turned off.
