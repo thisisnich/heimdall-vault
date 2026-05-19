@@ -49,22 +49,119 @@ Have you ever stopped to think about how the touch screen works? How it's able t
 ### 3. Types of Touch Screens
 
 #### Resistive Touch Screen Technology
-- Working principle
-- Pros and cons
+
+**Working Principle:**
+- Two electrically conductive layers separated by tiny spacers
+- When pressed together, the electrical current changes at the point of contact
+- Software identifies the current change and executes the corresponding function
+- One layer is consistent, the other is conductive, with a scratch-resistant layer on top
+
+**Applications:**
+- ATM machines
+- Supermarkets (electronic signature pads)
+- Industrial environments
+
+**Pros:**
+- Robust and efficient
+- Works with any object (finger, stylus, pen)
+- Can handle harsh environments
+
+**Cons:**
+- Challenging to read due to multiple layers reflecting light
+- Only supports single-touch (no multi-touch)
+- Requires pressure to activate
+- Lower image quality
+
+---
 
 #### Capacitive Touch Screen Technology
-- **Surface Capacitive Touch Screen Technology**
-- **Projective Capacitive Touch Screen Technology**
-- Working principle
-- Pros and cons
 
-#### Surface Acoustic Wave Touch Screen Technology
-- Working principle
-- Pros and cons
+**Working Principle:**
+- Does not use pressure; detects anything with electrical charge
+- Uses human skin (which contains atoms with + and - charges)
+- Made from copper or indium tin oxide materials
+- Charges stored in electrostatic grid of tiny wires (thinner than human hair)
+- When finger touches screen, electrical charge transfers to finger, creating voltage drop
+- Software processes voltage drop location to execute action
+
+**Types:**
+
+##### Surface Capacitive Touch Screen
+
+**Working Principle:**
+- Sensors around the edges
+- Thin, finely divided film around the surface
+- When finger touches, charge passes to finger completing circuit
+- Creates voltage drop at touch point
+
+##### Projective Capacitive Touch Screen (PCT)
+
+**Working Principle:**
+- Grid of columns and rows with distinct sensing chips
+- Glass sheet with embedded transparent electrode films
+- IC chip develops 3D electrostatic field
+- Detects difference in electrical currents when touched
+- Supports multi-touch functionality
+
+**Pros:**
+- High sensitivity
+- Excellent image quality
+- Multi-touch support (PCT)
+- Works with surgical gloves or thin cotton gloves (PCT)
+- Most common in modern smartphones
+
+**Cons:**
+- Won't work with regular gloves (unless conductive)
+- Won't work with non-conductive objects
+- More expensive than resistive
+
+---
+
+#### Surface Acoustic Wave (SAW) Touch Screen Technology
+
+**Working Principle:**
+- Transducers mounted on corners of glass panel
+- Creates hidden grid of ultrasonic waves on surface
+- Sensors receive the waves
+- When touched, some waves are absorbed
+- Receivers identify touchpoint and send to computer
+
+**Pros:**
+- Can be used with finger, gloved hand, or stylus
+- Excellent visibility
+- High optical clarity
+- Prolonged touch life
+- Easy to use
+
+**Cons:**
+- Cannot be activated with hard objects (pens, credit cards, fingernails)
+- Susceptible to false touches from water droplets
+- Solid contaminants create non-touch areas until cleaned
+- More expensive than other types
+
+---
 
 #### Infrared Touch Screen Technology
-- Working principle
-- Pros and cons
+
+**Working Principle:**
+- No overlay layer on screen
+- Uses light beam interruption technology
+- Infrared emitters and receivers create transparent grid of light beams
+- When object interrupts beams, sensor detects touch
+- Supports multi-touch
+
+**Pros:**
+- Best image quality and clarity (no extra layer)
+- Multi-touch support
+- No pressure required
+- Works even if screen is scratched
+- Can use objects other than fingers
+- Durable
+
+**Cons:**
+- Sunlight can affect functionality
+- More expensive
+- Requires precise alignment of emitters and receivers
 
 ---
 
