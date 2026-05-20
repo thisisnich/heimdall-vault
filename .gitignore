@@ -1,0 +1,11 @@
+# Ingestion / secrets
+91-SCRIPTS/.env
+91-SCRIPTS/.venv/
+91-SCRIPTS/__pycache__/
+
+# Inbox processed drops (optional — remove if you want to track)
+00-INBOX/_drop/processed/
+
+# OS
+.DS_Store
+Thumbs.db
