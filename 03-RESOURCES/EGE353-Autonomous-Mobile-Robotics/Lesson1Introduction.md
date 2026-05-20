@@ -1,127 +1,89 @@
 ---
-tags:
-  - EGE353
-  - robotics
-  - autonomous-systems
-  - ROS
-  - lesson-1
-  - introduction
-course: EGE353 Autonomous Mobile Robotics
-lesson: 1
-topic: Introduction to Autonomous Mobile Robotics
-source: NYPY3 Import
+type: lecture
+course: EGE353
+module: EGE353-Autonomous-Mobile-Robotics
+week: 1
+status: reviewed
+source: manual
 created: 2026-05-17
-type: Lesson
-status: Completed
+tags: [EGE353, lesson-1, introduction, robotics]
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson 1-Introduction.md|Lesson 1 Main]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[Lesson 1-Introduction|Lesson 1 PDF]] | [[autonomousRoboticsLesso1|Class Notes]] | [[Schedule & Assessments Dashboard|Assessments]]
 
-# EGE353 Autonomous Mobile Robotics
-### Lesson 1: Introduction
-**Lecturer:** Chan Kit Wai
-**Tel:** 65500559
-**Email:** Chan_kit_wai@nyp.edu.sg
+# Lesson 1: Introduction to Autonomous Mobile Robotics
 
-> 📚 **Related:** [[autonomousRoboticsLesso1|Lesson 1 Notes]] | [[EGE353 Autonomous Robotics/lab1|Lab 1: ROS Nodes]]
-
----
+**Instructor:** Chan Kit Wai · Tel: 65500559 · Chan_kit_wai@nyp.edu.sg
 
 ## Synopsis
 
 This module aims to equip learners with the knowledge of service robots and their applications. Learners will also study the concepts of path planning, navigation, obstacle avoidance, simultaneous localisation and mapping. They will be able to implement mobile robotics system to carry out tasks autonomously.
 
----
-
 ## Module Learning Outcomes
 
-At the end of the module, learners are able to:
-
-- Explain the features of different sensors and actuators used in autonomous mobile robotics.
-- Perform the analysis of laser and vision sensor data using visualization tools.
-- Implement mobile robotics system using methods such as mapping, localization, path planning, obstacle avoidance and motion control.
+- Explain the features of different sensors and actuators used in autonomous mobile robotics
+- Perform the analysis of laser and vision sensor data using visualization tools
+- Implement mobile robotics system using methods such as mapping, localization, path planning, obstacle avoidance and motion control
 
 ---
 
 ## Introduction to Robotics
 
 ### Definition of a Robot
-1. A machine that resembles a human and does mechanical, routine tasks on command.
-2. A person who acts and responds in a mechanical, routine manner, usually subject to another's will; automaton.
-3. Any machine or mechanical device that operates automatically with humanlike skill.
 
-*Source: https://www.dictionary.com/browse/robot*
+1. A machine that resembles a human and does mechanical, routine tasks on command
+2. A person who acts and responds in a mechanical, routine manner, usually subject to another's will; automaton
+3. Any machine or mechanical device that operates automatically with humanlike skill
+
+*Source: [dictionary.com/browse/robot](https://www.dictionary.com/browse/robot)*
 
 ### Asimov's Three Laws of Robotics
 
-The Three Laws of Robotics were devised by science fiction author Isaac Asimov, first introduced in his 1942 short story "Runaround" (included in the 1950 collection *I, Robot*).
+The Three Laws were devised by Isaac Asimov, first introduced in "Runaround" (1942, *I, Robot*).
 
-**First Law**
-A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+1. **First Law** — A robot may not injure a human being or, through inaction, allow a human being to come to harm
+2. **Second Law** — A robot must obey the orders given it by human beings except where such orders would conflict with the First Law
+3. **Third Law** — A robot must protect its own existence as long as such protection does not conflict with the First or Second Law
 
-**Second Law**
-A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.
-
-**Third Law**
-A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
-
-*Source: https://en.wikipedia.org/wiki/Three_Laws_of_Robotics*
+*Source: [Wikipedia — Three Laws of Robotics](https://en.wikipedia.org/wiki/Three_Laws_of_Robotics)*
 
 ---
 
 ## Robot Structure
 
-### Different Parts of a Robot
-- Mechanical body
-- Sensors
-- Actuators
-- Computing devices
+**Control loop:** Sensor data → Compute decision → Control actuators
 
-The basic control loop: **Sensor data → Compute decision → Control Actuators**
-
-### Mechanical Body
-The mechanical body is used to hold all the sensors, motors and wheels together. It is usually a rigid structure.
-
-### Sensors
-The sensors comprise of camera sensor, wheel encoders, IMU sensors, lidar sensors, ultrasonic sensors, and infrared sensor to perceive the surrounding environment.
-
-> 🔗 **See also:** Sensor interfacing in [[Lecture_1_PLC#PLC Inputs and Outputs|PLC Systems]] and [[ch0#Embedded System Components (Example: Smartwatch)|Embedded Systems]]
-
-### Actuators
-The motors control the movement of the robot's arm and body. It can control the position, angular and linear movements.
-
-*Source: http://en.robotis.com/*
+| Component | Description |
+|-----------|-------------|
+| **Mechanical body** | Holds sensors, motors, and wheels; usually rigid |
+| **Sensors** | Camera, encoders, IMU, LiDAR, ultrasonic, IR |
+| **Actuators** | Motors for position, angular, and linear movement |
+| **Computing devices** | Arduino (MCU), Raspberry Pi (SBC), GPU, Industrial PC |
 
 ### Computing Devices
-- **Microcontroller:** Arduino → See [[ch0#Embedded System Components (Example: Smartwatch)|EGE320 Embedded Systems]]
-- **Single Board Computer (SBC):** e.g. Raspberry Pi
-- **Graphic Processing Unit (GPU)**
-- **Industrial PC**
 
-**Single Board Computer (Raspberry Pi):** A single-board computer is a device with all of its components such as RAM, a GPU, and CPU built-in. Unlike a traditional desktop PC, SBCs are small — roughly the size of a credit card.
+- **Microcontroller (Arduino)** — see EGE320 embedded systems
+- **SBC (Raspberry Pi)** — RAM, GPU, CPU on one board, credit-card sized
+- **Industrial PC** — Rugged for dust, dirt, oil, grease, water
 
-**Industrial PC:** Industrial PC enclosures are a more efficient, affordable and reliable alternative to expensive machines. They can withstand harsh environments including dust, dirt, grime, oil, grease and water.
-
-*Source: https://www.advantech.com*
+*Source: [advantech.com](https://www.advantech.com)* · [robotis.com](http://en.robotis.com/)
 
 ---
 
 ## Applications of Mobile Robotics
 
 ### Warehouse Automation
-Mobile robotics systems carry out tasks autonomously in warehouses, such as picking, packing and transportation.
+Picking, packing, and autonomous transport in smart warehouses.
 
 ### Healthcare
-- Autonomous delivery robots in hospital corridors
-- Telepresence robots for remote consultation
-- UV disinfecting mobile robots (e.g. deployed at Tan Tock Seng Hospital)
+- Autonomous delivery in hospital corridors
+- Telepresence for remote consultation
+- UV disinfecting robots (e.g. Tan Tock Seng Hospital)
 
----
-
-## NYP Industrial Projects
+### NYP Industrial Projects
 - **Security robot** — AgileX SCOUT UGV
-- **Driverless car** — Autonomous vehicle with obstacle avoidance
-- **Simulation of Forklift and Warehouse** — Gazebo-based simulation environment
+- **Driverless car** — autonomous vehicle with obstacle avoidance
+- **Forklift & warehouse simulation** — Gazebo-based
 
 ---
 
@@ -130,9 +92,9 @@ Mobile robotics systems carry out tasks autonomously in warehouses, such as pick
 | Tool | Description |
 |------|-------------|
 | Ubuntu | Linux operating system |
-| ROS (Robot Operating System) | Middleware for robot software development → See [[autonomousRoboticsLesso1#ROS basics|ROS Basics]] |
+| ROS | Middleware for robot software → [[autonomousRoboticsLesso1#ROS Basics\|ROS Basics]] |
 | Python | Programming language |
-| RViz | 3D visualization tool for ROS |
+| RViz | 3D visualization for ROS |
 | TurtleBot3 Burger | Mobile robot platform |
 | Gazebo | Robot simulation environment |
 

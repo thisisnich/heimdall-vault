@@ -1,115 +1,89 @@
 ---
-tags:
-  - EGE353
-  - robotics
-  - ROS
-  - SLAM
-  - assessment-schedule
-  - lesson-1
-  - module-overview
-course: EGE353 Autonomous Mobile Robotics
-lesson: 1
-topic: Module Overview and ROS Basics
-source: NYPY3 Import
+type: lecture
+course: EGE353
+module: EGE353-Autonomous-Mobile-Robotics
+week: 1
+status: reviewed
+source: manual
 created: 2026-05-17
-type: Lesson
-status: Completed
+tags: [EGE353, lesson-1, module-overview, SLAM, ROS]
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson1Introduction.md|Lesson 1 Slides]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[Lesson1Introduction|Lesson 1 Slides]] | [[Lesson 1-Introduction|Lesson 1 PDF]] | [[EGE353 Assessment Breakdown|Assessments]]
 
-# EGE353 Autonomous Mobile Robotics — Lesson 1 Notes
-
-> 📚 **Related:** [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lesson1Introduction.md|Lesson 1 Slides]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/lab1.md|Lab 1: ROS Nodes]]
+# EGE353 — Lesson 1 Class Notes
 
 ---
 
 ## Assessment Schedule
 
-| Week | Assessment Type | Weightage |
-|------|----------------|-----------|
-| 4-5 | Practical 1: Usages of ROS bags and packages | 20 |
-| 6 | Test 1: Proctored Quiz-1 | 10 |
-| 11-13 | Practical 2: Dockers | 20 |
-| 14 | Test 2: Proctored Quiz-2 | 15 |
-| 15-17 | Project (Part A): Robot design project | 35 |
-| | Project (Part B): To implement Simultaneous Localisation and Mapping (SLAM) for path planning and navigation and obstacles avoidance using real mobile robots | 35 |
-| | **Total** | **100** |
-^^
-this is outdates, the time schedule (weeks) and project A and B are diff
+> See [[EGE353 Assessment Breakdown|Assessment Breakdown]] and [[EGE353 Weekly Lesson Plan - E2|Weekly Lesson Plan]] for current dates.
 
+| Week | Assessment | Weight |
+|------|------------|--------|
+| 4–5 | Practical 1: ROS bags and packages | 20% |
+| 6 | Test 1: Proctored Quiz-1 | 10% |
+| 11–13 | Practical 2: Dockers | 20% |
+| 14 | Test 2: Proctored Quiz-2 | 15% |
+| 15–17 | Project Part A + B (design + SLAM) | 35% |
+
+### Weekly Timetable (E2)
 
 | WK | Mon Date | E2: Tue 11am–1pm | E2: Fri 8am–10am | Remarks |
 |----|----------|------------------|------------------|---------|
-| 1 | 20 Apr 26 | - Introduction of Module structure<br>- Lesson 1: Introduction to Autonomous Mobile Robotics | Lab 1: ROS nodes and TurtleSim (Practical session) | |
-| 2 | 27 Apr 26 | Project Part A Briefing (Engage)<br>- Lesson 2: Robot Operating System *(ELearning-SDL)*<br>- Lesson 3: Important Concepts in ROS *(ELearning-SDL)* | | This project applies Challenge‑Based Learning to autonomous mobile robotics through a real‑world service context. Students begin with a Big Idea such as Health, Sustainability, or Community, exploring how robots can create meaningful impact. From this, an Essential Question is formed to connect personal relevance with community needs. These reflections lead to a concrete Challenge Statement, calling students to design an autonomous mobile robot that safely and effectively addresses a real operational problem. The resulting system design provides the evidence‑based foundation for implementation in Project Part C (ACT). |
-| | | | | **1 May 2026 (Fri) – Labour Day** |
-| 3 | 4 May 26 | - Lab 2: ROS nodes and TurtleSim (Practical session)<br>- Lab 4: ROS bags (Briefing)<br>- Briefing of Proctored Quiz-1 | | |
-| 4 | 11 May 26 | Project Part A Briefing (Investigate)<br>- Lesson 4: Understanding the various components of mobile robot *(ELearning-SDL)*<br>- Lesson 5: Computing hardware *(ELearning-SDL)* | | Investigate: The lesson supports the INVESTIGATE phase by equipping students with system‑level knowledge of sensing, computing, actuation, and power components. Technologies such as LiDAR, vision, UWB, IMU, computing platforms, and power systems are introduced to enable evidence‑based investigation and component justification for the challenge.<br><br>**HBL Week (SEG Graduation Week) 11–15 May 2026** |
-| 5 | 18 May 26 | **Practical 1 (20%)**<br>- Lab 5: ROS packages (Briefing)<br>- Lab 5: ROS packages (Practical session) | **Practical 1 (20%)**<br>- Lab 5: ROS packages (Practical session) | |
-| 6 | 25 May 26 | **Practical 1 (20%)**<br>- Lab 5: ROS packages (Practical session)<br>- Demo of Practical 1 to instructor<br>- Lab 6: Creating and editing ROS launch files (Briefing) | | **27 May 2026 (Wed) – Hari Raya Haji** |
-| 7 | 1 Jun 26 | **Proctored Quiz-1 (10%)**<br>Class E2 Quiz: 2 Jun 2026, Tue, 9–10am<br>- Deadline for Practical 1 (20%) to instructor<br>- Lab 6: Creating and editing ROS launch files (Practical session) | | **1 Jun 2026 (Mon) – Vesak Day** |
-| 8 | 8 Jun 26 | Project Part A Discussion (Engage, Investigate) review<br>Project Part A *(ELearning)*<br>Mid term feedback | | |
-| 9 | 15 Jun 26 | **Term Break** | | **15 Jun 2026 – 26 Jun 2026 (2 Weeks)** |
-| 10 | 22 Jun 26 | **Term Break** | | |
+| 1 | 20 Apr 26 | Module intro · Lesson 1 | Lab 1: ROS nodes & TurtleSim | |
+| 2 | 27 Apr 26 | Project Part A Briefing · Lesson 2 & 3 (SDL) | | **1 May — Labour Day** |
+| 3 | 4 May 26 | Lab 2 · Lab 4 briefing · Quiz-1 briefing | | |
+| 4 | 11 May 26 | Project Part A (Investigate) · Lesson 4 & 5 (SDL) | | **HBL 11–15 May** |
+| 5 | 18 May 26 | **Practical 1 (20%)** · Lab 5 briefing/practical | **Practical 1 (20%)** · Lab 5 | |
+| 6 | 25 May 26 | **Practical 1 (20%)** · Lab 5 demo · Lab 6 briefing | | **27 May — Hari Raya Haji** |
+| 7 | 1 Jun 26 | **Quiz-1 (10%)** · Practical 1 deadline · Lab 6 | | **1 Jun — Vesak Day** |
+| 8 | 8 Jun 26 | Project Part A review · mid-term feedback | | |
+| 9–10 | 15–26 Jun | **Term Break** | | |
 
 ---
 
 ## ROS Basics
 
 **ROS → Robot Operating System**
-- Windows is an OS on a PC; on a robot it's called ROS
-- Will use TurtleBot from lab 5 onwards
-- First we will use ConstructSim (web-based simulator)
+
+- Windows is an OS on a PC; on a robot it's ROS
+- TurtleBot from Lab 5 onwards; ConstructSim for early labs
 
 ### SLAM (Simultaneous Localisation and Mapping)
 
-**What is the difference between localisation and mapping?**
-- **Localization:** Knowing where you are (robot finding its position in the environment)
-- **Mapping:** Knowing what the environment looks like (robot creating a map)
-- **SLAM:** Maps and localises at the same time — making a map of environment while tracking position
-- Mapping and localisation are two separate functions that can happen independently
+| Concept | Meaning |
+|---------|---------|
+| **Localization** | Knowing where you are (position in environment) |
+| **Mapping** | Knowing what the environment looks like |
+| **SLAM** | Maps and localises **at the same time** |
 
-**Technologies used:**
-- GPS, LiDAR for localization
-- Reference: [[Lesson1Introduction#Sensors|Sensor Types]]
+Mapping and localization are separate functions that can happen independently.
 
-We need to self study before a lab -> decide and find out what are we learning during a lab -> what are the components we need to know -> self learn before
+**Technologies:** GPS, LiDAR — see [[Lesson1Introduction#Sensors|Sensors]]
 
-lacalisation -> knowing where you are in reference to map, gps, lidar
-SLAM -> maps and localises at the same time -> making a map of envoronment 
-mapping and localisation are two seperate functions -> can happen independently from each other
-
-
----
-
-## Lesson 1 Learning Outcomes
-
-> See [[Lesson1Introduction#Module Learning Outcomes|Official Learning Outcomes]]
-
+> Self-study before each lab: identify what you'll learn, which components matter, and pre-read accordingly.
 
 ---
 
 ## Certification
 
-We will finish with a **certificate of competency from NYP and Robotis**: certified to work on ROS to a certain level.
+Certificate of competency from **NYP and Robotis** — certified to work on ROS to a certain level.
 
 ---
 
 ## Asimov's Laws of Robotics
 
-Discussed 3(4) rules of robots:
+1. **First Law** — May not injure a human or allow harm through inaction
+2. **Second Law** — Must obey human orders unless they conflict with the First Law
+3. **Third Law** — Must protect own existence unless it conflicts with First or Second Law
+4. **Zeroth Law** — Must not harm humanity or allow humanity to come to harm
 
-1. **First Law:** A robot may not injure a human being or, through inaction, allow a human being to come to harm.
-2. **Second Law:** A robot must obey orders given to it by human beings, except where such orders would conflict with the First Law.
-3. **Third Law:** A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
-4. **Fourth Law (Zeroth Law):** A robot must not harm humanity, or, by inaction, allow humanity to come to harm.
-
-> 📖 Full details: [[Lesson1Introduction#Asimov's Three Laws of Robotics|Asimov's Three Laws]]
+> Full details: [[Lesson1Introduction#Asimov's Three Laws of Robotics|Lesson 1 Slides]]
 
 ---
 
 ## Applications
 
-- **Taobao robotic warehouse** — See [[Lesson1Introduction#Warehouse Automation|Warehouse Automation]]
-
+- **Taobao/Alibaba robotic warehouse** — [[Lesson1Introduction#Warehouse Automation|Warehouse Automation]]
+- Security robots, driverless cars, hospital UV disinfecting robots
