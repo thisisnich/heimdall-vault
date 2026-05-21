@@ -63,7 +63,32 @@ Use the status bar **C/C++ configuration** dropdown to pick `lab5_1.1`, `lab5_1.
 - USB to host PC (debug + power)
 - XDS100v2 debug probe connected
 
-## Lab 5 expected touch coords (1.1)
+## Troubleshooting
+
+### GEL: Could not open file `lab5_1.1.out`
+
+The `.out` file **does not exist yet** — debug was started before a successful build.
+
+**Root cause on your PC:** CCS 20.5.1 only installed the **LLVM** compiler (`ti-cgt-armllvm`). These lab projects need the **classic** compiler (`ti-cgt-arm` 18.12.x), which is not installed by default.
+
+**Fix:**
+
+1. In CCS: **Help → Install Code Generation Compiler Tools**
+2. Uncheck *Show only the latest versions*
+3. Install **TI ARM Compiler** (classic) — version **18.12.x** or **20.2.x** (not armllvm)
+4. **Window → Preferences → Code Composer Studio → Build → Compilers** — confirm `ti-cgt-arm` appears
+5. Right-click `lab5_1.1` → **Properties → General** → set **Compiler version** to the classic ARM compiler you installed
+6. **Project → Clean** → **Project → Build Project**
+7. Confirm this file exists before debugging:
+   `lab5_1.1\Debug\lab5_1.1.out`
+8. Then **Run → Debug (F11)**
+
+**Alternative:** Install **CCS 12.8.x** (matches NYP lab PCs: `C:\ti\ccs1281`) — ships with the classic compiler these projects expect.
+
+### Build console shows empty compiler path (`"" -mv7M4`)
+
+Stale `Debug/` folder from another machine. Delete `lab5_1.1/Debug`, then Clean + Build in CCS after installing the classic compiler.
+
 
 | Location | x | y |
 |----------|---|---|
