@@ -1,165 +1,96 @@
 ---
-type: lecture
+type: tutorial
 course: EGE320
 module: EGE320-Embedded-System-Design
 status: draft
 source: pdf
 created: 2026-05-21
-tags: []
+tags: [EGE320, tutorial, touchscreen, MCQ]
 ---
 
-# EGE320 Tutorial 5
+> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[EGE320 - Touch Screen Technology|Touch Screen Lesson]] | [[ege320-lab-5-touchscreen-interaction-slides|Lab 5]] | [[Schedule & Assessments Dashboard|Assessments]]
+
+> **PDF:** [[99-ATTACHMENTS/EGE320/EGE320 - Tutorial5.pdf]]
+
+# EGE320 Tutorial 5 — Touchscreen Panel
+
 > [!ingest] source: EGE320 - Tutorial5.pdf | date: 2026-05-21 | tool: markitdown
 > Auto-converted. Edit summary below; re-run ingest to replace block above.
 
 ## Summary
 
-Tutorial 5 — **Touchscreen Panel**: MCQ on touchscreen layering (on top of LCD), sensing technologies (resistive, capacitive, etc.), and touch system hardware components.
+MCQ tutorial on touchscreen hardware: panel layering on LCD, sensing technologies (resistive, capacitive, infrared), spacer dots in resistive panels, voltage measurement at touch points, projected capacitive environments, and touch controller role between sensor and MCU.
 
-**PDF:** [[99-ATTACHMENTS/EGE320/EGE320 - Tutorial5.pdf]]
-## Raw
+**Objective:** Describe touch system hardware components and the purpose of each.
 
-Official (Closed) and Non-Sensitive
+---
 
-Course
+## Questions
 
-: Diploma in Electronic Systems (EGDF18)
-  Diploma in Electronic & Computer Engineering (EGDF20)
+### Q1 — How is a touchscreen layered with an LCD?
 
-Module
+- A. Layered **on top** of the LCD screen
+- B. Layered at the bottom of the LCD screen
+- C. Layered in between the LCD screen
+- D. Layered both top and bottom of the LCD screen
 
-: Embedded System Design & Technology (EGE320)
+### Q2 — Which is NOT a touchscreen sensing technology?
 
-Tutorial No
+- A. Resistive
+- B. Capacitive
+- C. Inductive
+- D. Infrared
 
-: Tutorial 5
+### Q3 — What is the spacer dot used for in resistive touch (ITO sheets)?
 
-Tutorial Title
+- A. Prevent top/bottom sheets contacting **when pressed**
+- B. Prevent top/bottom sheets contacting **when not pressed**
+- C. Perform resistive sensing by measuring voltages
+- D. Fill the gap between sheets
 
-: Touchscreen Panel
+### Q4 — Touch point voltage measured with X1 (0 V) and X2 (5 V) on top sheet?
 
-Objective
+- A. Through electrode X1
+- B. Through electrode X2
+- C. Through spacer dot
+- D. Through electrode Y
 
-: Describe the touch system hardware components by recognizing the
-  properties and purposes of each component in the system.
+### Q5 — Touch point nearer to X2 — expected voltage? (X1=0 V, X2=5 V)
 
-Questions:
+- A. 1 V · B. 2 V · C. 3 V · D. 4 V
 
-1.  How does a touchscreen panel being layered together with a LCD screen?
+### Q6 — Projected capacitive sensing best suited for?
 
-A.  It is layered on top of a LCD screen.
-B.
-C.
-D.  It is layered both top and bottom of a LCD screen.
+- A. Wet or underwater
+- B. High-vibration industrial
+- C. Dusty environments
+- D. **Clean, dry environments with bare-finger touch**
 
-It is layered at the bottom of a LCD screen.
-It is layered in between a LCD screen.
+### Q7 — Center of resistive panel touched (max 5 V on electrodes)?
 
-2.  Which of the following is NOT a touchscreen panel sensing technology?
+- A. 1.5 V · B. **2.5 V** · C. 3.5 V · D. 4.5 V
 
-A.  Resistive
-B.  Capacitive
-C.
-Inductive
-D.  Infrared
+### Q8 — X and Y electrodes in projected capacitive structure?
 
-3.  What is the use of spacer dot found in between the top and bottom transparent sheets coated with
+- A. Parallel · B. Series · C. **Intersecting in matrix** · D. Series X / parallel Y
 
-ITO in a resistive technology sensing structure?
+### Q9 — How does a finger affect projected capacitive sensing?
 
-A.  To prevent the top and bottom sheets from contacting when pressed.
-B.  To prevent the top and bottom sheets from contacting when not pressed.
-C.  To perform resistive sensing by measuring voltages.
-D.  To fill the gap between the top and bottom sheets.
+- A. **Introduces additional capacitance**
+- B. Introduces additional resistance
+- C. Introduces additional inductance
+- D. Introduces additional pressure
 
-EGE320 Tut 5
+### Q10 — Role of touch controller (between sensor and MCU)?
 
-Page 1 of 3
+- A. Captures voltage/signal change on panel
+- B. Lets driver code interpret touch events
+- C. **Translates sensor info into data the MCU understands**
+- D. Fetches/decodes frame buffer data for MCU
 
-  Effective Date: 1 Apr 2018
+---
 
-Official (Closed) and Non-Sensitive
+## Study links
 
-4.  How would the touch point voltage be measured when voltage is imposed between the electrode
-
-X1 (0 v) and X2 (5 v) on the top sheet?
-
-A.  Through electrode X1
-B.  Through electrode X2
-C.  Through Spacer Dot
-D.  Through electrode Y
-
-5.  What  is  the  possible  voltage  measured  if  the  touch  point  is  nearer  to  electrode  X2?  Assuming
-
-voltage is imposed between the electrode X1 (0 v) and X2 (5 v) on the top sheet.
-
-A.  1 v
-B.  2 v
-C.  3 v
-D.  4 v
-
-6.  Which of the following environments is projected capacitive sensing best suited for?
-
-A.  Wet or underwater
-B.  High-vibration industrial applications
-C.  Dusty environments
-D.  Clean, dry environments with bare-finger touch
-
-7.
-
-If  the  center  of  a  resistive  touchscreen  panel  is touched,  what  would  be  the  voltage  measured  at
-both X and Y electrodes given the maximum voltage imposed to the electrodes is 5 v?
-
-A.  1.5 v
-B.  2.5 v
-C.  3.5 v
-D.  4.5 v
-
-8.  How does the X and Y electrodes being arranged in the Projected Capacitive Structure?
-
-A.  Parallel
-B.  Series
-C.
-D.  Series for X electrode and parallel for Y electrode
-
-Intersecting in matrix
-
-9.  How does a human finger affect the electrostatic capacitance between the X and Y electrodes in the
-
-Projected Capacitive Sensing?
-
-A.  Human finger introduces additional capacitance.
-B.  Human finger introduces additional resistance.
-C.  Human finger introduces additional inductance.
-D.  Human finger introduces additional pressure.
-
-10. What  is  the  role  of  the  touch  controller  which  connects  between  the  touch  sensor  and
-
-microcontroller?
-
-EGE320 Tut 5
-
-Page 2 of 3
-
-  Effective Date: 1 Apr 2018
-
-Official (Closed) and Non-Sensitive
-
-A.  Captures the voltage or signal change on the touchscreen panel.
-B.  Allows the touchscreen software driver code running inside to know how to interpret the touch
-
-event information.
-
-C.  Takes information from the touch sensor and translate it into information that microcontroller
-
-can understand.
-
-D.  Fetches  data  from  the  frame  buffer,  decodes  it  to  the  required  bit  format  and  feeds  it  to  the
-
-microcontroller.
-
-EGE320 Tut 5
-
-Page 3 of 3
-
-  Effective Date: 1 Apr 2018
+- [[EGE320 - Touch Screen Technology#Resistive Touch Screen|Resistive vs capacitive]]
+- [[ege320-lab-5-touchscreen-interaction-slides#IT7258 API|Lab 5 — IT7258 driver]]

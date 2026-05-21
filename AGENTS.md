@@ -194,6 +194,24 @@ Additional fields when applicable:
 4. Set `source:` and `status: draft` in frontmatter.
 5. Offer to generate **Summary** + **Flashcards** sections in the **tutorial** note, not duplicate files.
 
+### Post-ingest cleanup pass (mandatory for agents)
+
+`ingest.py` + MarkItDown only produces a **raw dump**. The agent **must run one cleanup round** on the output `.md` before reporting done:
+
+1. **Keep** the `[!ingest]` callout block unchanged (re-run ingest replaces it).
+2. **Write `## Summary`** — 2–5 sentences: topic, key tasks, links to related vault notes.
+3. **Restructure body** — replace PDF line-break junk with:
+   - Proper `#` / `##` headings
+   - Tables (wiring, specs, MCQ options)
+   - Fenced code blocks for scripts
+   - Remove form-feed (`\f`), page headers/footers, duplicate titles
+4. **Set frontmatter** — correct `type` (`lecture` | `lab` | `assignment` | `tutorial`), `course`, `module`, `tags`, `status: draft`.
+5. **Link** — PDF in `99-ATTACHMENTS/`, project note in `01-PROJECTS/` if assignment, existing tutorial/lab note if duplicate topic.
+6. **Raw section** — either delete after structuring, or collapse to `## Raw (archive)` with only content not captured above. Do not leave an unedited MarkItDown dump as the only body.
+7. **Inbox** — move originals to `99-ATTACHMENTS/<course>/`; clear `00-INBOX/` (see `00-INBOX/README.md`).
+
+Do **not** consider ingest complete until the cleanup pass is done.
+
 ### Tools
 
 - **MarkItDown** — PDF, PPTX, DOCX, images, URLs
@@ -330,12 +348,16 @@ The PA service should expose tools: `vault_search`, `vault_read`, `vault_write`,
 
 ```
 ## Filed
-- path
+- path (markdown + attachment)
+
+## Cleaned up
+- summary, headings, code blocks, links added
+
 ## Linked to
 - [[tutorial note]] or "none — create?"
+
 ## Suggested next
-- [ ] Add summary to tutorial
-- [ ] Generate flashcards
+- [ ] Add flashcards to tutorial note (not duplicate file)
 ```
 
 ### After inbox process
@@ -363,7 +385,7 @@ The PA service should expose tools: `vault_search`, `vault_read`, `vault_write`,
 
 | Date | Change |
 |------|--------|
-| 2026-05-20 | Initial Heimdall agent manual |
+| 2026-05-21 | Post-ingest cleanup pass required after MarkItDown |
 
 When you change vault conventions, update this file and add a row above.
 

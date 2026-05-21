@@ -39,4 +39,6 @@ python ingest.py --process-inbox
 
 Output lands in `00-INBOX/_processing/` then copies to `03-RESOURCES/<module>/` or `Media/`.
 
+**After `ingest.py` finishes:** agent must run the **post-ingest cleanup pass** — structure the `.md` (headings, tables, code blocks, summary, links). MarkItDown output alone is not done. See [[AGENTS.md]] §5.
+
 **Agents:** see [[AGENTS.md]] §5.

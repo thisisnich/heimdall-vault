@@ -1,0 +1,48 @@
+
+
+/**
+ * main.c
+ */
+int main(void)
+{
+    unsigned int ui1stNumber, ui2ndNumber, ui3rdNumber, uiLargestNumber;
+
+    ui1stNumber = 12;
+    ui2ndNumber = 34;
+    ui3rdNumber = 56;
+
+    //Check if ui1stNumber is larger or equal to ui2ndNumber
+        if(ui1stNumber > ui2ndNumber)
+        {
+            //Check if ui1stNumber is larger or equal to ui3rdNumber
+            if(ui1stNumber > ui3rdNumber)
+            {
+            //uiLargestNumber is assigned value of ui1stNumber
+                uiLargestNumber = ui1stNumber;
+            }
+
+            else
+            {
+            //uiLargestNumber is assigned value of ui3rdNumber
+                uiLargestNumber = ui3rdNumber;
+            }
+        }
+
+        else
+            {
+            //Check if ui2ndNumber is larger or equal to ui3rdNumber
+                if(ui2ndNumber > ui3rdNumber)
+                {
+                //uiLargestNumber is assigned value of ui2ndNumber
+                    uiLargestNumber = ui2ndNumber;
+                }
+
+                else
+                {
+                //uiLargestNumber is assigned value of ui3rdNumber
+                    uiLargestNumber = ui3rdNumber;
+                }
+            }
+            return 0;
+}
+
