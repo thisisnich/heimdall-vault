@@ -1,4 +1,4 @@
----
+﻿---
 type: lab
 course: EGE320
 module: EGE320-Embedded-System-Design
@@ -8,9 +8,9 @@ created: 2026-05-21
 tags: [EGE320, lab, touchscreen, IT7258, CCS]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[EGE320 - Touch Screen Technology|Touch Screen Lesson]] | [[ege320-tutorial-5-slides|Tutorial 5]] | [[Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE320 - Touch Screen Technology|Touch Screen Lesson]] | [[ege320-tutorial-5-slides|Tutorial 5]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
-> **PDF:** [[99-ATTACHMENTS/EGE320/EGE320 - Lab5 Touchscreen Interaction.pdf]]
+> **Code:** `99-ATTACHMENTS/EGE320/EGE320_E2/` · [[99-ATTACHMENTS/EGE320/EGE320_E2/README|EGE320_E2 workflow]]
 
 # EGE320 Lab 5 — Touchscreen Interaction
 
@@ -118,7 +118,7 @@ Draw icons with `GrImageDraw(&sContext, g_pui8MusicIcon, x, y)`.
 
 ## Tasks
 
-- [ ] Complete 1.1 coordinate display
-- [ ] Complete 1.2 four-icon touch regions
-- [ ] Complete 1.3 unlock → icons transition
+- [x] Complete 1.1 coordinate display
+- [x] Complete 1.2 four-icon touch regions
+- [x] Complete 1.3 unlock → icons transition
 - [ ] Demo all touch regions to instructor

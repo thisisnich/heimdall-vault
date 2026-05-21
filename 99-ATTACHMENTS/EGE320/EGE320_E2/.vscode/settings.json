@@ -1,0 +1,18 @@
+{
+  "C_Cpp.default.configurationProvider": "",
+  "C_Cpp.default.configurationProviderTimeout": 5000,
+  "files.associations": {
+    "*.h": "c",
+    "clock.h": "c",
+    "grlib.h": "c",
+    "it7258_i2c.h": "c",
+    "st7789_spi.h": "c"
+  },
+  "files.exclude": {
+    "**/Debug": true
+  },
+  "search.exclude": {
+    "**/Debug": true,
+    "**/Libraries/grlib/fonts": true
+  }
+}

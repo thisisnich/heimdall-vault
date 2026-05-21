@@ -4,8 +4,6 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS
-
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
 
@@ -64,9 +62,6 @@ endif
 ifneq ($(strip $(S64_DEPS)),)
 -include $(S64_DEPS)
 endif
-ifneq ($(strip $(INO_DEPS)),)
--include $(INO_DEPS)
-endif
 ifneq ($(strip $(CLA_DEPS)),)
 -include $(CLA_DEPS)
 endif
@@ -81,9 +76,6 @@ ifneq ($(strip $(C62_DEPS)),)
 endif
 ifneq ($(strip $(C67_DEPS)),)
 -include $(C67_DEPS)
-endif
-ifneq ($(strip $(PDE_DEPS)),)
--include $(PDE_DEPS)
 endif
 ifneq ($(strip $(K_DEPS)),)
 -include $(K_DEPS)
@@ -133,9 +125,8 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 
 # Tool invocations
 Lab3a.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@echo 'Building target: "$@"'
-	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab3a.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3a_linkInfo.xml" --rom_model -o "Lab3a.out" $(ORDERED_OBJS)
+	@echo 'Arm Linker - building target: "$@"'
+	"" -z -m"Lab3a.map" --heap_size=0 --stack_size=512 -i"/lib" -i"/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3a_linkInfo.xml" --rom_model -o "Lab3a.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
@@ -144,7 +135,6 @@ clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
 	-$(RM) "main.obj" "tm4c129encpdt_startup_ccs.obj" 
 	-$(RM) "main.d" "tm4c129encpdt_startup_ccs.d" 
-	-@echo 'Finished clean'
 	-@echo ' '
 
 .PHONY: all clean dependents

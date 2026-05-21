@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "EGE320 code",
+      "path": "."
+    },
+    {
+      "name": "EGE320 notes",
+      "path": "../../../03-RESOURCES/EGE320-Embedded-System-Design"
+    }
+  ],
+  "settings": {
+    "C_Cpp.default.configurationProvider": "",
+    "files.exclude": {
+      "**/Debug": true
+    }
+  },
+  "extensions": {
+    "recommendations": ["ms-vscode.cpptools"]
+  }
+}

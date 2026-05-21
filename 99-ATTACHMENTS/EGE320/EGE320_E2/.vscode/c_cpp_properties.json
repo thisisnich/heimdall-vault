@@ -1,0 +1,57 @@
+{
+  "configurations": [
+    {
+      "name": "lab5_1.1",
+      "includePath": [
+        "${workspaceFolder}/lab5_1.1",
+        "${workspaceFolder}/lab5_1.1/Drivers/CoreDrivers",
+        "${workspaceFolder}/lab5_1.1/Drivers/DeviceDrivers",
+        "${workspaceFolder}/lab5_1.1/Drivers/PeripheralDrivers",
+        "${workspaceFolder}/lab5_1.1/Libraries",
+        "${workspaceFolder}/lab5_1.1/Libraries/grlib",
+        "C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include"
+      ],
+      "defines": ["ccs", "PART_TM4C129ENCPDT"],
+      "compilerPath": "C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl.exe",
+      "cStandard": "c99",
+      "intelliSenseMode": "gcc-arm",
+      "browse": {
+        "path": ["${workspaceFolder}/lab5_1.1"],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    },
+    {
+      "name": "lab5_1.2",
+      "includePath": [
+        "${workspaceFolder}/lab5_1.2",
+        "${workspaceFolder}/lab5_1.2/Drivers/CoreDrivers",
+        "${workspaceFolder}/lab5_1.2/Drivers/DeviceDrivers",
+        "${workspaceFolder}/lab5_1.2/Drivers/PeripheralDrivers",
+        "${workspaceFolder}/lab5_1.2/Libraries",
+        "${workspaceFolder}/lab5_1.2/Libraries/grlib",
+        "C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include"
+      ],
+      "defines": ["ccs", "PART_TM4C129ENCPDT"],
+      "compilerPath": "C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl.exe",
+      "cStandard": "c99",
+      "intelliSenseMode": "gcc-arm"
+    },
+    {
+      "name": "lab5_1.3",
+      "includePath": [
+        "${workspaceFolder}/lab5_1.3",
+        "${workspaceFolder}/lab5_1.3/Drivers/CoreDrivers",
+        "${workspaceFolder}/lab5_1.3/Drivers/DeviceDrivers",
+        "${workspaceFolder}/lab5_1.3/Drivers/PeripheralDrivers",
+        "${workspaceFolder}/lab5_1.3/Libraries",
+        "${workspaceFolder}/lab5_1.3/Libraries/grlib",
+        "C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include"
+      ],
+      "defines": ["ccs", "PART_TM4C129ENCPDT"],
+      "compilerPath": "C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl.exe",
+      "cStandard": "c99",
+      "intelliSenseMode": "gcc-arm"
+    }
+  ],
+  "version": 4
+}
