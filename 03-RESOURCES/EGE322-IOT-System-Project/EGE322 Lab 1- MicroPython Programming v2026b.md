@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE322
   - lab1
@@ -16,9 +16,9 @@ status: Completed
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Week 1.md|Week 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Week 1.md|Week 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE322-IOT-System-Project/ESP32_Programming_Guide.md|ESP32 Programming Guide]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE322-IOT-System-Project/ESP32_Programming_Guide.md|ESP32 Programming Guide]]
 
 Official (Open)
 School of Engineering

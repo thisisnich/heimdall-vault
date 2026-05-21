@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE351
   - lab
@@ -15,11 +15,11 @@ status: Completed
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lab 2.md|Lab 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lab 2.md|Lab 2]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lab 2.md|Lab 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lab 2.md|Lab 2]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lab 2.md|Lab 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lab 2.md|Lab 2]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 Official (Open)
 School of Engineering

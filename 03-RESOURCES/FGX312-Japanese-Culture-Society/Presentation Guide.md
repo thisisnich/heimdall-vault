@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - FGX312
   - elective
@@ -15,17 +15,17 @@ status: Completed
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Coming of Age Day Presentation]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Coming of Age Day Presentation]]
 
 Official (Open)
 “

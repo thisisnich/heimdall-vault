@@ -1,4 +1,4 @@
----
+﻿---
 type: lecture
 course: EGE353
 module: EGE353-Autonomous-Mobile-Robotics
@@ -9,7 +9,7 @@ created: 2026-05-08
 tags: [EGE353, lesson-1, introduction, robotics]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[Lesson1Introduction|Lesson 1 Study Notes]] | [[autonomousRoboticsLesso1|Class Notes]] | [[Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lesson1Introduction|Lesson 1 Study Notes]] | [[autonomousRoboticsLesso1|Class Notes]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
 # Lesson 1: Introduction to Autonomous Robotics
 

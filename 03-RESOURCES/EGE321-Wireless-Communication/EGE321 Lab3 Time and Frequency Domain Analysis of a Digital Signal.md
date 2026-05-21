@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE321
   - lab
@@ -16,11 +16,11 @@ type: Lab
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lab 3: Time and Frequency Domain Analysis of a Digital Signal
 

@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE321
   - lesson5c
@@ -15,11 +15,11 @@ status: Completed
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Lesson 4c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Lesson 4c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Lesson 4c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Lesson 4c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Chapter 2]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Chapter 2]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lesson 5c - Digital Modulation Technique (Chapter 2.3)
 

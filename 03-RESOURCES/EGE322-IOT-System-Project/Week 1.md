@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE322
   - IoT
@@ -16,7 +16,7 @@ type: Week
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Tutorials.md|Tutorials 1-3]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Tutorials.md|Tutorials 1-3]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 **Under Year 3 Diploma in Electronic & Computer Engineering**
 

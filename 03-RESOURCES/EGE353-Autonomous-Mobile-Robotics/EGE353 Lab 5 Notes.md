@@ -1,4 +1,4 @@
----
+﻿---
 type: lab
 course: EGE353
 module: EGE353-Autonomous-Mobile-Robotics
@@ -8,7 +8,7 @@ created: 2026-05-19
 tags: [EGE353, lab, ros2, package, publisher, subscriber, lab5]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]] | [[Lab 5 - ROS Package|Lab 5 Slides]] | [[Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]] | [[Lab 5 - ROS Package|Lab 5 Slides]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
 > **Lab Materials:** [[Lab 5 - ROS Package.pdf|PDF]] · [[Lab 5 - ROS Package|Markdown]]
 

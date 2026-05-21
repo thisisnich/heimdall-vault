@@ -1,4 +1,4 @@
----
+﻿---
 type: lab
 course: EGE322
 module: EGE322-IOT-System-Project
@@ -8,7 +8,7 @@ created: 2026-05-20
 tags: [EGE322, lab, micropython, ESP32, lab-code]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[EGE322 Lab 2- Controlling the ESP32 GPIOs v2026-1|Lab 2]] | [[EGE322 Lab 3- Interacting with the ESP32 GPIOs v2026-1|Lab 3]] | [[EGE322 Assignment 2 - BME280 Web Server|Assignment 2]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE322 Lab 2- Controlling the ESP32 GPIOs v2026-1|Lab 2]] | [[EGE322 Lab 3- Interacting with the ESP32 GPIOs v2026-1|Lab 3]] | [[EGE322 Assignment 2 - BME280 Web Server|Assignment 2]]
 
 # EGE322 Lab Code Reference
 

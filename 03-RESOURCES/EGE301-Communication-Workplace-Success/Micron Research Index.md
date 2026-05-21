@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE301
   - Micron
@@ -12,7 +12,7 @@ status: in-progress
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 > 📚 **Related:** [[CWS_ICA_Brief|ICA 1 Brief]] | [[1_Workplace_Culture_and_Ethics|Unit 1 Notes]]
 >

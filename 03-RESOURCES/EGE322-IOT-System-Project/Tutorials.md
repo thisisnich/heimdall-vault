@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE322
   - IoT
@@ -13,7 +13,7 @@ type: Tutorial
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Week 1.md|Week 1 Overview]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Week 1.md|Week 1 Overview]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 ---
 

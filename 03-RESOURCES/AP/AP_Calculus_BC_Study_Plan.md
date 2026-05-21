@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - AP-Calculus-BC
   - study-plan
@@ -15,7 +15,7 @@ type: Study Plan
 status: Active
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[AP_Study_Resources.md|AP Study Resources]] | [[AP_Computer_Science_A_Study_Plan.md|AP Computer Science A]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[AP_Study_Resources.md|AP Study Resources]] | [[AP_Computer_Science_A_Study_Plan.md|AP Computer Science A]]
 
 # AP Calculus BC - 12 Month Study Plan
 **Target Exam Date:** May 2027  

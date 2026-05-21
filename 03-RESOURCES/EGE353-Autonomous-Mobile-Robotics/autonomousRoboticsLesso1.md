@@ -1,4 +1,4 @@
----
+﻿---
 type: lecture
 course: EGE353
 module: EGE353-Autonomous-Mobile-Robotics
@@ -9,7 +9,7 @@ created: 2026-05-17
 tags: [EGE353, lesson-1, module-overview, SLAM, ROS]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[Lesson1Introduction|Lesson 1 Slides]] | [[Lesson 1-Introduction|Lesson 1 PDF]] | [[EGE353 Assessment Breakdown|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lesson1Introduction|Lesson 1 Slides]] | [[Lesson 1-Introduction|Lesson 1 PDF]] | [[EGE353 Assessment Breakdown|Assessments]]
 
 # EGE353 — Lesson 1 Class Notes
 

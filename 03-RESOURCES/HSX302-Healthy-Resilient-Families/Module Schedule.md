@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - HSX302
   - elective
@@ -13,7 +13,7 @@ status: Active
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 **HSX302 Healthy and Resilient Families**
 **AY2026-27 S1 Schedule**

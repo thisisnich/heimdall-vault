@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE321
   - lab
@@ -16,7 +16,7 @@ type: Appendix
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/EGE321 Lab3 Time and Frequency Domain Analysis of a Digital Signal.md|Lab 3]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/EGE321 Lab3 Time and Frequency Domain Analysis of a Digital Signal.md|Lab 3]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lab 3 Appendix: Bandwidth of a Digital Signal - Theory
 

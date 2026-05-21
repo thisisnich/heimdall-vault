@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE322
   - IoT
@@ -16,7 +16,7 @@ type: Chapter
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Tutorials.md|Tutorials]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE322-IOT-System-Project/Tutorials.md|Tutorials]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 # Chapter 2: Overview of Project Management
 **Nanyang Polytechnic | School of Engineering | SEG/SCSC**
 *Effective Date: 19 Oct 2020*

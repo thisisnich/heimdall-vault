@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - HSX302
   - elective
@@ -15,17 +15,17 @@ status: Active
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/HSX302-Healthy-Resilient-Families/Module Syllabus.md|Module Syllabus]]
 
 
 # **HSX302 HEALTHY AND RESILIENT FAMILIES**

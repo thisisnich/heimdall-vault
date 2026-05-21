@@ -278,7 +278,7 @@ When user gives a **Git URL**:
 |------|------|
 | `07-DASHBOARDS/NYPY3 - Main Index.md` | Course hub, cross-links |
 | `07-DASHBOARDS/Schedule & Assessments Dashboard.md` | Due dates, study priorities |
-| `NYP Timetable S1 2026.md` | Weekly schedule (root or dashboard) |
+| `07-DASHBOARDS/NYP Timetable S1 2026.md` | Weekly schedule |
 
 **Dataview** (if available): query `due`, `status`, `type`, `#gap`.
 

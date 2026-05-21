@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE351
   - automation
@@ -15,7 +15,7 @@ type: Lab
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1: PLC]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1: PLC]]
 
 ---
 

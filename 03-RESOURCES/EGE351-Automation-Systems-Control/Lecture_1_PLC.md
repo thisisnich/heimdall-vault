@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE351
   - automation
@@ -15,7 +15,7 @@ type: Lecture
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/lab1.md|Lab 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/lab1.md|Lab 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Programmable Logic Controller (PLC)
 ### PLC Flowchart to Ladder Diagram

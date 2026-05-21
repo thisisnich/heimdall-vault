@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE351
   - automation
@@ -17,7 +17,7 @@ type: Lab
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1: PLC Theory]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/Lecture_1_PLC.md|Lecture 1: PLC Theory]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE351 / LAB 1 — Automation: PLC Programming
 

@@ -1,4 +1,4 @@
----
+﻿---
 type: lecture
 course: EGE353
 module: EGE353-Autonomous-Mobile-Robotics
@@ -9,7 +9,7 @@ created: 2026-05-07
 tags: [EGE353, lesson-2, ROS, robot-operating-system]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[Lesson 1-Introduction|Lesson 1]] | [[Lesson 3 Important Concepts of ROS|Lesson 3]] | [[Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lesson 1-Introduction|Lesson 1]] | [[Lesson 3 Important Concepts of ROS|Lesson 3]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
 # Lesson 2: Robot Operating System (ROS)
 

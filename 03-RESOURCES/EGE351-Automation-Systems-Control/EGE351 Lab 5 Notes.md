@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE351
   - lab
@@ -12,7 +12,7 @@ type: Lab Notes
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/23S2 EGE351 Lab 4 - Automation .md|Lab 4]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/23S2 EGE351 Lab 4 - Automation .md|Lab 4]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 > **Lab Materials:**
 > - 📄 [[Lab 5 - Automation.pdf|PDF Document]]

@@ -1,4 +1,4 @@
----
+﻿---
 type: tutorial
 course: EGE320
 module: EGE320-Embedded-System-Design
@@ -8,7 +8,7 @@ created: 2026-05-21
 tags: [EGE320, tutorial, touchscreen, MCQ]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[EGE320 - Touch Screen Technology|Touch Screen Lesson]] | [[ege320-lab-5-touchscreen-interaction-slides|Lab 5]] | [[Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE320 - Touch Screen Technology|Touch Screen Lesson]] | [[ege320-lab-5-touchscreen-interaction-slides|Lab 5]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
 > **PDF:** [[99-ATTACHMENTS/EGE320/EGE320 - Tutorial5.pdf]]
 

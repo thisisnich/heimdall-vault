@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE351
   - lab
@@ -15,7 +15,7 @@ type: Guide
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351_Lab_1_PLC_Programming.md|Lab 1 PLC Programming]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351_Lab_1_PLC_Programming.md|Lab 1 PLC Programming]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # EGE351 Lab Procedures
 

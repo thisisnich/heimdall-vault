@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE301
   - Micron
@@ -17,7 +17,7 @@ source: NYPY3 Import
 created: 2026-05-17
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/lesson 1.md|Lesson 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Physical and IT Environments, Facilities and Amenities
 

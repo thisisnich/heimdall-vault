@@ -10,7 +10,7 @@ source: NYP_LearningTT.pdf
 converted: 2026-04-23
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|Main Index]] | [[📅 Schedule & Assessments Dashboard|Schedule Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|Main Index]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Schedule Dashboard]]
 
 # NYP Timetable — Semester 1 2026
 

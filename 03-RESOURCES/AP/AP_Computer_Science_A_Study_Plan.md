@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - AP-Computer-Science-A
   - study-plan
@@ -15,7 +15,7 @@ type: Study Plan
 status: Active
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[AP_Study_Resources.md|AP Study Resources]] | [[AP_Calculus_BC_Study_Plan.md|AP Calculus BC]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[AP_Study_Resources.md|AP Study Resources]] | [[AP_Calculus_BC_Study_Plan.md|AP Calculus BC]]
 
 # AP Computer Science A - 12 Month Study Plan
 **Target Exam Date:** May 2027  

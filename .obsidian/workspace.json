@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lab 5 - ROS Package.md",
+                "file": "AGENTS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab 5 - ROS Package"
+              "title": "AGENTS"
             }
           }
         ]
@@ -193,6 +193,20 @@
   },
   "active": "098fddb7f77f2d64",
   "lastOpenFiles": [
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.3/Debug/objects.mk",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.3/Debug/sources.mk",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/README.md",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/EGE320-E2.code-workspace",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.3/main.c",
+    "07-DASHBOARDS/NYPY3 - Main Index.md",
+    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lab 5 - ROS Package.md",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.1/Debug/Libraries/grlib/fonts/subdir_vars.mk",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.1/Debug/Libraries/grlib/fonts/subdir_rules.mk",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.1/Debug/Libraries/grlib/fonts/fontcmss48i.obj",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.1/Debug/Libraries/grlib/fonts/fontcmss48i.d",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.1/Debug/Libraries/grlib/fonts/fontcmss48b.obj",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.1/Debug/Libraries/grlib/fonts/fontcmss48b.d",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab5_1.1/Debug/Libraries/grlib/fonts/fontcmss48.obj",
     "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 2 - ROS Nodes and Topics.md",
     "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 1 Notes.md",
     "91-SCRIPTS/VOICE-MEMOS-WORKFLOW.md",
@@ -202,7 +216,6 @@
     "wiki/concepts/the-morning-ya-kun-kaya.md",
     "03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Touch Screen Technology.md",
     "03-RESOURCES/EGE320-Embedded-System-Design/YouTube Lesson.md",
-    "03-RESOURCES/EGE351-Automation-Systems-Control/Lab 5 - Automation.pdf",
     "03-RESOURCES/EGE351-Automation-Systems-Control/Lab procedures.md",
     "03-RESOURCES/EGE351-Automation-Systems-Control/23S2 EGE351 Tutorial 4 Combination Traffic Light.md",
     "03-RESOURCES/EGE351-Automation-Systems-Control/23S2 EGE351 Lab 4 - Automation .md",
@@ -215,19 +228,6 @@
     "04-ARCHIVE/Year-2-Sem-2-Previous/Electric-Circuit-Analysis/ECA.md",
     "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/Planning.md",
     "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/ND - Week 2.md",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/ND - Week 1.md",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/EGE205 User And Data Collection (Project Report Part 1) Week 2.pdf",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/EGE205 Project Briefing and Discussion - Copy (5).pdf",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/EGE205 - Lab1a - Copy (1).pdf",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/CSDP.md",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/CSDP Plannign slides.md",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking/ND - Week 2.md",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking/ND - Week 1.md",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/Electric-Circuit-Analysis",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/Differential-Equations",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/Application-Programming",
-    "04-ARCHIVE/Year-2-Sem-2-Previous"
+    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/ND - Week 1.md"
   ]
 }

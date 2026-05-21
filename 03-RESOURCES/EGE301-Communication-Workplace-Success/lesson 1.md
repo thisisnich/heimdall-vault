@@ -1,4 +1,4 @@
-  ---
+﻿  ---
 tags:
   - EGE301
   - communication
@@ -14,7 +14,7 @@ type: Lesson
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/UNIT 4 - Networking Skills.md|Unit 4: Networking Skills]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE301-Communication-Workplace-Success/UNIT 4 - Networking Skills.md|Unit 4: Networking Skills]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # Lesson 1 Notes
 

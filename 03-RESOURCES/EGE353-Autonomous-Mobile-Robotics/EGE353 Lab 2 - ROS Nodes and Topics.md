@@ -1,4 +1,4 @@
----
+﻿---
 type: lab
 course: EGE353
 module: EGE353-Autonomous-Mobile-Robotics
@@ -8,7 +8,7 @@ created: 2026-04-28
 tags: [EGE353, lab, ros2, nodes, topics, lab2]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 1 Notes|Lab 1]] | [[EGE353 Lab 3 - ROS Services|Lab 3]] | [[Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 1 Notes|Lab 1]] | [[EGE353 Lab 3 - ROS Services|Lab 3]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
 # Lab 2: ROS2 Nodes and Topics
 

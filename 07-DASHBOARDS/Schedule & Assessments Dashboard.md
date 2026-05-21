@@ -1,4 +1,7 @@
 ---
+aliases:
+  - Schedule & Assessments Dashboard
+  - "📅 Schedule & Assessments Dashboard"
 tags:
   - schedule
   - assessments

@@ -1,4 +1,6 @@
 ---
+aliases:
+  - NYPY3 Main Index
 tags:
   - index
   - MOC

@@ -1,4 +1,4 @@
----
+﻿---
 type: assignment
 course: EGE322
 module: EGE322-IOT-System-Project
@@ -9,7 +9,7 @@ due: 2026-05-25
 tags: [EGE322, assignment, BME280, web-server, ESP32]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[iot-assignment-2-2026b-slides|Ingested PDF]] | [[EGE322 Lab Code Reference|Lab Code]] | [[Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[iot-assignment-2-2026b-slides|Ingested PDF]] | [[EGE322 Lab Code Reference|Lab Code]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
 # EGE322 Assignment 2 — BME280 Web Server
 

@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE321
   - wireless
@@ -19,13 +19,13 @@ status: Completed
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson1c.md|Lesson 1c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson1c.md|Lesson 1c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 converted: 2026-04-30
 type: Lesson
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Lesson 2c]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Lesson 2c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 > 📚 **Related:** [[EGE321 Wireless Communication & Networking - MOC|EGE321 MOC]] | [[Lesson2c|Lesson 2c]]
 Wireless System Design Considerations
 Multiple Access Techniques

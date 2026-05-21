@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE353
   - certification
@@ -15,9 +15,9 @@ status: Active
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Assessment Breakdown.md|Assessment Breakdown]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Assessment Breakdown.md|Assessment Breakdown]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Assessment Breakdown.md|Assessment Breakdown]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Assessment Breakdown.md|Assessment Breakdown]]
 
 # Robotis Co-Certification Announcement
 

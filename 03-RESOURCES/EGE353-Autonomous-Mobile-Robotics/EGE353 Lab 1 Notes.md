@@ -1,4 +1,4 @@
----
+﻿---
 type: lab
 course: EGE353
 module: EGE353-Autonomous-Mobile-Robotics
@@ -8,7 +8,7 @@ created: 2026-05-17
 tags: [EGE353, lab, ros2, topics, lab1]
 ---
 
-> **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[Lab 1 - ROS Nodes and TurtleSim|Lab 1 Slides]] | [[EGE353 Lab 2 - ROS Nodes and Topics|Lab 2]] | [[Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lab 1 - ROS Nodes and TurtleSim|Lab 1 Slides]] | [[EGE353 Lab 2 - ROS Nodes and Topics|Lab 2]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
 > **Lab Materials:** [[Lab 1 - ROS Nodes and TurtleSim.pdf|PDF]] · [[Lab 1 - ROS Nodes and TurtleSim|Markdown]]
 

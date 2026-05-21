@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - EGE321
   - wireless
@@ -17,7 +17,7 @@ status: Completed
 source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE321-Wireless-Communication/WCnN Lesson 1.md|Lesson 1 Notes]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]] | [[03-RESOURCES/EGE321-Wireless-Communication/WCnN Lesson 1.md|Lesson 1 Notes]]
 
 # EGE321 / LAB 1 — Loopback Test within Spectrum Analyser
 

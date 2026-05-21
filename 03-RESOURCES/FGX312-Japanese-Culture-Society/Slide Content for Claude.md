@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - FGX312
   - elective
@@ -14,7 +14,7 @@ type: Content
 status: Completed
 ---
 
-> 📚 **Related:** [[NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[📅 Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/FGX312-Japanese-Culture-Society/Presentation Outline - Coming of Age Day.md|Presentation Outline]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 
 # FGX312 Presentation - Coming of Age Day
 # Copy this content to Claude to create PowerPoint slides
