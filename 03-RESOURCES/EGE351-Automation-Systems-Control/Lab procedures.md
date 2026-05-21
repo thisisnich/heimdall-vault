@@ -85,6 +85,40 @@ For LED blinking, **TMR (10ms)** is the sweet spot.
 
 ---
 
+## Button Debouncing (TMX + U1)
+
+Mechanical pushbuttons **bounce** on press/release — the PLC may see multiple rapid ON/OFF pulses from a single press. This can **double-register** counts, latch twice, or trigger logic more than once.
+
+**Fix:** Put the raw button in series with a **TMX timer (U1)**. Use the **timer contact (T1)**, not the raw button contact, for your logic.
+
+```
+|--[X103 PB1]--[TMX1, U1]--|        ← button enables timer; U1 = 1 × 100ms = 100ms debounce
+```
+
+**Timer block:**
+```
+TMX  T1
+─────────
+U:  [X103]        ← raw pushbutton (only ON while physically held)
+SV: 1             ← 1 × 100ms = 100ms debounce window
+```
+
+**Downstream logic** — use **T1**, not X103:
+```
+|--[T1]--(R1)--|                   ← clean, debounced single trigger
+|--[T1]--[CT C1, U10]--|           ← counter sees one pulse per press
+```
+
+| Element | Role |
+|---------|------|
+| **X103** (button) | Feeds the timer **U** input only — do not use directly for count/latch |
+| **TMX1, U1** | 100ms debounce; filters bounce before T1 closes |
+| **T1 contact** | Single clean signal after debounce period |
+
+> **Why TMX?** U1 on TMX = **100ms** — enough to swallow typical mechanical bounce. TMR U1 would only be 10ms (often too short).
+
+---
+
 ## Timer Block Layout
 
 ```
@@ -177,6 +211,7 @@ When counter C1 is complete, the LED Y122 flashes at 1-second intervals (1s ON, 
 - SV can also be set using a **data register**: `SV: DT0` if you want adjustable speed at runtime
 - Make sure timer/counter numbers don't overlap with other rungs
 - Counters latch ON when complete - always provide a reset condition
+- **Debouncing:** raw button → **TMX1 U1** in series → use **T1** contact downstream (prevents double-registering presses)
 
 > ⚠️ **NOTE: Each output address can only be used ONCE across all rungs.**
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 2 - ROS Nodes and Topics.md",
+                "file": "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/Lab 5 - ROS Package.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EGE353 Lab 2 - ROS Nodes and Topics"
+              "title": "Lab 5 - ROS Package"
             }
           }
         ]
@@ -193,6 +193,7 @@
   },
   "active": "098fddb7f77f2d64",
   "lastOpenFiles": [
+    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 2 - ROS Nodes and Topics.md",
     "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 1 Notes.md",
     "91-SCRIPTS/VOICE-MEMOS-WORKFLOW.md",
     "03-RESOURCES/EGE351-Automation-Systems-Control/Lab 5 - Automation.md",
@@ -222,7 +223,6 @@
     "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project/CSDP Plannign slides.md",
     "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking/ND - Week 2.md",
     "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking/ND - Week 1.md",
-    "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking/Computer Networking.md",
     "04-ARCHIVE/Year-2-Sem-2-Previous/Electric-Circuit-Analysis",
     "04-ARCHIVE/Year-2-Sem-2-Previous/EGE205-Connected-System-Design-Project",
     "04-ARCHIVE/Year-2-Sem-2-Previous/EGE203-Computer-Networking",
