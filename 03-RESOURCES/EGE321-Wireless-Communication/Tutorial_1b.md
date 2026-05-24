@@ -27,6 +27,8 @@ status: Completed
 
 ### Tutorial 1: RF Fundamentals
 
+> 📚 **Solution:** [[tutorial-1b-solution-slides|Tutorial 1b Solution (official)]]
+
 > 📚 **Related:** [[Lesson1c|Chapter 1]] | [[Lesson2c|Chapter 2]]
 
 ---
