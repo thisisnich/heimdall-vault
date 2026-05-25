@@ -11,7 +11,7 @@ tags:
   - assignment
   - model-answers
 ---
-
+	
 > **Source:** [[03-RESOURCES/EGE321-Wireless-Communication/assignment-1b-slides|Assignment brief (ingested)]] · PDF/DOCX: [[99-ATTACHMENTS/EGE321/EGE321-26S1-Assignment-1b.docx]]
 > **Vault refs:** Lessons 1c–5c · Tutorials 1b, 2b · **Solutions:** [[tutorial-1b-solution-slides|Tut 1b Sol]] · [[tutorial-2-solution-slides|Tut 2 Sol]] · [[tutorial-3b-solution-slides|Tut 3b Sol]] · [[tutorial-4-solution-slides|Tut 4 Sol]] · [[tutorial-5c-solution-slides|Tut 5c Sol]]
 
@@ -53,15 +53,26 @@ Model answers from vault notes + ingested tutorial solutions. **Copy into your s
 
 *Ref: [[Lesson3c#Example (1)]]*
 
-#### (c) Three QoS parameters (3 marks)
+#### (c) Three QoS parameters — effect on video streaming & online gaming (3 marks)
 
-| Parameter | Meaning | Poor value → effect on streaming / gaming |
-|-----------|---------|-------------------------------------------|
-| **Latency** | Delay for packets to travel (propagation, queuing, protocol) | High latency → lag, desync, stutter in video; unplayable reaction time in games |
-| **Reliability** | Network delivers data correctly and completely | Packet loss / drops → buffering, frozen video, disconnects |
-| **Security** | Protection from eavesdropping / unauthorized access | Weak security → risk of interception; may force extra overhead that hurts performance |
+QoS ensures the wireless network meets user expectations for time-sensitive applications. Three critical parameters (from [[Lesson2c#Quality of Service (QoS)]], [[Tutorial 2b]]):
 
-*Ref: [[Lesson2c#Quality of Service (QoS)]], [[Tutorial 2b#Question 9]]*
+**1. Latency** — time delay for a packet to travel from sender to receiver (propagation, serialization, routing, queuing/buffering).
+
+- **Video streaming:** High latency means the player buffer runs ahead of what the network can deliver → **startup delay**, **audio–video lip-sync errors**, and live streams (sports, calls) feeling **out of step** with reality. Short spikes cause **stutter** even if average bitrate is fine.
+- **Online gaming:** Games need **fast feedback** (button press → server → screen). High latency (**lag/ping**) makes aiming and movement feel delayed; in FPS or fighting games you see enemies **after** they have already moved (**desync**), which is often **unplayable** in ranked play.
+
+**2. Reliability** — the network **delivers data completely and correctly** to the receiver (low packet loss, few retransmissions).
+
+- **Video streaming:** Lost video packets force **retransmits** or **frame drops** → **buffering** (spinning wheel), **pixelation/blocking**, or resolution **downgrades** (720p → 480p) when the app cannot sustain throughput.
+- **Online gaming:** Lost control or state packets cause **rubber-banding** (character snaps back), **hit registration** failures, or sudden **disconnects**/kicks. UDP-based games suffer immediately; TCP-based traffic adds delay while recovering lost data.
+
+**3. Security** — protection against **eavesdropping**, tampering, and **unauthorized access** (authentication, privacy on a shared wireless medium).
+
+- **Video streaming:** Weak security risks **account hijack** or **content interception** on public Wi-Fi; fixing this with **encryption (e.g. WPA3, HTTPS)** adds processing and overhead that can slightly **reduce throughput** or add **latency** on weak links.
+- **Online gaming:** Poor security enables **cheating tools**, **DDoS** on your IP, or **session theft**; encryption is required for fair play but on congested Wi-Fi extra handshakes can contribute to **join-time delay** or brief **lag spikes** if the link is already marginal.
+
+*Real-time apps need **low latency + high reliability** first; security must be strong without starving the link of usable capacity.*
 
 #### (d) FDMA / FDMA+TDMA diagrams (6 marks)
 
@@ -109,13 +120,19 @@ P_T = 10^{(36-30)/10} = 10^{0.6} \approx \mathbf{3.98\ W} \approx 4\ W
 
 #### (c) Wi-Fi observations (9 marks)
 
-| Observation | Phenomenon | Brief explanation |
-|-------------|------------|-------------------|
-| **A** — usable signal through closed door, no LOS to AP | **Diffraction** | Signal bends around/obstacle edges; energy reaches **shadow region** behind door/walls so link still works at low level |
-| **B** — signal varies over a few steps in cafeteria (metal, glass) | **Multipath fading** (reflection/scattering) | Many reflected paths add constructively/destructively; small movement changes phase → **rapid RSSI changes** |
-| **C** — outdoor hotspot poor in heavy rain | **Scattering** | Raindrops are comparable to λ; energy scattered in many directions (weaker at receiver). Used in weather radar; extra loss in heavy rain degrades outdoor link |
+**Observation A — Diffraction**
 
-*A: [[tutorial-4-solution-slides#Tutorial 4 Solution]] (diffraction). B: reflection → fading ([[tutorial-4-solution-slides]]); multipath ([[tutorial-3b-solution-slides]]). C: [[tutorial-4-solution-slides]] Q2(c) — raindrops → scattering.*
+Wi-Fi signals do not always travel in a straight line; they propagate as EM waves. When the path to the access point is blocked by a door frame or the edge of a wall, **diffraction** occurs — the waves **bend around** the sharp obstacle into the **shadow region** behind it. Not all of the transmitted energy reaches the receiver (so the signal is **weaker**), but similar to sound being muffled yet still audible through a closed door, enough diffracted energy still reaches the classroom for a usable, though weak, link.
+
+**Observation B — Reflection** *(multipath fading in explanation)*
+
+Large **metal surfaces** and **glass walls** **reflect** Wi-Fi signals (objects large compared to the wavelength). The receiver then gets **multiple copies** of the same signal along different paths (direct + reflected). These copies can add **constructively** (stronger RSSI) or **destructively** (weaker RSSI) depending on phase — this is **multipath fading**. Moving only a few steps shifts the receiver between constructive and destructive “zones”, so the observed signal strength **fluctuates**. *(Diagram: show direct + reflected ray; constructive = waves in phase; destructive = waves out of phase / cancel.)*
+
+**Observation C — Scattering**
+
+In heavy rain, **water droplets** interact with the outdoor Wi-Fi signal. Raindrops are comparable in size to the wavelength, so **scattering** occurs — EM energy is redirected in many directions rather than staying on the direct path. Water also **absorbs** some RF energy. Together, scattering and absorption **increase path loss** between the hotspot and the receiver; heavier rain compounds the effect until the link is practically unusable.
+
+*Refs: [[tutorial-4-solution-slides]] (diffraction, reflection, scattering/raindrops); [[Lesson4c#Radio Propagation Mechanisms]]; multipath fading — [[Lesson3c]], [[Lesson5c#Fade Margin]].*
 
 ---
 

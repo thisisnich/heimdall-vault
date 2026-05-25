@@ -1,4 +1,13 @@
-﻿---
+---
+type: lesson
+course: EGE321
+module: EGE321-Wireless-Communication
+chapter: 2
+topic: Multiple Access Techniques
+status: reviewed
+source: pdf
+created: 2026-05-17
+updated: 2026-05-24
 tags:
   - EGE321
   - wireless
@@ -10,24 +19,15 @@ tags:
   - SDMA
   - chapter-2
   - lesson-2c
-course: EGE321 Wireless Communication & Networking
-chapter: 2
-topic: Multiple Access Techniques
 ---
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson1c.md|Lesson 1c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
----
+> [!ingest] source: Lesson2c(1).pptx | date: 2026-05-24 | tool: markitdown
+> Structured notes below (duplicate of prior import — kept). Source: [[99-ATTACHMENTS/EGE321/Lesson2c(1).pptx]]
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson1c.md|Lesson 1c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
-source: NYPY3 Import
-created: 2026-05-17
-type: Lesson
-status: Completed
----
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lesson1c|Ch 1]] | [[Lesson3c|Ch 2.1–2.3]] | [[Tutorial 2b|Tut 2]] | [[tutorial-2-solution-slides|Tut 2 Sol]]
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson1c.md|Chapter 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
 # Wireless System Design Considerations — Multiple Access Techniques
-> 📚 **Related:** [[Lesson1c|Chapter 1: System Design]] | [[Tutorial_1b|Tutorial 1]]
+
 ---
 ## Multiple Access Techniques Overview
 There are five common multiple access techniques:

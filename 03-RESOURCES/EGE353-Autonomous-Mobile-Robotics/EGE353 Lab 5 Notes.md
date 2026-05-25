@@ -8,15 +8,15 @@ created: 2026-05-19
 tags: [EGE353, lab, ros2, package, publisher, subscriber, lab5]
 ---
 
-> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]] | [[Lab 5 - ROS Package|Lab 5 Slides]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]] | [[EGE353 Lab 5 Demo Study Guide|Demo Study Guide (simple)]] | [[EGE353 Lab 5 Package Guide|Package Guide]] | [[Lab 5 - ROS Package|Lab 5 Slides]] | [[EGE353 Lab 1-5 Q&A|Lab 1–5 Q&A]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
-> **Lab Materials:** [[Lab 5 - ROS Package.pdf|PDF]] · [[Lab 5 - ROS Package|Markdown]]
+> **Lab Materials:** [[Lab 5 - ROS Package.pdf|PDF (original)]] · [[Lab 5 - ROS Package|Markdown]] · [[lab-5-ros-package_task5-slides|Task5 update]] · [[99-ATTACHMENTS/EGE353/Lab 5 ROS package_Task5.pdf|PDF (Task5)]]
 
 # Lab 5: ROS Package Creation
 
 **Instructor:** Chan Kit Wai · Tel: 65500559 · Chan_kit_wai@nyp.edu.sg
 
-**Practical 1 (20%)** — Individual work; live demo to instructor is compulsory (Tasks 1, 3, 4). Late demo subject to penalty.
+**Practical 1 (20%)** — Individual work; live demo to instructor is compulsory (**Tasks 4 and 5** in the Task5 PDF). Late demo subject to penalty. Tasks 1–3 are still lab practice and demo *questions* may cover them.
 
 ---
 
@@ -165,6 +165,91 @@ ros2 bag record -o bagtalker /topic
 # Terminal 2: ros2 run cpp_pubsub listener
 # Terminal 3: ros2 run rqt_graph rqt_graph → refresh active nodes
 ```
+
+---
+
+## Task 5 — Rosbag with 2 topics and 2 subscribers (new)
+
+Marked *optional* on the slide (“independent/advance learners”), but **required for Practical 1 demo** in the Task5 PDF.
+
+**Goal:** One bag file replays **two topics** at different rates; **two listener nodes** each subscribe to a different topic.
+
+| Topic | Rate | Subscriber node |
+|-------|------|-----------------|
+| `/upcounter` | 2 Hz | `Countup_Listener` |
+| `/downcounter` | 1 Hz | `Countdown_Listener` |
+
+### Step 1 — Add two publishers (record phase only)
+
+In `cpp_pubsub` (or a new package), add nodes that publish `std_msgs/msg/String`:
+
+- **Countup publisher** → topic `/upcounter`, timer **500 ms** (2 Hz), message counts up: `0, 1, 2, …`
+- **Countdown publisher** → topic `/downcounter`, timer **1000 ms** (1 Hz), message counts down: `10, 9, 8, …` (pick any start value)
+
+Pattern (same as Task 3 talker — change topic name and timer):
+
+```cpp
+publisher_ = this->create_publisher<std_msgs::msg::String>("upcounter", 10);
+timer_ = this->create_wall_timer(500ms, std::bind(&CountupPublisher::timer_callback, this));
+```
+
+Register both executables in `CMakeLists.txt` and rebuild:
+
+```bash
+cd ~/dev_ws
+colcon build --packages-select cpp_pubsub
+source install/setup.bash
+```
+
+### Step 2 — Add two listeners
+
+Clone `subscriber_member_function.cpp` twice:
+
+- `countup_listener.cpp` — subscribe to `"upcounter"`, log e.g. `Countup_Listener heard: …`
+- `countdown_listener.cpp` — subscribe to `"downcounter"`, log e.g. `Countdown_Listener heard: …`
+
+Add both to `CMakeLists.txt` `install(TARGETS …)` and rebuild.
+
+### Step 3 — Record both topics into one bag
+
+```bash
+mkdir -p ~/bag_files && cd ~/bag_files
+source ~/dev_ws/install/setup.bash
+
+# Terminal A — record
+ros2 bag record -o bagcounters /upcounter /downcounter
+
+# Terminal B — run both publishers ~15–20 s, then Ctrl+C each
+ros2 run cpp_pubsub countup
+ros2 run cpp_pubsub countdown   # second terminal
+
+# Stop recording (Ctrl+C on Terminal A)
+ros2 bag info bagcounters       # should list both topics
+```
+
+### Step 4 — Demo (bag replaces live publishers)
+
+Close all previous terminals. **Do not run the publishers** — only the bag and listeners:
+
+```bash
+source ~/dev_ws/install/setup.bash
+
+# Terminal 1
+cd ~/bag_files
+ros2 bag play -l bagcounters
+
+# Terminal 2
+ros2 run cpp_pubsub countup_listener
+
+# Terminal 3
+ros2 run cpp_pubsub countdown_listener
+
+# Terminal 4
+ros2 run rqt_graph rqt_graph
+# → Nodes/Topics (active) → Refresh
+```
+
+You should see the bag publishing both topics; each listener prints only its topic. Verify rates with `ros2 topic hz /upcounter` (~2 Hz) and `ros2 topic hz /downcounter` (~1 Hz) in extra terminals during playback.
 
 ---
 

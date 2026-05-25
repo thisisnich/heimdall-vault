@@ -1,4 +1,13 @@
-﻿---
+---
+type: lesson
+course: EGE321
+module: EGE321-Wireless-Communication
+chapter: 1
+topic: System Design Considerations
+status: reviewed
+source: pdf
+created: 2026-05-17
+updated: 2026-05-24
 tags:
   - EGE321
   - wireless
@@ -7,26 +16,16 @@ tags:
   - system-design
   - chapter-1
   - lesson-1c
-course: EGE321 Wireless Communication & Networking
-chapter: 1
-topic: System Design Considerations
-source: NYPY3 Import
-created: 2026-05-17
-type: Lesson
 ---
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
----
+> [!ingest] source: Lesson1c(1).pptx | date: 2026-05-24 | tool: markitdown
+> Structured notes below (duplicate of prior import — kept). Source: [[99-ATTACHMENTS/EGE321/Lesson1c(1).pptx]]
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/lab1.md|Lab 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
-status: Completed
----
-
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Tutorial_1b.md|Tutorial 1]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lesson2c|Ch 2]] | [[Tutorial_1b|Tut 1b]] | [[tutorial-1b-solution-slides|Tut 1b Sol]] | [[lab1|Lab 1]]
 
 # EGE321 – Wireless Communication & Networking
 ## Chapter 1: System Design Considerations
-> 📚 **Related:** [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Chapter 2: Multiple Access]] | [[03-RESOURCES/EGE321-Wireless-Communication/Tutorial_1b.md|Tutorial 1]]
+
 ---
 ## Contents
 1. System Design Considerations

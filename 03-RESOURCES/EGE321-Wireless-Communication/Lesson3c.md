@@ -1,4 +1,13 @@
-﻿---
+---
+type: lesson
+course: EGE321
+module: EGE321-Wireless-Communication
+chapter: 2
+topic: Wireless Communications System (2.1, 2.3)
+status: reviewed
+source: pdf
+created: 2026-05-07
+updated: 2026-05-24
 tags:
   - EGE321
   - lesson3c
@@ -6,20 +15,12 @@ tags:
   - digital-modulation
   - chapter-2
   - communications-system
-course: EGE321 Wireless Communication & Networking
-topic: Lesson 3c - Wireless Communications System (Chapter 2)
-source: Lesson3c.pptx
-converted: 2026-05-07
-type: Lesson
-status: Completed
-source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Lesson 2c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
+> [!ingest] source: Lesson3c.pptx | date: 2026-05-24 | tool: markitdown
+> Structured notes below (duplicate of prior import — kept). Source: [[99-ATTACHMENTS/EGE321/Lesson3c.pptx]]
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Lesson 2c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
-
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson2c.md|Chapter 2]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lesson2c|Multiple access]] | [[Lesson4c|Propagation]] | [[tutorial-3b-solution-slides|Tut 3b Sol]]
 
 # Lesson 3c - Wireless Communications System (Chapter 2)
 

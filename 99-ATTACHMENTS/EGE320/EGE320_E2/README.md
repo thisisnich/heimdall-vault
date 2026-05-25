@@ -71,19 +71,22 @@ The `.out` file **does not exist yet** — debug was started before a successful
 
 **Root cause on your PC:** CCS 20.5.1 only installed the **LLVM** compiler (`ti-cgt-armllvm`). These lab projects need the **classic** compiler (`ti-cgt-arm` 18.12.x), which is not installed by default.
 
-**Fix:**
+### "20.2.7.LTS [Arm] is not installed"
 
-1. In CCS: **Help → Install Code Generation Compiler Tools**
-2. Uncheck *Show only the latest versions*
-3. Install **TI ARM Compiler** (classic) — version **18.12.x** or **20.2.x** (not armllvm)
-4. **Window → Preferences → Code Composer Studio → Build → Compilers** — confirm `ti-cgt-arm` appears
-5. Right-click `lab5_1.1` → **Properties → General** → set **Compiler version** to the classic ARM compiler you installed
-6. **Project → Clean** → **Project → Build Project**
-7. Confirm this file exists before debugging:
-   `lab5_1.1\Debug\lab5_1.1.out`
-8. Then **Run → Debug (F11)**
+The compiler **is** on disk at `C:\ti\ccs2051\ccs\tools\compiler\ti-cgt-arm_20.2.7.LTS\` but CCS has not registered it. Old workspace builds pointed at `C:\ti\ccs1281\` (not on this PC).
 
-**Alternative:** Install **CCS 12.8.x** (matches NYP lab PCs: `C:\ti\ccs1281`) — ships with the classic compiler these projects expect.
+**Fix in CCS (once):**
+
+1. **Window → Preferences → Code Composer Studio → Build → Compilers**
+2. Under **Tool discovery path**, click **Add**
+3. Browse to: `C:\ti\ccs2051\ccs\tools\compiler`
+4. OK — confirm **20.2.7.LTS [Arm]** appears under **Discovered tools**
+5. Close CCS completely, reopen workspace
+6. For each project: delete its `Debug/` folder → **Project → Clean** → **Build**
+
+**Project file fixes (lab5):** `.ccsproject` was still on `16.9.6.LTS` — now updated to `20.2.7.LTS` to match Lab2/Lab3.
+
+**Fix:** Install **TI ARM CGT 20.2.7.LTS** (classic). Lab5 projects are now retargeted to **20.2.7.LTS** (same as Lab2/Lab3). In CCS: right-click project → **Properties → General → Compiler version → 20.2.7.LTS**, then **Clean + Build**.
 
 ### Build console shows empty compiler path (`"" -mv7M4`)
 

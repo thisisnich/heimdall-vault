@@ -1,27 +1,27 @@
-﻿---
+---
+type: lesson
+course: EGE321
+module: EGE321-Wireless-Communication
+chapter: 2
+topic: Link Performance Analysis (2.2.3) + EIRP / Hata
+status: reviewed
+source: pdf
+created: 2026-05-07
+updated: 2026-05-24
 tags:
   - EGE321
   - lesson5c
   - wireless-systems
-  - digital-modulation
+  - link-budget
   - chapter-2
-  - modulation-techniques
-course: EGE321 Wireless Communication & Networking
-topic: Lesson 5c - Digital Modulation Technique (Chapter 2.3)
-source: Lesson5c.pptx
-converted: 2026-05-07
-type: Lesson
-status: Completed
-source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Lesson 4c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
+> [!ingest] source: Lesson5c.pptx | date: 2026-05-24 | tool: markitdown
+> Structured notes below (duplicate of prior import — kept). Source: [[99-ATTACHMENTS/EGE321/Lesson5c.pptx]]
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Lesson 4c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lesson4c|Propagation]] | [[tutorial-5c-solution-slides|Tut 5c Sol]] | [[01-PROJECTS/EGE321-ASSN1/EGE321 Assignment 1b — Model Answers|ASSN1b answers]]
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson4c.md|Chapter 2]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
-
-# Lesson 5c - Digital Modulation Technique (Chapter 2.3)
+# Lesson 5c - Link Performance Analysis (EIRP, Hata, Rayleigh)
 
 ## Contents
 

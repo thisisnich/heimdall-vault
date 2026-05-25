@@ -9,10 +9,10 @@
         "${workspaceFolder}/lab5_1.1/Drivers/PeripheralDrivers",
         "${workspaceFolder}/lab5_1.1/Libraries",
         "${workspaceFolder}/lab5_1.1/Libraries/grlib",
-        "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include"
+        "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include"
       ],
       "defines": ["ccs", "PART_TM4C129ENCPDT"],
-      "compilerPath": "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmclang.exe",
+      "compilerPath": "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl.exe",
       "cStandard": "c99",
       "intelliSenseMode": "gcc-arm",
       "browse": {
@@ -29,10 +29,10 @@
         "${workspaceFolder}/lab5_1.2/Drivers/PeripheralDrivers",
         "${workspaceFolder}/lab5_1.2/Libraries",
         "${workspaceFolder}/lab5_1.2/Libraries/grlib",
-        "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include"
+        "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include"
       ],
       "defines": ["ccs", "PART_TM4C129ENCPDT"],
-      "compilerPath": "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmclang.exe",
+      "compilerPath": "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl.exe",
       "cStandard": "c99",
       "intelliSenseMode": "gcc-arm"
     },
@@ -45,10 +45,10 @@
         "${workspaceFolder}/lab5_1.3/Drivers/PeripheralDrivers",
         "${workspaceFolder}/lab5_1.3/Libraries",
         "${workspaceFolder}/lab5_1.3/Libraries/grlib",
-        "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include"
+        "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include"
       ],
       "defines": ["ccs", "PART_TM4C129ENCPDT"],
-      "compilerPath": "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmclang.exe",
+      "compilerPath": "C:/ti/ccs2051/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl.exe",
       "cStandard": "c99",
       "intelliSenseMode": "gcc-arm"
     }

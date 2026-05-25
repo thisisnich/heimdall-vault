@@ -1,4 +1,13 @@
-﻿---
+---
+type: lesson
+course: EGE321
+module: EGE321-Wireless-Communication
+chapter: 2
+topic: Radio Propagation and Link Budget (2.2)
+status: reviewed
+source: pdf
+created: 2026-05-07
+updated: 2026-05-24
 tags:
   - EGE321
   - lesson4c
@@ -6,20 +15,12 @@ tags:
   - radio-propagation
   - link-budget
   - chapter-2
-course: EGE321 Wireless Communication & Networking
-topic: Lesson 4c - Radio Propagation and Link Budget (Chapter 2.2)
-source: Lesson4c.pptx
-converted: 2026-05-07
-type: Lesson
-status: Completed
-source: NYPY3 Import
 ---
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson3c.md|Lesson 3c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
+> [!ingest] source: Lesson4c.pptx | date: 2026-05-24 | tool: markitdown
+> Structured notes below (duplicate of prior import — kept). Source: [[99-ATTACHMENTS/EGE321/Lesson4c.pptx]]
 
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson3c.md|Lesson 3c]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
-
-> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[03-RESOURCES/EGE321-Wireless-Communication/Lesson3c.md|Chapter 2]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessment Dashboard]]
+> 📚 **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[Lesson3c|Modulation]] | [[Lesson5c|Link budget]] | [[tutorial-4-solution-slides|Tut 4 Sol]]
 
 # Lesson 4c - Radio Propagation and Link Budget (Chapter 2.2)
 
