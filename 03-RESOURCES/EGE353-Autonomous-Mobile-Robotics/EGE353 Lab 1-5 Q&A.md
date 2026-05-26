@@ -10,117 +10,187 @@ tags: [EGE353, lab, ros2, qna, flashcards, exam-prep, quiz-1]
 ---
 
 > **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 1 Notes|Lab 1]] | [[EGE353 Lab 2 - ROS Nodes and Topics|Lab 2]] | [[EGE353 Lab 3 - ROS Services|Lab 3]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]] | [[EGE353 Lab 5 Notes|Lab 5]] | [[EGE353 Lab 5 Package Guide|Package Guide]] | [[EGE353 Lab 5 Demo Study Guide|Practical 1 demo]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
-> **Friend's source (merged below):** [[99-ATTACHMENTS/EGE353/ROS2_Revision_Notes.docx]]
+> **Sources merged:** vault lab notes + [[99-ATTACHMENTS/EGE353/ROS2_Revision_Notes.docx]]
 
 # EGE353 Lab 1–5 Q&A & Command Reference
 
-Study sheet for Practical 1 demo questions, **Proctored Quiz-1** (Labs 1–6 scope), and oral checks. Your notes + friend's revision notes merged (**add-only**).
+Study sheet for Practical 1 demo, **Proctored Quiz-1** (Labs 1–6), and oral checks.
+
+---
+
+## Core concepts
+
+| Concept | Definition | Example |
+|---------|------------|---------|
+| **Node** | Smallest running program in ROS 2 | `turtlesim_node`, `turtle_teleop_key` |
+| **Topic** | Named one-way communication channel | `/turtle1/cmd_vel`, `/turtle1/pose` |
+| **Publisher** | Node that **sends** data to a topic | `turtle_teleop_key` → `/turtle1/cmd_vel` |
+| **Subscriber** | Node that **receives** data from a topic | `turtlesim_node` on `/turtle1/cmd_vel` |
+| **Service** | One-shot request/response (synchronous) | `/spawn`, `/kill` — **one server**, many clients |
+| **Action** | Long-running task with goal + feedback (async) | Tasks that take a long time to complete |
+| **Parameter** | Config variables on a node | `/turtlesim` → `background_r`, `background_g`, `background_b` |
+
+### Topic vs service vs action
+
+| | Topic | Service | Action |
+|---|-------|---------|--------|
+| Pattern | Continuous stream | One request → one response | Long task + feedback |
+| Sync/async | Async | **Synchronous** | Async |
+| Servers | Many publishers OK* | **One server** | One action server |
+| Clients | Many subscribers OK | Many clients OK | Many clients OK |
+| Use when | Ongoing data (pose, velocity) | One-time action (spawn/kill) | Long-running task |
+
+\* **Multi-publisher warning:** Multiple publishers on the **same topic** can conflict — subscribers only see the topic name, not which node sent the message. Usually **one publisher per topic**.
 
 ---
 
 ## Command cheat sheet (all labs)
 
-| Command                                                   | What it does                                         |
-| --------------------------------------------------------- | ---------------------------------------------------- |
-| `source /opt/ros/humble/setup.bash`                       | Load system ROS 2 (Humble) in current terminal       |
-| `source ~/dev_ws/install/setup.bash`                      | Load workspace overlay (underlay + your packages)    |
-| `source ~/dev_ws/install/local_setup.bash`                | Load overlay only (underlay must already be sourced) |
-| `ros2 run <pkg> <exe>`                                    | Run a compiled node executable                       |
-| `ros2 node list`                                          | List running node names                              |
-| `ros2 topic list`                                         | List active topics                                   |
-| `ros2 topic echo /topic`                                  | Print messages on a topic in real time               |
-| `ros2 topic echo /turtle1/pose`                           | Show turtle position & orientation live              |
-| `ros2 topic hz /topic`                                    | Show average publish frequency (Hz)                  |
-| `ros2 topic pub --once ...`                               | Publish one message from CLI                         |
-| `ros2 topic pub --rate N ...`                             | Publish repeatedly at N Hz                           |
-| `ros2 service list`                                       | List available services                              |
-| `ros2 service list -t`                                    | List services with types                             |
-| `ros2 service type /name`                                 | Show type of one service                             |
-| `ros2 service find <type>`                                | Find services matching a type                        |
-| `ros2 interface show <type>`                              | Show fields of a message/service type                |
-| `ros2 service call <name> <type> "{...}"`                 | Send one service request                             |
-| `ros2 param list`                                         | List parameters for nodes                            |
-| `ros2 param get /node param`                              | Read a parameter value                               |
-| `ros2 param set /node param value`                        | Change a parameter at runtime                        |
-| `ros2 param dump /node`                                   | Save node params to YAML                             |
-| `rqt_graph`                                               | Open GUI graph of nodes and topics (Lab 1–4)         |
-| `ros2 run rqt_graph rqt_graph`                            | Same tool via ros2 run (Lab 5 demo)                  |
-| `rqt`                                                     | General ROS GUI toolbox (e.g. Service Caller)        |
-| `ros2 bag record -o name /topic ...`                      | Record topic(s) to a bag folder                      |
-| `ros2 bag play -l name`                                   | Replay bag in a loop                                 |
-| `ros2 bag info name`                                      | Show duration and message counts                     |
-| `git clone <url> -b humble`                               | Copy remote repo into workspace `src/`               |
-| `rosdep install -i --from-path src --rosdistro humble -y` | Install package dependencies                         |
-| `colcon build`                                            | Build all packages in workspace                      |
-| `colcon build --packages-select <pkg>`                    | Build one package only                               |
-| `ros2 pkg create --build-type ament_cmake ...`            | Create new C++ package                               |
-| `ros2 pkg executables <pkg>`                              | List runnable executables in a package               |
-| `--ros-args --remap old:=new`                             | Remap topic name at runtime                          |
+| Command | What it does |
+|---------|--------------|
+| `source /opt/ros/humble/setup.bash` | Load system ROS 2 (Humble) in current terminal |
+| `source ~/dev_ws/install/setup.bash` | Load workspace overlay (underlay + your packages) |
+| `source ~/dev_ws/install/local_setup.bash` | Load overlay only (underlay must already be sourced) |
+| `ros2 run <pkg> <exe>` | Run a compiled node executable |
+| `ros2 run turtlesim turtlesim_node` | Start turtlesim (subscriber) |
+| `ros2 run turtlesim turtle_teleop_key` | Keyboard teleop (publisher) |
+| `ros2 node list` | List running node names |
+| `ros2 topic list` | List active topics |
+| `ros2 topic echo /topic` | Print messages on a topic in real time |
+| `ros2 topic echo /turtle1/pose` | Show turtle position & orientation live |
+| `ros2 topic hz /topic` | Show average publish frequency (Hz) |
+| `ros2 topic pub --once ...` | Publish one message from CLI |
+| `ros2 topic pub --rate N ...` | Publish repeatedly at N Hz |
+| `ros2 service list` / `ros2 action list` | List services / actions |
+| `ros2 service list -t` | List services with types |
+| `ros2 service type /name` | Show type of one service |
+| `ros2 service find <type>` | Find services matching a type |
+| `ros2 interface show <type>` | Show fields of a message/service type |
+| `ros2 service call <name> <type> "{...}"` | Send one service request |
+| `ros2 param list` / `get` / `set` / `dump` | List, read, change, or save node params |
+| `ros2 param set /turtlesim background_r 150` | Change turtlesim background colour |
+| `rqt_graph` / `ros2 run rqt_graph rqt_graph` | GUI graph of nodes and topics |
+| `rqt` | General ROS GUI (e.g. Service Caller) |
+| `ros2 bag record -o name /topic ...` | Record topic(s) to a bag folder (`.db3`) |
+| `ros2 bag play -l name` | Replay bag in a loop |
+| `ros2 bag info name` | Show duration and message counts |
+| `git clone <url> -b humble` | Copy repo into workspace **`src/`** |
+| `rosdep install -i --from-path src --rosdistro humble -y` | Install package dependencies |
+| `colcon build` | Build all packages in workspace |
+| `colcon build --packages-select <pkg>` | Build one package only |
+| `ros2 pkg create --build-type ament_cmake ...` | Create new C++ package |
+| `ros2 pkg executables <pkg>` | List runnable executables in a package |
+| `--ros-args --remap old:=new` | Remap topic name at runtime |
 
 ---
 
 ## Lab 1 — Topics & TurtleSim
 
+**System flow:**
+```
+Keyboard → turtle_teleop_key (publisher) → /turtle1/cmd_vel (topic) → turtlesim_node (subscriber) → turtle moves
+```
+
 **Q1: What does `source /opt/ros/humble/setup.bash` do?**  
 A: Loads the system ROS 2 environment so `ros2` commands and system packages work in that terminal.
 
 **Q2: What does `ros2 run turtlesim turtlesim_node` do?**  
-A: Starts the turtlesim simulation node.
+A: Starts the turtlesim simulation node (**subscriber**).
 
 **Q3: What does `ros2 run turtlesim turtle_teleop_key` do?**  
-A: Starts keyboard teleop — publishes velocity commands to `/turtle1/cmd_vel`.
+A: Starts keyboard teleop — **publisher** of velocity commands to `/turtle1/cmd_vel`.
 
 **Q4: Is `turtle_teleop_key` a publisher or subscriber?**  
-A: **Publisher** — it publishes to `/turtle1/cmd_vel`; it does not subscribe.
+A: **Publisher** — publishes to `/turtle1/cmd_vel`; does not subscribe.
 
 **Q5: What topic does turtlesim subscribe to for movement?**  
-A: `/turtle1/cmd_vel`
+A: `/turtle1/cmd_vel` (cmd = command, vel = velocity).
 
-**Q6: What does `ros2 node list` do?**  
-A: Lists all currently running ROS 2 nodes.
+**Q6: What does `ros2 node list` / `ros2 topic list` do?**  
+A: Lists all running nodes / all active topics.
 
-**Q7: What does `ros2 topic list` do?**  
-A: Lists all active topics in the graph.
-
-**Q8: What does `ros2 service list` / `ros2 action list` do?**  
+**Q7: What does `ros2 service list` / `ros2 action list` do?**  
 A: Lists available services / actions.
 
-**Q9: What does `ros2 topic echo /turtle1/cmd_vel` do?**  
-A: Displays messages published on that topic (linear.x, angular.z, etc.).
+**Q8: What does `ros2 topic echo /turtle1/cmd_vel` do?**  
+A: Displays live messages on that topic (`linear.x`, `angular.z`, etc.).
 
-**Q10: What does `ros2 topic pub <topic> <msg_type> '<args>'` do?**  
-A: Publishes a message of the given type to the topic from the command line.
+**Q9: What does `ros2 topic echo /turtle1/pose` do?**  
+A: Shows turtle position and orientation in real time.
 
-**Q11: What does `--rate 1` on `ros2 topic pub` mean?**  
-A: Publish repeatedly at **1 Hz**.
+**Q10: What does `ros2 topic pub` do? What does `--rate 1` mean?**  
+A: Publishes messages from CLI. `--once` = single message; `--rate 1` = **1 Hz** (1 message per second).
 
-**Q12: What does `ros2 topic hz /turtle1/cmd_vel` do?**  
-A: Reports the average publishing frequency of that topic.
+```bash
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist \
+  "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+
+ros2 topic pub --rate 1 /turtle1/cmd_vel geometry_msgs/msg/Twist \
+  "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+```
+
+**Q11: What does `ros2 topic hz /turtle1/cmd_vel` do?**  
+A: Reports average publishing frequency of that topic.
+
+**Q12: Frequency of `/cmd_vel` from keyboard teleop?**  
+A: **Event-based** — publishes when a key is pressed, not at a fixed rate. (Course sheet may also cite **10 Hz** in other contexts — confirm with lab.)
 
 **Q13: What does `rqt_graph` do?**  
-A: Opens a GUI showing nodes, topics, and pub/sub connections. Select active nodes/topics and click **Refresh** after changes.
+A: Opens GUI showing nodes, topics, and pub/sub connections. Refresh after changes. Open in new terminal; Ctrl+C to stop. Lab 5 equivalent: `ros2 run rqt_graph rqt_graph`.
 
-**Q14: What is the Lab 5 equivalent command?**  
-A: `ros2 run rqt_graph rqt_graph` — same tool, invoked via `ros2 run`.
+**Q14: `/turtle1/cmd_vel` field meanings?**
+
+| Field | Effect |
+|-------|--------|
+| `linear.x > 0` | Forward |
+| `linear.x < 0` | Backward |
+| `angular.z > 0` | Turn left (anti-clockwise) |
+| `angular.z < 0` | Turn right (clockwise) |
 
 **Q15: Linear vs angular velocity?**  
-A: Linear = straight-line motion (m/s); angular = rotation about an axis (rad/s), usually `angular.z` for yaw on the turtle.
+A: Linear = straight-line motion (m/s); angular = rotation (rad/s), usually `angular.z` for yaw.
 
-**Q16: What is theta?**  
-A: Orientation angle in radians; positive = counterclockwise, negative = clockwise.
+**Q16: What is theta? Coordinate system?**
+
+| Axis / value | Meaning |
+|--------------|---------|
+| X | Increases right (0 → 13 in window) |
+| Y | Increases upward (0 → 13) |
+| Theta = 0 | Facing **East** (3 o'clock) |
+| Theta = π (3.14 rad) | Facing **West** |
+| Theta **+** | Anti-clockwise |
+| Theta **−** | Clockwise |
+
+**Q17: Teleop key bindings**
+
+| Key(s) | Action |
+|--------|--------|
+| `i` / `,` | Forward / backward |
+| `j` / `l` | Rotate left / right (in place) |
+| `u`, `m` | Anti-clockwise diagonal |
+| `o`, `.` | Clockwise diagonal |
+| **Capital** letters | Translation relative to robot front |
 
 ---
 
 ## Lab 2 — Nodes, workspace, remap
 
-**Q1: What does `git clone` do?**  
-A: Creates a local copy of a remote Git repository (files + version history).
+**Underlay vs overlay**
+
+| Underlay | Overlay |
+|----------|---------|
+| Base ROS at `/opt/ros/humble` | Your `~/dev_ws` built with `colcon` |
+| System packages & libraries | Custom/edited packages on top |
+| Like original game files | Like mods — **overrides** same-named underlay packages |
+
+**Q1: What does `git clone` do? Where do you run it?**  
+A: Copies a remote Git repository locally. Run from workspace **`src/`** folder.
 
 **Q2: What does `colcon build --packages-select teleop_cpp_ros2` do?**  
-A: Builds only the named package (faster than building the whole workspace).
+A: Builds only that package (reads source → compiles C++ → executable).
 
 **Q3: What does `source install/setup.bash` do?**  
-A: Makes your built workspace packages available to `ros2 run` in that terminal.
+A: Loads underlay + overlay so your packages are available to `ros2 run`.
 
 **Q4: Why don't teleop and turtlesim connect at first?**  
 A: Topic names differ — teleop publishes `/cmd_vel`, turtlesim listens on `/turtle1/cmd_vel`.
@@ -128,63 +198,60 @@ A: Topic names differ — teleop publishes `/cmd_vel`, turtlesim listens on `/tu
 **Q5: Remap teleop to turtlesim?**  
 ```bash
 ros2 run teleop_cpp_ros2 teleop --ros-args --remap /cmd_vel:=/turtle1/cmd_vel
-```  
-A: Redirects teleop output to the topic turtlesim actually subscribes to.
+```
 
-**Q6: Frequency of `/cmd_vel` from keyboard teleop?**  
-A: **Event-based** — publishes when a key is pressed, not at a fixed rate.
+**Q6: Twist axes (x, y, z)?**  
+A: **X** forward/back (`linear.x`); **Y** strafe on holonomic robots (`linear.y`); **Z** yaw (`angular.z`).
 
-**Q7: Twist axes on the turtle (x, y, z)?**  
-A: **X** forward/back (`linear.x`); **Y** left/right strafe on holonomic robots (`linear.y`); **Z** rotation/yaw (`angular.z`).
+**Q7: Holonomic vs non-holonomic robots?**  
+A: **Holonomic** — move sideways and rotate simultaneously. **Omni wheel** (3×, 90° to travel); **Mecanum wheel** (4×, 45°). Control via **angle** and **amplitude** (speed).
 
-**Q8: What does `ros2 topic echo /cmd_vel` do?**  
-A: Prints velocity messages from the teleop publisher in real time.
+**Q8: When must you run `colcon build`?**  
+A: After any change to source code, `CMakeLists.txt`, or `package.xml`.
 
 ---
 
 ## Lab 3 — Services & parameters
 
-**Q1: Topic vs service?**  
-A: **Topic** = continuous publisher/subscriber stream. **Service** = synchronous request/response (one-shot action).
+**Q1: Topic vs service vs action — when use service?**  
+A: **Topic** = continuous pub/sub stream. **Service** = one-time synchronous request/response (spawn/kill) — **one server only**. **Action** = long async task with feedback.
 
 **Q2: `ros2 service list` vs `ros2 service list -t`?**  
-A: List service names / list with **service types** included.
+A: List service names / list with **types** included.
 
 **Q3: `ros2 service type /clear`?**  
-A: Shows the service type (e.g. `std_srvs/srv/Empty`).
+A: Shows service type (e.g. `std_srvs/srv/Empty`).
 
 **Q4: `ros2 interface show turtlesim/srv/Spawn`?**  
-A: Shows request and response fields for the Spawn service.
+A: Shows request and response fields before calling.
 
-**Q5: Spawn a turtle?**  
+**Q5: Spawn / kill a turtle?**  
 ```bash
 ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}"
-```
-
-**Q6: Kill a turtle?**  
-```bash
 ros2 service call /kill turtlesim/srv/Kill "{name: 'turtle1'}"
 ```
 
-**Q7: Control turtle2 with teleop?**  
+**Q6: Control turtle2 with teleop?**  
 ```bash
 ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel
 ```
 
-**Q8: `ros2 param list` / `get` / `set` / `dump`?**  
-A: List all params on nodes; read one value; change one at runtime; save node params to a YAML file.
+**Q7: Parameters — list / get / set / dump?**  
+A: List all params on nodes; read one; change at runtime; save to YAML.
 
-**Q9: Load saved parameters at node startup?**  
+**Q8: Load saved parameters at startup?**  
 ```bash
 ros2 run turtlesim turtlesim_node --ros-args --params-file ./turtlesim.yaml
 ```
 
-**Q10: What is `rqt` Service Caller used for in Lab 3?**  
+**Q9: What is `rqt` Service Caller used for?**  
 A: GUI to call services (e.g. `/turtle1/set_pen`) without typing `ros2 service call`.
 
 ---
 
 ## Lab 4 — Rosbag & Gazebo
+
+**Rosbag concept:** Records topic traffic to `.db3` files — **live topics** = conversation now; **bag** = recording to replay later.
 
 **Q1: Three main rosbag commands?**  
 A: `record`, `play`, `info`.
@@ -192,31 +259,35 @@ A: `record`, `play`, `info`.
 **Q2: Record multiple topics?**  
 ```bash
 ros2 bag record -o bagfile1 /turtle1/cmd_vel /turtle1/pose
-```  
-A: Saves published data on those topics to folder `bagfile1`.
+```
 
 **Q3: Replay in a loop?**  
 ```bash
 ros2 bag play -l bagfile1
-```  
-A: Replays recorded messages; `-l` loops forever.
+```
+A: `-l` loops forever; robot redraws same path automatically.
 
 **Q4: `ros2 bag info bagfile1`?**  
-A: Shows duration, total messages, and count per topic.
+A: Duration, total messages, count per topic.
 
-**Q5: Which node/topic moves the turtle in Lab 4 setup?**  
-A: Node `turtle_teleop_key`; topic `/turtle1/cmd_vel`.
+**Q5: Why does `/turtle1/pose` have far more messages than `/cmd_vel` in a bag?**  
+A: `cmd_vel` only when keys pressed (event-based); `pose` publishes **continuously** at fixed rate even if turtle is still → pose count ≫ cmd_vel count.
 
-**Q6: Why remap teleop for Gazebo?**  
+**Q6: Which node moves the turtle?**  
+A: `turtle_teleop_key` (pub) → `/turtle1/cmd_vel` → `turtlesim_node` (sub).
+
+**Q7: Why remap teleop for Gazebo?**  
 A: Teleop publishes `/turtle1/cmd_vel`; Gazebo diff-drive demo listens on `/demo/cmd_demo`.
 
-**Q7: Gazebo remap example?**  
-```bash
-ros2 run turtlesim turtle_teleop_key --ros-args --remap /turtle1/cmd_vel:=/demo/cmd_demo
+```
+Before remap:  teleop → /turtle1/cmd_vel     Gazebo listens → /demo/cmd_demo  (no link)
+After remap:   Keyboard → teleop → /demo/cmd_demo → Gazebo robot → moves
 ```
 
-**Q8: Start Gazebo demo world?**  
+**Q8: Gazebo remap + start world?**  
 ```bash
+ros2 run turtlesim turtle_teleop_key --ros-args --remap /turtle1/cmd_vel:=/demo/cmd_demo
+
 gazebo --verbose /opt/ros/humble/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world
 ```
 
@@ -227,46 +298,56 @@ A: e.g. rosbag player → `/turtle1/cmd_vel` → `/turtlesim` (active pub/sub ch
 
 ## Lab 5 — Packages, pub/sub, rosbag (Practical 1)
 
-**Q1: Overlay vs underlay?**  
-A: **Underlay** = base ROS install (`/opt/ros/humble`). **Overlay** = your `dev_ws` built with `colcon`. Overlay packages **override** same-named underlay packages.
+**Q1: Overlay vs underlay (Lab 5 Task 1)?**  
+A: T1 sources overlay → custom compiled turtlesim. T2 sources only underlay → system turtlesim.
 
-**Q2: Terminal 1 vs Terminal 2 turtlesim in Task 1?**  
-A: T1 sources overlay → custom compiled turtlesim (your window title). T2 sources only underlay → system turtlesim (default title).
-
-**Q3: When do you run `colcon build`?**  
-A: After any change to source code, `CMakeLists.txt`, or `package.xml`.
-
-**Q4: `rosdep install -i --from-path src --rosdistro humble -y`?**  
+**Q2: `rosdep install -i --from-path src --rosdistro humble -y`?**  
 A: Installs missing system dependencies for packages in `src/`.
 
-**Q5: Create a C++ package with a node?**  
+**Q3: Create a C++ package with a node?**  
 ```bash
 ros2 pkg create --build-type ament_cmake --node-name my_node my_package
 ```
 
-**Q6: Talker topic, node names, message type, frequency?**  
-A: Topic `/topic`; nodes `minimal_publisher` and `minimal_subscriber`; type `std_msgs/msg/String`; ~**2 Hz** (500 ms timer).
+**Q4: Talker topic, nodes, type, frequency?**  
+A: Topic `/topic`; nodes `minimal_publisher` / `minimal_subscriber`; type `std_msgs/msg/String`; ~**2 Hz** (500 ms timer).
 
-**Q7: Command to check talker frequency?**  
-```bash
-ros2 topic hz /topic
-```
+**Q5: Task 4 — record then demo?**  
+Record: `ros2 bag record -o bagtalker /topic` while talker runs.  
+Demo: `ros2 bag play -l bagtalker` + listener + `ros2 run rqt_graph rqt_graph` (**no live talker**).
 
-**Q8: Task 4 — record then demo?**  
-Record: `ros2 bag record -o bagtalker /topic` while `ros2 run cpp_pubsub talker` runs.  
-Demo: `ros2 bag play -l bagtalker` + `ros2 run cpp_pubsub listener` + `ros2 run rqt_graph rqt_graph` (no talker).
+**Q6: Task 5 vs Task 4?**  
+A: One bag, **two topics** (`/upcounter` ~2 Hz, `/downcounter` ~1 Hz), **two listeners** (`Countup_Listener`, `Countdown_Listener`).
 
-**Q9: Task 5 — what is different from Task 4?**  
-A: One bag with **two topics** (`/upcounter` ~2 Hz, `/downcounter` ~1 Hz) and **two listeners** (`Countup_Listener`, `Countdown_Listener`). Demo: bag play + both listeners + rqt_graph.
+**Q7: Why must every `.cpp` node appear in `CMakeLists.txt`?**  
+A: `add_executable` = build target; `install(TARGETS ...)` = available to `ros2 run`.
 
-**Q10: Why must every `.cpp` node appear in `CMakeLists.txt`?**  
-A: `add_executable` creates the build target; `install(TARGETS ...)` makes it available to `ros2 run`.
+**Q8: What files define a ROS 2 package?**  
+A: `package.xml` (metadata, dependencies) and `CMakeLists.txt` (build/install rules).
 
-**Q11: Other talker/listener examples in robotics?**  
-A: Camera driver (publisher/talker), image display or detector node (subscriber/listener).
+**Q9: Other talker/listener examples in robotics?**  
+A: Camera driver (publisher), image display or detector (subscriber).
 
-**Q12: What files define a ROS 2 package?**  
-A: `package.xml` (metadata and dependencies) and `CMakeLists.txt` (build and install rules).
+**Q10: `ros2 pkg executables cpp_pubsub`?**  
+A: Lists runnable executables installed for that package.
+
+---
+
+## Exam quick reference
+
+| Question | Answer |
+|----------|--------|
+| Which node moves the turtle? | `turtle_teleop_key` → `/turtle1/cmd_vel` → `turtlesim_node` |
+| What does `ros2 topic echo` do? | Print live messages on a topic |
+| What does `ros2 bag record` / `play` do? | Save topic data (`.db3`) / replay recorded data |
+| What does `ros2 topic list` do? | List all active topics |
+| Why one publisher per topic? | Subscribers can't tell which node sent the message |
+| Topic vs service — when service? | One-time action (spawn/kill); no ongoing stream |
+| How many servers per service? | **One** server (many clients OK) |
+| What is `rqt_graph`? | Visual node–topic graph |
+| Clockwise in theta? | **Negative**; anti-clockwise = **positive** |
+| Why Gazebo needed remap? | teleop → `/turtle1/cmd_vel` but robot → `/demo/cmd_demo` |
+| Keyboard teleop frequency? | Event-based (on key press) |
 
 ---
 
@@ -282,10 +363,16 @@ Q::: Is `turtle_teleop_key` a publisher or subscriber?
 A::: Publisher (publishes to `/turtle1/cmd_vel`)
 
 Q::: Topic vs service — main difference?
-A::: Topic = continuous stream (pub/sub); service = one request, one response
+A::: Topic = continuous stream (pub/sub); service = one request, one response (one server)
 
-Q::: What does `git clone` do?
-A::: Copies a remote Git repository to your local machine
+Q::: What is an Action (vs topic/service)?
+A::: Long-running async task with goal and feedback
+
+Q::: Why avoid multiple publishers on one topic?
+A::: Subscriber can't tell which node sent the message — conflicts possible
+
+Q::: What does `git clone` do? Where to run it?
+A::: Copy remote repo locally; run from workspace `src/`
 
 Q::: When must you run `colcon build`?
 A::: After changing source code, CMakeLists.txt, or package.xml
@@ -293,17 +380,11 @@ A::: After changing source code, CMakeLists.txt, or package.xml
 Q::: Overlay vs underlay?
 A::: Underlay = base ROS install; overlay = your workspace; overlay overrides underlay
 
-Q::: Talker topic name and message type (Lab 5 Task 3)?
-A::: Topic `/topic`; type `std_msgs/msg/String`
+Q::: Why does pose have more bag messages than cmd_vel?
+A::: pose publishes continuously; cmd_vel only when keys pressed
 
-Q::: Publisher and subscriber node names (Task 3)?
-A::: `minimal_publisher` and `minimal_subscriber`
-
-Q::: Talker publish rate (Task 3)?
-A::: ~2 Hz (500 ms wall timer)
-
-Q::: Record a bag from talker topic?
-A::: `ros2 bag record -o bagtalker /topic` (while talker is running)
+Q::: Talker topic, type, rate (Lab 5 Task 3)?
+A::: `/topic`; `std_msgs/msg/String`; ~2 Hz
 
 Q::: Task 4 demo — which nodes run?
 A::: Bag player + listener + rqt_graph (no live talker)
@@ -320,155 +401,21 @@ A::: `--ros-args --remap /turtle1/cmd_vel:=/demo/cmd_demo`
 Q::: Spawn a turtle via service?
 A::: `ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}"`
 
-Q::: What does `source install/setup.bash` do in dev_ws?
-A::: Loads underlay + overlay so your packages are available
+Q::: Theta = 0 means facing which direction?
+A::: East (3 o'clock); π rad = West; + = anti-clockwise
 
-Q::: What does `ros2 pkg executables cpp_pubsub` show?
-A::: List of runnable executables installed for that package
-
-Q::: Keyboard teleop `/cmd_vel` frequency?
-A::: Event-based (on key press), not fixed Hz
+Q::: Holonomic robot?
+A::: Can move sideways and rotate simultaneously (omni/mecanum wheels)
 
 Q::: Linear vs angular velocity?
 A::: Linear = m/s straight motion; angular = rad/s rotation (yaw = angular.z)
 
 ---
 
-## Friend's revision notes (merged — add-only)
+## Last-minute summary
 
-> Ingested from [[99-ATTACHMENTS/EGE353/ROS2_Revision_Notes.docx]] · 2026-05-26. Sections below added to your Q&A; nothing above was removed.
-
-### Core concepts (quick table)
-
-| Concept | Definition | Example |
-|---------|------------|---------|
-| **Node** | Smallest running program in ROS 2 | `turtlesim_node`, `turtle_teleop_key` |
-| **Topic** | Named one-way channel | `/turtle1/cmd_vel`, `/turtle1/pose` |
-| **Publisher** | Node that **sends** to a topic | `turtle_teleop_key` → `/turtle1/cmd_vel` |
-| **Subscriber** | Node that **receives** from a topic | `turtlesim_node` listens on `/turtle1/cmd_vel` |
-| **Service** | One-shot request/response (sync) | `/spawn`, `/kill` |
-| **Action** | Long-running task with goal + feedback (async) | Tasks that take a long time to complete |
-| **Parameter** | Config variables on a node | `/turtlesim` → `background_r`, `background_g`, `background_b` |
-
-### Turtlesim data flow
-
-```
-Keyboard → turtle_teleop_key (publisher) → /turtle1/cmd_vel (topic) → turtlesim_node (subscriber) → turtle moves
-```
-
-**Teleop key bindings**
-
-| Key(s) | Action |
-|--------|--------|
-| `i` / `,` | Forward / backward |
-| `j` / `l` | Rotate left / right (in place) |
-| `u`, `m` | Anti-clockwise diagonal |
-| `o`, `.` | Clockwise diagonal |
-| **Capital** letters | Translation (move in that direction relative to robot front) |
-
-**Coordinate system**
-
-| Axis / value | Meaning |
-|--------------|---------|
-| X | Increases to the right (0 → 13 in turtlesim window) |
-| Y | Increases upward (0 → 13) |
-| Theta = 0 | Facing **East** (3 o'clock) |
-| Theta = π (3.14 rad) | Facing **West** |
-| Theta **+** | Anti-clockwise |
-| Theta **−** | Clockwise |
-
-**`/turtle1/cmd_vel` fields** — cmd = command, vel = velocity
-
-| Field | Effect |
-|-------|--------|
-| `linear.x > 0` | Forward |
-| `linear.x < 0` | Backward |
-| `angular.z > 0` | Turn left (anti-clockwise) |
-| `angular.z < 0` | Turn right (clockwise) |
-
-**Publish from CLI (examples):**
-
-```bash
-# Single command
-ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist \
-  "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
-
-# Continuous (--rate 1 → 1 message per second)
-ros2 topic pub --rate 1 /turtle1/cmd_vel geometry_msgs/msg/Twist \
-  "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
-```
-
-### Topic vs service vs action
-
-| | Topic | Service | Action |
-|---|-------|---------|--------|
-| Pattern | Continuous stream | One request → one response | Long task + feedback |
-| Sync/async | Async | **Synchronous** | Async |
-| Servers | Many publishers OK | **One server** | One action server |
-| Clients | Many subscribers OK | Many clients OK | Many clients OK |
-| Use when | Ongoing data (pose, velocity) | One-time action (spawn/kill) | Long-running task |
-
-**Multi-publisher warning:** Multiple publishers on the **same topic** can conflict — the subscriber only sees the topic name, not which node sent the message. Usually **one publisher per topic**.
-
-### ROS bag — concepts
-
-- Records topic traffic to files (`.db3` database)
-- **Live topics** = conversation now; **bag** = recording to replay later
-
-**Why `/turtle1/pose` has more messages than `/cmd_vel` in a bag**
-
-- `cmd_vel` — only when keys pressed (event-based)
-- `pose` — publishes **continuously** at fixed rate even if turtle still
-- So pose count ≫ cmd_vel count in the same recording
-
-### Gazebo remapping (flow)
-
-| teleop publishes | Gazebo listens |
-|------------------|----------------|
-| `/turtle1/cmd_vel` | `/demo/cmd_demo` |
-
-After remap: `Keyboard → teleop → /demo/cmd_demo → Gazebo robot → moves`
-
-*(Use Humble path in lab: `/opt/ros/humble/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world`)*
-
-### Workspace, build & git (extra tips)
-
-| Underlay | Overlay |
-|----------|---------|
-| Base ROS at `/opt/ros/humble` | Your `~/dev_ws` (or `~/ros2_ws`) |
-| System packages | Custom/edited packages on top |
-
-- Run **`git clone`** from inside workspace **`src/`** folder
-- **`colcon build --packages-select <pkg>`** — compile only that package (reads source → executable)
-
-### Robot types (brief)
-
-- **Holonomic** — can move sideways and rotate at the same time
-- **Omni wheel** (3 wheels) — wheels at 90° to travel direction
-- **Mecanum wheel** (4 wheels) — wheels at 45° to travel direction
-- Control: specify **angle** and **amplitude** (speed)
-
-### Friend's exam quick reference
-
-| Question | Answer |
-|----------|--------|
-| Which node moves the turtle? | `turtle_teleop_key` (pub) → `/turtle1/cmd_vel` → `turtlesim_node` (sub) |
-| What does `ros2 topic echo` do? | Print live messages on a topic |
-| What does `ros2 bag record` do? | Save topic data to bag files (`.db3`) |
-| What does `ros2 bag play` do? | Replay recorded data (same path redrawn) |
-| What does `ros2 topic list` do? | List all active topics |
-| Why one publisher per topic? | Subscribers can't tell which node sent the message |
-| Topic vs service — when service? | One-time action (spawn/kill); no ongoing stream |
-| How many servers per service? | **One** server (many clients OK) |
-| What is `rqt_graph`? | Visual node–topic graph (new terminal; Ctrl+C to stop) |
-| Clockwise in theta? | **Negative** theta; anti-clockwise = positive |
-| Why Gazebo needed remap? | teleop → `/turtle1/cmd_vel` but robot → `/demo/cmd_demo` |
-| Frequency of `/cmd_vel`? | Friend's sheet: **10 Hz**; keyboard teleop = event-based; `ros2 topic pub --rate 1` = **1 Hz** |
-
-### Super summary (last-minute)
-
-**Node** = ROS program · **Topic** = channel · **Publisher** = sends · **Subscriber** = receives
+**Node** = ROS program · **Topic** = channel · **Publisher** = sends · **Subscriber** = receives · **Service** = one-shot · **Action** = long task
 
 **`/cmd_vel`** = movement command · **teleop** publishes · **turtlesim** subscribes
 
-**`ros2 topic echo`** = view messages · **`ros2 bag record`** = save · **`ros2 bag play`** = replay · **Gazebo** needs topic remap
+**`ros2 topic echo`** = view messages · **`ros2 bag record`** = save · **`ros2 bag play`** = replay · **Gazebo** needs topic remap · **`git clone`** in **`src/`** · **`colcon build`** after code changes
