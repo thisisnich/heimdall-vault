@@ -5,54 +5,57 @@ module: EGE353-Autonomous-Mobile-Robotics
 status: draft
 source: manual
 created: 2026-05-22
-tags: [EGE353, lab, ros2, qna, flashcards, exam-prep]
+updated: 2026-05-26
+tags: [EGE353, lab, ros2, qna, flashcards, exam-prep, quiz-1]
 ---
-	
-> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 1 Notes|Lab 1]] | [[EGE353 Lab 2 - ROS Nodes and Topics|Lab 2]] | [[EGE353 Lab 3 - ROS Services|Lab 3]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]] | [[EGE353 Lab 5 Notes|Lab 5]] | [[EGE353 Lab 5 Package Guide|Package Guide]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
+
+> **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 1 Notes|Lab 1]] | [[EGE353 Lab 2 - ROS Nodes and Topics|Lab 2]] | [[EGE353 Lab 3 - ROS Services|Lab 3]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]] | [[EGE353 Lab 5 Notes|Lab 5]] | [[EGE353 Lab 5 Package Guide|Package Guide]] | [[EGE353 Lab 5 Demo Study Guide|Practical 1 demo]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
+> **Friend's source (merged below):** [[99-ATTACHMENTS/EGE353/ROS2_Revision_Notes.docx]]
 
 # EGE353 Lab 1–5 Q&A & Command Reference
 
-Study sheet for Practical 1 demo questions, Proctored Quiz-1 (Labs 1–6 scope), and oral checks. Content sourced from vault lab notes only.
+Study sheet for Practical 1 demo questions, **Proctored Quiz-1** (Labs 1–6 scope), and oral checks. Your notes + friend's revision notes merged (**add-only**).
 
 ---
 
 ## Command cheat sheet (all labs)
 
-| Command | What it does |
-|---------|----------------|
-| `source /opt/ros/humble/setup.bash` | Load system ROS 2 (Humble) in current terminal |
-| `source ~/dev_ws/install/setup.bash` | Load workspace overlay (underlay + your packages) |
-| `source ~/dev_ws/install/local_setup.bash` | Load overlay only (underlay must already be sourced) |
-| `ros2 run <pkg> <exe>` | Run a compiled node executable |
-| `ros2 node list` | List running node names |
-| `ros2 topic list` | List active topics |
-| `ros2 topic echo /topic` | Print messages on a topic in real time |
-| `ros2 topic hz /topic` | Show average publish frequency (Hz) |
-| `ros2 topic pub --once ...` | Publish one message from CLI |
-| `ros2 topic pub --rate N ...` | Publish repeatedly at N Hz |
-| `ros2 service list` | List available services |
-| `ros2 service list -t` | List services with types |
-| `ros2 service type /name` | Show type of one service |
-| `ros2 service find <type>` | Find services matching a type |
-| `ros2 interface show <type>` | Show fields of a message/service type |
-| `ros2 service call <name> <type> "{...}"` | Send one service request |
-| `ros2 param list` | List parameters for nodes |
-| `ros2 param get /node param` | Read a parameter value |
-| `ros2 param set /node param value` | Change a parameter at runtime |
-| `ros2 param dump /node` | Save node params to YAML |
-| `rqt_graph` | Open GUI graph of nodes and topics (Lab 1–4) |
-| `ros2 run rqt_graph rqt_graph` | Same tool via ros2 run (Lab 5 demo) |
-| `rqt` | General ROS GUI toolbox (e.g. Service Caller) |
-| `ros2 bag record -o name /topic ...` | Record topic(s) to a bag folder |
-| `ros2 bag play -l name` | Replay bag in a loop |
-| `ros2 bag info name` | Show duration and message counts |
-| `git clone <url> -b humble` | Copy remote repo into workspace `src/` |
-| `rosdep install -i --from-path src --rosdistro humble -y` | Install package dependencies |
-| `colcon build` | Build all packages in workspace |
-| `colcon build --packages-select <pkg>` | Build one package only |
-| `ros2 pkg create --build-type ament_cmake ...` | Create new C++ package |
-| `ros2 pkg executables <pkg>` | List runnable executables in a package |
-| `--ros-args --remap old:=new` | Remap topic name at runtime |
+| Command                                                   | What it does                                         |
+| --------------------------------------------------------- | ---------------------------------------------------- |
+| `source /opt/ros/humble/setup.bash`                       | Load system ROS 2 (Humble) in current terminal       |
+| `source ~/dev_ws/install/setup.bash`                      | Load workspace overlay (underlay + your packages)    |
+| `source ~/dev_ws/install/local_setup.bash`                | Load overlay only (underlay must already be sourced) |
+| `ros2 run <pkg> <exe>`                                    | Run a compiled node executable                       |
+| `ros2 node list`                                          | List running node names                              |
+| `ros2 topic list`                                         | List active topics                                   |
+| `ros2 topic echo /topic`                                  | Print messages on a topic in real time               |
+| `ros2 topic echo /turtle1/pose`                           | Show turtle position & orientation live              |
+| `ros2 topic hz /topic`                                    | Show average publish frequency (Hz)                  |
+| `ros2 topic pub --once ...`                               | Publish one message from CLI                         |
+| `ros2 topic pub --rate N ...`                             | Publish repeatedly at N Hz                           |
+| `ros2 service list`                                       | List available services                              |
+| `ros2 service list -t`                                    | List services with types                             |
+| `ros2 service type /name`                                 | Show type of one service                             |
+| `ros2 service find <type>`                                | Find services matching a type                        |
+| `ros2 interface show <type>`                              | Show fields of a message/service type                |
+| `ros2 service call <name> <type> "{...}"`                 | Send one service request                             |
+| `ros2 param list`                                         | List parameters for nodes                            |
+| `ros2 param get /node param`                              | Read a parameter value                               |
+| `ros2 param set /node param value`                        | Change a parameter at runtime                        |
+| `ros2 param dump /node`                                   | Save node params to YAML                             |
+| `rqt_graph`                                               | Open GUI graph of nodes and topics (Lab 1–4)         |
+| `ros2 run rqt_graph rqt_graph`                            | Same tool via ros2 run (Lab 5 demo)                  |
+| `rqt`                                                     | General ROS GUI toolbox (e.g. Service Caller)        |
+| `ros2 bag record -o name /topic ...`                      | Record topic(s) to a bag folder                      |
+| `ros2 bag play -l name`                                   | Replay bag in a loop                                 |
+| `ros2 bag info name`                                      | Show duration and message counts                     |
+| `git clone <url> -b humble`                               | Copy remote repo into workspace `src/`               |
+| `rosdep install -i --from-path src --rosdistro humble -y` | Install package dependencies                         |
+| `colcon build`                                            | Build all packages in workspace                      |
+| `colcon build --packages-select <pkg>`                    | Build one package only                               |
+| `ros2 pkg create --build-type ament_cmake ...`            | Create new C++ package                               |
+| `ros2 pkg executables <pkg>`                              | List runnable executables in a package               |
+| `--ros-args --remap old:=new`                             | Remap topic name at runtime                          |
 
 ---
 
@@ -328,3 +331,144 @@ A::: Event-based (on key press), not fixed Hz
 
 Q::: Linear vs angular velocity?
 A::: Linear = m/s straight motion; angular = rad/s rotation (yaw = angular.z)
+
+---
+
+## Friend's revision notes (merged — add-only)
+
+> Ingested from [[99-ATTACHMENTS/EGE353/ROS2_Revision_Notes.docx]] · 2026-05-26. Sections below added to your Q&A; nothing above was removed.
+
+### Core concepts (quick table)
+
+| Concept | Definition | Example |
+|---------|------------|---------|
+| **Node** | Smallest running program in ROS 2 | `turtlesim_node`, `turtle_teleop_key` |
+| **Topic** | Named one-way channel | `/turtle1/cmd_vel`, `/turtle1/pose` |
+| **Publisher** | Node that **sends** to a topic | `turtle_teleop_key` → `/turtle1/cmd_vel` |
+| **Subscriber** | Node that **receives** from a topic | `turtlesim_node` listens on `/turtle1/cmd_vel` |
+| **Service** | One-shot request/response (sync) | `/spawn`, `/kill` |
+| **Action** | Long-running task with goal + feedback (async) | Tasks that take a long time to complete |
+| **Parameter** | Config variables on a node | `/turtlesim` → `background_r`, `background_g`, `background_b` |
+
+### Turtlesim data flow
+
+```
+Keyboard → turtle_teleop_key (publisher) → /turtle1/cmd_vel (topic) → turtlesim_node (subscriber) → turtle moves
+```
+
+**Teleop key bindings**
+
+| Key(s) | Action |
+|--------|--------|
+| `i` / `,` | Forward / backward |
+| `j` / `l` | Rotate left / right (in place) |
+| `u`, `m` | Anti-clockwise diagonal |
+| `o`, `.` | Clockwise diagonal |
+| **Capital** letters | Translation (move in that direction relative to robot front) |
+
+**Coordinate system**
+
+| Axis / value | Meaning |
+|--------------|---------|
+| X | Increases to the right (0 → 13 in turtlesim window) |
+| Y | Increases upward (0 → 13) |
+| Theta = 0 | Facing **East** (3 o'clock) |
+| Theta = π (3.14 rad) | Facing **West** |
+| Theta **+** | Anti-clockwise |
+| Theta **−** | Clockwise |
+
+**`/turtle1/cmd_vel` fields** — cmd = command, vel = velocity
+
+| Field | Effect |
+|-------|--------|
+| `linear.x > 0` | Forward |
+| `linear.x < 0` | Backward |
+| `angular.z > 0` | Turn left (anti-clockwise) |
+| `angular.z < 0` | Turn right (clockwise) |
+
+**Publish from CLI (examples):**
+
+```bash
+# Single command
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist \
+  "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+
+# Continuous (--rate 1 → 1 message per second)
+ros2 topic pub --rate 1 /turtle1/cmd_vel geometry_msgs/msg/Twist \
+  "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+```
+
+### Topic vs service vs action
+
+| | Topic | Service | Action |
+|---|-------|---------|--------|
+| Pattern | Continuous stream | One request → one response | Long task + feedback |
+| Sync/async | Async | **Synchronous** | Async |
+| Servers | Many publishers OK | **One server** | One action server |
+| Clients | Many subscribers OK | Many clients OK | Many clients OK |
+| Use when | Ongoing data (pose, velocity) | One-time action (spawn/kill) | Long-running task |
+
+**Multi-publisher warning:** Multiple publishers on the **same topic** can conflict — the subscriber only sees the topic name, not which node sent the message. Usually **one publisher per topic**.
+
+### ROS bag — concepts
+
+- Records topic traffic to files (`.db3` database)
+- **Live topics** = conversation now; **bag** = recording to replay later
+
+**Why `/turtle1/pose` has more messages than `/cmd_vel` in a bag**
+
+- `cmd_vel` — only when keys pressed (event-based)
+- `pose` — publishes **continuously** at fixed rate even if turtle still
+- So pose count ≫ cmd_vel count in the same recording
+
+### Gazebo remapping (flow)
+
+| teleop publishes | Gazebo listens |
+|------------------|----------------|
+| `/turtle1/cmd_vel` | `/demo/cmd_demo` |
+
+After remap: `Keyboard → teleop → /demo/cmd_demo → Gazebo robot → moves`
+
+*(Use Humble path in lab: `/opt/ros/humble/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world`)*
+
+### Workspace, build & git (extra tips)
+
+| Underlay | Overlay |
+|----------|---------|
+| Base ROS at `/opt/ros/humble` | Your `~/dev_ws` (or `~/ros2_ws`) |
+| System packages | Custom/edited packages on top |
+
+- Run **`git clone`** from inside workspace **`src/`** folder
+- **`colcon build --packages-select <pkg>`** — compile only that package (reads source → executable)
+
+### Robot types (brief)
+
+- **Holonomic** — can move sideways and rotate at the same time
+- **Omni wheel** (3 wheels) — wheels at 90° to travel direction
+- **Mecanum wheel** (4 wheels) — wheels at 45° to travel direction
+- Control: specify **angle** and **amplitude** (speed)
+
+### Friend's exam quick reference
+
+| Question | Answer |
+|----------|--------|
+| Which node moves the turtle? | `turtle_teleop_key` (pub) → `/turtle1/cmd_vel` → `turtlesim_node` (sub) |
+| What does `ros2 topic echo` do? | Print live messages on a topic |
+| What does `ros2 bag record` do? | Save topic data to bag files (`.db3`) |
+| What does `ros2 bag play` do? | Replay recorded data (same path redrawn) |
+| What does `ros2 topic list` do? | List all active topics |
+| Why one publisher per topic? | Subscribers can't tell which node sent the message |
+| Topic vs service — when service? | One-time action (spawn/kill); no ongoing stream |
+| How many servers per service? | **One** server (many clients OK) |
+| What is `rqt_graph`? | Visual node–topic graph (new terminal; Ctrl+C to stop) |
+| Clockwise in theta? | **Negative** theta; anti-clockwise = positive |
+| Why Gazebo needed remap? | teleop → `/turtle1/cmd_vel` but robot → `/demo/cmd_demo` |
+| Frequency of `/cmd_vel`? | Friend's sheet: **10 Hz**; keyboard teleop = event-based; `ros2 topic pub --rate 1` = **1 Hz** |
+
+### Super summary (last-minute)
+
+**Node** = ROS program · **Topic** = channel · **Publisher** = sends · **Subscriber** = receives
+
+**`/cmd_vel`** = movement command · **teleop** publishes · **turtlesim** subscribes
+
+**`ros2 topic echo`** = view messages · **`ros2 bag record`** = save · **`ros2 bag play`** = replay · **Gazebo** needs topic remap
