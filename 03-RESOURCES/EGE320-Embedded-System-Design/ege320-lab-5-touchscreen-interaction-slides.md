@@ -1,4 +1,4 @@
-﻿---
+---
 type: lab
 course: EGE320
 module: EGE320-Embedded-System-Design
@@ -7,7 +7,7 @@ source: pdf
 created: 2026-05-21
 tags: [EGE320, lab, touchscreen, IT7258, CCS]
 ---
-
+ 
 > **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE320 - Touch Screen Technology|Touch Screen Lesson]] | [[ege320-tutorial-5-slides|Tutorial 5]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
 
 > **Code:** `99-ATTACHMENTS/EGE320/EGE320_E2/` · [[99-ATTACHMENTS/EGE320/EGE320_E2/README|EGE320_E2 workflow]]

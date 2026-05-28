@@ -23,10 +23,10 @@ tags: [EGE322, assignment, BME280, web-server, ESP32]
 
 | Part | Code in vault | Meets spec? | Submit-ready? |
 |------|---------------|-------------|---------------|
-| **1** | ⚠️ Library in vault; no `Part 1/` yet | — | ❌ Need `Part 1/main.py` + `BME280.py` (from [[99-ATTACHMENTS/EGE322/assignment-2/bme280 - Copy(1).py\|portal library]]) |
-| **2** | ✅ `assignment-2/Task2/` | ✅ HTML table + 5 s refresh | ⚠️ Rename folder; screenshot + Word diff |
-| **3** | ✅ `assignment-2/Task3/` | ✅ Two LEDs (GPIO 2 & 4), `led1`/`led2` URLs | ⚠️ Rename folder; screenshot + Word diff |
-| **4** | ✅ `assignment-2/Task4/` | ✅ Combined sensor + dual LED UI | ⚠️ Rename folder; final screenshot |
+| **1** | ✅ `assignment-2/Part 1/` | ✅ Serial loop + `BME280.py` | ✅ Ready |
+| **2** | ✅ `assignment-2/Part 2/` | ✅ HTML table + 5 s refresh | ⚠️ Screenshot + Word diff |
+| **3** | ✅ `assignment-2/Part 3/` | ✅ Two LEDs (GPIO 2 & 4), `led1`/`led2` URLs | ⚠️ Screenshot + Word diff |
+| **4** | ✅ `assignment-2/Part 4/` | ✅ Combined sensor + dual LED UI | ⚠️ Final screenshot |
 | **Word doc** | 🟡 Draft started | — | ⚠️ Add screenshots; see [[01-PROJECTS/EGE322-Assignment-2/Assignment_2.docx\|Assignment_2.docx]] |
 | **Zip** | ❌ Not started | — | ❌ `Assignment_2/` layout |
 
@@ -34,9 +34,9 @@ tags: [EGE322, assignment, BME280, web-server, ESP32]
 
 | Part | Your work (submit from here) | Files |
 |------|------------------------------|-------|
-| 2 | `99-ATTACHMENTS/EGE322/assignment-2/Task2/` | `main.py`, `boot.py` |
-| 3 | `99-ATTACHMENTS/EGE322/assignment-2/Task3/` | `main.py`, `boot.py` |
-| 4 | `99-ATTACHMENTS/EGE322/assignment-2/Task4/` | `main.py`, `boot.py` |
+| 2 | `99-ATTACHMENTS/EGE322/assignment-2/Part 2/` | `main.py`, `boot.py` |
+| 3 | `99-ATTACHMENTS/EGE322/assignment-2/Part 3/` | `main.py`, `boot.py` |
+| 4 | `99-ATTACHMENTS/EGE322/assignment-2/Part 4/` | `main.py`, `boot.py` |
 
 ### Folder layout — `99-ATTACHMENTS/EGE322/assignment-2/`
 
@@ -69,9 +69,9 @@ References for Word doc diffs: compare **Task*** `main.py` **against** portal st
 
 ### A. Code / files (before zip)
 
-- [ ] **Part 1 folder** — `Part 1/main.py` (serial loop from brief) + `Part 1/BME280.py` (copy/rename from portal [[99-ATTACHMENTS/EGE322/assignment-2/bme280 - Copy(1).py|bme280 library]])
+- [x] **Part 1 folder** — `Part 1/main.py` + `Part 1/BME280.py`
 - [ ] **Sanitize `boot.py`** for submission — replace real SSIDs/passwords with placeholders (`Your_SSID`) in the **zip copies** only; keep working creds locally if needed
-- [ ] **Rename for marking** — grader expects `Part 1` … `Part 4`, not `Task2`/`Task3`/`Task4`
+- [x] **Rename for marking** — `Part 1` … `Part 4` (done)
 - [ ] **Quick re-test on board** — flash each part folder once; capture IP for screenshots
 
 ### B. Documentation (Word doc)
@@ -122,10 +122,10 @@ Wiring: BME280 Vin→3.3V, GND→GND, SCL→22, SDA→21. LEDs: any digital GPIO
 
 ## Tasks
 
-- [ ] Part 1 — file `main.py` + `BME280.py` into `Part 1/`
-- [x] Part 2 — web table for sensor data (`Task2/`)
-- [x] Part 3 — two independent LED ON/OFF pairs (`Task3/`)
-- [x] Part 4 — combined page (`Task4/`)
+- [x] Part 1 — file `main.py` + `BME280.py` into `Part 1/`
+- [x] Part 2 — web table for sensor data (`Part 2/`)
+- [x] Part 3 — two independent LED ON/OFF pairs (`Part 3/`)
+- [x] Part 4 — combined page (`Part 4/`)
 - [ ] Word doc with screenshots and highlighted code → [[01-PROJECTS/EGE322-Assignment-2/Assignment_2.docx|Assignment_2.docx]] (draft; paste screenshots)
 - [ ] Zip `Assignment_2/` and submit to Brightspace
 

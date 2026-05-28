@@ -14,7 +14,9 @@ Lightweight pub/sub messaging protocol for IoT; broker-based; topics and QoS lev
 
 ## In my courses
 
-- [[03-RESOURCES/EGE322-IOT-System-Project/|EGE322 IoT System Project]]
+- [[03-RESOURCES/EGE322-IOT-System-Project/iot-data-collection-mqtt-rest-api-cloud-services-slides|IoT MQTT & REST lecture]]
+- [[03-RESOURCES/EGE322-IOT-System-Project/ege322-lab-8-mqtt-adafruit-io-slides|Lab 8 — Adafruit IO MQTT]]
+- [[03-RESOURCES/EGE322-IOT-System-Project/ege322-lab-7-esp32-thingspeak-slides|Lab 7 — ThingSpeak REST (contrast)]]
 
 ## Flashcards
 
