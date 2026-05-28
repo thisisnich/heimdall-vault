@@ -21,7 +21,8 @@ status: Active
 ## 🚨 Quick Access
 
 **[[07-DASHBOARDS/Schedule & Assessments Dashboard|📅 Schedule & Assessments Dashboard]]** — Class times, due dates, and what to study  
-**[[07-DASHBOARDS/NYP Timetable S1 2026|NYP Timetable S1 2026]]** — Weekly class schedule and timing
+**[[07-DASHBOARDS/NYP Timetable S1 2026|NYP Timetable S1 2026]]** — Weekly class schedule and timing  
+**[[07-DASHBOARDS/flashcard-hub/index.html|🃏 Flashcard Hub]]** — Pick a deck and review (open via **File Explorer → double-click `index.html`**, not Obsidian preview)
 
 > **Agents:** Full vault manual → [[AGENTS.md]] · Human guide → [[HEIMDALL-VAULT.md]]
 

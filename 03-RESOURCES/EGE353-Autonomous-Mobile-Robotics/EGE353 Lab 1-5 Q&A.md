@@ -6,7 +6,6 @@ status: draft
 source: manual
 created: 2026-05-22
 updated: 2026-05-26
-tags: [EGE353, lab, ros2, qna, flashcards, exam-prep, quiz-1]
 ---
 
 > **Related:** [[07-DASHBOARDS/NYPY3 - Main Index|NYPY3 Index]] | [[EGE353 Lab 1 Notes|Lab 1]] | [[EGE353 Lab 2 - ROS Nodes and Topics|Lab 2]] | [[EGE353 Lab 3 - ROS Services|Lab 3]] | [[EGE353 Lab 4 - ROS Bag Files and Gazebo|Lab 4]] | [[EGE353 Lab 5 Notes|Lab 5]] | [[EGE353 Lab 5 Package Guide|Package Guide]] | [[EGE353 Lab 5 Demo Study Guide|Practical 1 demo]] | [[07-DASHBOARDS/Schedule & Assessments Dashboard|Assessments]]
@@ -20,67 +19,128 @@ Study sheet for Practical 1 demo, **Proctored Quiz-1** (Labs 1–6), and oral ch
 
 ## Core concepts
 
-| Concept | Definition | Example |
-|---------|------------|---------|
-| **Node** | Smallest running program in ROS 2 | `turtlesim_node`, `turtle_teleop_key` |
-| **Topic** | Named one-way communication channel | `/turtle1/cmd_vel`, `/turtle1/pose` |
-| **Publisher** | Node that **sends** data to a topic | `turtle_teleop_key` → `/turtle1/cmd_vel` |
-| **Subscriber** | Node that **receives** data from a topic | `turtlesim_node` on `/turtle1/cmd_vel` |
-| **Service** | One-shot request/response (synchronous) | `/spawn`, `/kill` — **one server**, many clients |
-| **Action** | Long-running task with goal + feedback (async) | Tasks that take a long time to complete |
-| **Parameter** | Config variables on a node | `/turtlesim` → `background_r`, `background_g`, `background_b` |
+| Concept        | Definition                                     | Example                                                       |
+| -------------- | ---------------------------------------------- | ------------------------------------------------------------- |
+| **Node**       | Smallest running program in ROS 2              | `turtlesim_node`, `turtle_teleop_key`                         |
+| **Topic**      | Named communication channel                    | `/turtle1/cmd_vel`, `/turtle1/pose`                           |
+| **Publisher**  | Node that **sends** data to a topic            | `turtle_teleop_key` → `/turtle1/cmd_vel`                      |
+| **Subscriber** | Node that **receives** data from a topic       | `turtlesim_node` on `/turtle1/cmd_vel`                        |
+| **Service**    | One-shot request/response (synchronous)        | `/spawn`, `/kill` — **one server**, many clients              |
+| **Action**     | Long-running task with goal + feedback (async) | Tasks that take a long time to complete                       |
+| **Parameter**  | Config variables on a node                     | `/turtlesim` → `background_r`, `background_g`, `background_b` |
 
-### Topic vs service vs action
+### Topic vs service vs action — explained
 
-| | Topic | Service | Action |
-|---|-------|---------|--------|
-| Pattern | Continuous stream | One request → one response | Long task + feedback |
-| Sync/async | Async | **Synchronous** | Async |
-| Servers | Many publishers OK* | **One server** | One action server |
-| Clients | Many subscribers OK | Many clients OK | Many clients OK |
-| Use when | Ongoing data (pose, velocity) | One-time action (spawn/kill) | Long-running task |
+| | **Topic** | **Service** | **Action** |
+|---|-----------|-------------|------------|
+| **Analogy** | Live radio stream | Phone call: ask once, get answer, hang up | Long job with progress updates; can cancel |
+| **Pattern** | Publisher → topic → subscriber (continuous) | Client → request → server → response (one shot) | Client sends **goal** → **feedback** → **result** |
+| **Sync/async** | Async (fire-and-forget stream) | **Synchronous** (client waits for reply) | **Asynchronous** (program keeps running) |
+| **Servers** | Many publishers OK* | **One server** | One action server |
+| **Clients** | Many subscribers OK | Many clients OK | Many clients OK |
+| **Best for** | Ongoing data (pose, velocity, sensors) | Instant one-off commands (spawn/kill) | Long tasks (navigation, mapping) |
 
 \* **Multi-publisher warning:** Multiple publishers on the **same topic** can conflict — subscribers only see the topic name, not which node sent the message. Usually **one publisher per topic**.
+
+#### Topic — “keep the data flowing”
+
+A **named channel**. One node **publishes**; others **subscribe**. Data flows **one way**, repeatedly.
+
+```
+turtle_teleop_key (publisher) → /turtle1/cmd_vel (topic) → turtlesim_node (subscriber)
+```
+
+- Teleop sends velocity commands while keys are held.
+- `/turtle1/pose` publishes **continuously** (even when the turtle is still).
+- Tools: `ros2 topic echo`, `ros2 topic hz`, `ros2 bag record` — all about **streams**.
+
+**Use when:** Anything that updates repeatedly — velocity, position, sensor readings.
+
+#### Service — “do this once, tell me when done”
+
+**Call-and-response** ([[EGE353 Lab 3 - ROS Services|Lab 3]]). Client sends a **request**; server returns **one response**; interaction is **done**.
+
+```bash
+ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}"
+ros2 service call /kill turtlesim/srv/Kill "{name: 'turtle1'}"
+```
+
+- Spawn/kill = instant result. **Not** for continuous movement — that is `/cmd_vel` (topic).
+
+**Use when:** One-time commands that finish quickly — spawn, kill, reset, teleport, set pen.
+
+**Key points:** Client **waits** for the response ([[Lesson 3 Important Concepts of ROS|Lesson 3]]). **One server** per service. Connection is **one-time**, not a continuous stream.
+
+#### Action — “start a long job, update me, let me cancel”
+
+For **long tasks** with **progress feedback** ([[Lesson 3 Important Concepts of ROS|Lesson 3]]). Not used much in Labs 1–5 (`ros2 action list` only), but on the quiz:
+
+| Service | Action |
+|---------|--------|
+| Request → Response | Goal → Feedback (many) → Result |
+| Client **waits** | Client **does not block** |
+| Short, instant tasks | Long tasks (navigate to goal, SLAM, etc.) |
+| **Cannot cancel** mid-call | **Can cancel** mid-operation |
+
+**Use when:** Robot navigation, mapping, any task needing progress updates or cancellation while your main program keeps running.
+
+#### Turtlesim — which to use?
+
+| Task | Use | Why |
+|------|-----|-----|
+| Move turtle continuously | **Topic** `/turtle1/cmd_vel` | Stream of velocity commands |
+| Read position live | **Topic** `/turtle1/pose` | Continuous updates |
+| Create turtle at (2, 2) | **Service** `/spawn` | One request, one response |
+| Remove a turtle | **Service** `/kill` | One-shot command |
+| “Drive across the map with progress” | **Action** (conceptual) | Takes time; needs feedback; may need cancel |
+
+#### Exam one-liners
+
+- **Topic:** Continuous async pub/sub; ongoing data like velocity and pose.
+- **Service:** Sync request/response; **one server**; client waits; spawn/kill; no ongoing connection.
+- **Action:** Async goal + feedback + result; long tasks; program continues; **cancellable** (services are not).
+
+*Ref: [[Lesson 3 Important Concepts of ROS#Communication Summary]], [[EGE353 Lab 3 - ROS Services#ROS Services]]*
 
 ---
 
 ## Command cheat sheet (all labs)
 
-| Command | What it does |
-|---------|--------------|
-| `source /opt/ros/humble/setup.bash` | Load system ROS 2 (Humble) in current terminal |
-| `source ~/dev_ws/install/setup.bash` | Load workspace overlay (underlay + your packages) |
-| `source ~/dev_ws/install/local_setup.bash` | Load overlay only (underlay must already be sourced) |
-| `ros2 run <pkg> <exe>` | Run a compiled node executable |
-| `ros2 run turtlesim turtlesim_node` | Start turtlesim (subscriber) |
-| `ros2 run turtlesim turtle_teleop_key` | Keyboard teleop (publisher) |
-| `ros2 node list` | List running node names |
-| `ros2 topic list` | List active topics |
-| `ros2 topic echo /topic` | Print messages on a topic in real time |
-| `ros2 topic echo /turtle1/pose` | Show turtle position & orientation live |
-| `ros2 topic hz /topic` | Show average publish frequency (Hz) |
-| `ros2 topic pub --once ...` | Publish one message from CLI |
-| `ros2 topic pub --rate N ...` | Publish repeatedly at N Hz |
-| `ros2 service list` / `ros2 action list` | List services / actions |
-| `ros2 service list -t` | List services with types |
-| `ros2 service type /name` | Show type of one service |
-| `ros2 service find <type>` | Find services matching a type |
-| `ros2 interface show <type>` | Show fields of a message/service type |
-| `ros2 service call <name> <type> "{...}"` | Send one service request |
-| `ros2 param list` / `get` / `set` / `dump` | List, read, change, or save node params |
-| `ros2 param set /turtlesim background_r 150` | Change turtlesim background colour |
-| `rqt_graph` / `ros2 run rqt_graph rqt_graph` | GUI graph of nodes and topics |
-| `rqt` | General ROS GUI (e.g. Service Caller) |
-| `ros2 bag record -o name /topic ...` | Record topic(s) to a bag folder (`.db3`) |
-| `ros2 bag play -l name` | Replay bag in a loop |
-| `ros2 bag info name` | Show duration and message counts |
-| `git clone <url> -b humble` | Copy repo into workspace **`src/`** |
-| `rosdep install -i --from-path src --rosdistro humble -y` | Install package dependencies |
-| `colcon build` | Build all packages in workspace |
-| `colcon build --packages-select <pkg>` | Build one package only |
-| `ros2 pkg create --build-type ament_cmake ...` | Create new C++ package |
-| `ros2 pkg executables <pkg>` | List runnable executables in a package |
-| `--ros-args --remap old:=new` | Remap topic name at runtime |
+| Command                                                   | What it does                                                   |
+| --------------------------------------------------------- | -------------------------------------------------------------- |
+| `source /opt/ros/humble/setup.bash`                       | Load system ROS 2 (Humble) in current terminal (underlay only) |
+| `source ~/dev_ws/install/setup.bash`                      | Load workspace overlay (underlay + your packages)              |
+| `source ~/dev_ws/install/local_setup.bash`                | Load overlay only (underlay must already be sourced)           |
+| `ros2 run <pkg> <exe>`                                    | Run a compiled node executable                                 |
+| `ros2 run turtlesim turtlesim_node`                       | Start turtlesim (subscriber)                                   |
+| `ros2 run turtlesim turtle_teleop_key`                    | Keyboard teleop (publisher)                                    |
+| `ros2 node list`                                          | List running node names                                        |
+| `ros2 topic list`                                         | List active topics                                             |
+| `ros2 topic echo /topic`                                  | Print messages on a topic in real time                         |
+| `ros2 topic echo /turtle1/pose`                           | Show turtle position & orientation live                        |
+| `ros2 topic hz /topic`                                    | Show average publish frequency (Hz)                            |
+| `ros2 topic pub --once ...`                               | Publish one message from CLI                                   |
+| `ros2 topic pub --rate N ...`                             | Publish repeatedly at N Hz                                     |
+| `ros2 service list` / `ros2 action list`                  | List services / actions                                        |
+| `ros2 service list -t`                                    | List services with types                                       |
+| `ros2 service type /name`                                 | Show type of one service                                       |
+| `ros2 service find <type>`                                | Find services matching a type                                  |
+| `ros2 interface show <type>`                              | Show fields of a message/service type                          |
+| `ros2 service call <name> <type> "{...}"`                 | Send one service request                                       |
+| `ros2 param list` / `get` / `set` / `dump`                | List, read, change, or save node params                        |
+| `ros2 param set /turtlesim background_r 150`              | Change turtlesim background colour                             |
+| `rqt_graph` / `ros2 run rqt_graph rqt_graph`              | GUI graph of nodes and topics                                  |
+| `rqt`                                                     | General ROS GUI (e.g. Service Caller)                          |
+| `ros2 bag record -o name /topic ...`                      | Record topic(s) to a bag folder (`.db3`)                       |
+| `ros2 bag play -l name`                                   | Replay bag in a loop                                           |
+| `ros2 bag info name`                                      | Show duration and message counts                               |
+| `git clone <url> -b humble`                               | Copy repo into workspace **`src/`**                            |
+| `rosdep install -i --from-path src --rosdistro humble -y` | Install package dependencies                                   |
+| `colcon build`                                            | Build all packages in workspace                                |
+| `colcon build --packages-select <pkg>`                    | Build one package only                                         |
+| `ros2 pkg create --build-type ament_cmake ...`            | Create new C++ package                                         |
+| `ros2 pkg executables <pkg>`                              | List runnable executables in a package                         |
+| `--ros-args --remap old:=new`                             | Remap topic name at runtime                                    |
 
 ---
 
@@ -197,7 +257,7 @@ A: Topic names differ — teleop publishes `/cmd_vel`, turtlesim listens on `/tu
 
 **Q5: Remap teleop to turtlesim?**  
 ```bash
-ros2 run teleop_cpp_ros2 teleop --ros-args --remap /cmd_vel:=/turtle1/cmd_vel
+ros2 run teleop_cpp_ros2 teleop --ros-args --remap /cmd_vel:=/turtle1/cmd_fvel
 ```
 
 **Q6: Twist axes (x, y, z)?**  

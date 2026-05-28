@@ -1,0 +1,634 @@
+{
+  "generated": "2026-05-26",
+  "deckCount": 2,
+  "decks": [
+    {
+      "id": "ege322-test1-flashcards",
+      "title": "EGE322 Test 1 Flashcards",
+      "course": "EGE322",
+      "path": "03-RESOURCES/EGE322-IOT-System-Project/EGE322_Test1_Flashcards.md",
+      "cardCount": 53,
+      "cards": [
+        {
+          "question": "What is a project?",
+          "answer": "A unique effort with:\n- Defined beginning and end\n- Specific deliverables\n- Defined resources",
+          "critical": false
+        },
+        {
+          "question": "What are the 3 key differences between a Project and a Business Process?",
+          "answer": "| Project | Business Process |\n|---------|------------------|\n| Has a beginning and an end | Repeated over and over |\n| Produces different output/deliverable | Produces same output each time |\n| No regular work assignments | Has regular work assignments |\n\n**Example:** Custom house (project) vs Standard house (business process)",
+          "critical": false
+        },
+        {
+          "question": "What are the 3 constraints in project management?",
+          "answer": "1. **Time** (schedule/duration)\n2. **Cost** (budget)\n3. **Scope** (features/deliverables)\n\nThese must be balanced to maintain quality.",
+          "critical": false
+        },
+        {
+          "question": "What happens when the duration of the project is **decreased**?",
+          "answer": "- **Increase the cost** (hire more people/resources), AND/OR\n- **Decrease the scope** (reduce features)",
+          "critical": false
+        },
+        {
+          "question": "What happens if the budget (cost) of the project is **decreased**?",
+          "answer": "- **Increase the project duration** (reduce manpower), AND/OR\n- **Decrease the scope** (reduce features)",
+          "critical": false
+        },
+        {
+          "question": "What happens if project scope is **increased**?",
+          "answer": "- **Increase project cost** (more resources needed), AND/OR\n- **Increase project duration** (more time needed)",
+          "critical": false
+        },
+        {
+          "question": "What are the 3 main goals of project management?",
+          "answer": "1. Complete project **on time**\n2. Finish **within budget**\n3. Achieve **customer satisfaction**",
+          "critical": false
+        },
+        {
+          "question": "What are the 5 phases in the full cycle of a project?",
+          "answer": "1. Project initiation and organising\n2. Project planning\n3. Project execution\n4. Project control and monitoring\n5. Project closure",
+          "critical": false
+        },
+        {
+          "question": "What are the 4 main phases of project management (simplified)?",
+          "answer": "1. **Initiation & Organisation**\n2. **Planning**\n3. **Execution, Monitoring & Control**\n4. **Closure**",
+          "critical": false
+        },
+        {
+          "question": "What are the key activities in Project Initiation & Organisation?",
+          "answer": "- Organise a project team\n- Define parameters (objectives, scope)\n- Establish framework (how team operates)",
+          "critical": false
+        },
+        {
+          "question": "What are the 3 steps for organising a project team?",
+          "answer": "1. Identify a **sponsor**\n2. Appoint a **project manager (PM)**\n3. Identify **core team** (max 7 members)",
+          "critical": false
+        },
+        {
+          "question": "What are the key responsibilities of a project sponsor?",
+          "answer": "- Appoint project manager\n- Set strategic direction\n- Approve plan and budget\n- Support team members\n- Approve project changes\n- Set priorities and resolve conflicts",
+          "critical": false
+        },
+        {
+          "question": "What are the key responsibilities of a project manager?",
+          "answer": "- Define project management process\n- Prepare and obtain approval of project plan\n- Ensure team understands responsibilities\n- Expend resources according to plan\n- Analyse actual vs planned performance\n- Establish priorities\n- Provide status reports\n- Resolve conflicts",
+          "critical": false
+        },
+        {
+          "question": "What is the maximum recommended size for a core project team?",
+          "answer": "**At most 7 members**\n\nCore members make major decisions; extended members provide specific expertise (no limit).",
+          "critical": false
+        },
+        {
+          "question": "Name 5 reasons why projects are authorized.",
+          "answer": "1. **Technology advances** (e.g., efficient car for gas shortage)\n2. **Social needs** (e.g., new substation for industrial park)\n3. **Market demands** (e.g., new video game player)\n4. **Business needs** (e.g., toxic material guidelines)\n5. **Customer requests** (e.g., portable water project)",
+          "critical": false
+        },
+        {
+          "question": "What does SWOT stand for and what is its purpose?",
+          "answer": "- **S**trengths\n- **W**eaknesses\n- **O**pportunities\n- **T**hreats\n\n**Purpose:** Identify suitable projects by analyzing internal capabilities and external factors.",
+          "critical": false
+        },
+        {
+          "question": "What should a Project Objective Statement include?",
+          "answer": "- **What** you're going to do (scope)\n- **By when** (schedule)\n- **With how many** (resources/costs)\n\n**Max 25 words, only 1 target, clear and precise**\n\nExample: \"Implement integrated employee database by 31 Dec 2006 with budget of S$20 million.\"",
+          "critical": false
+        },
+        {
+          "question": "What are the 3 flexibility levels in a Flexibility Matrix?",
+          "answer": "1. **Least Flexible** — cannot be exceeded\n2. **Moderately Flexible** — can be adjusted within project objective\n3. **Most Flexible** — management willing to exceed original goal if necessary\n\nUsed to determine trade-offs among scope, schedule, and resources.",
+          "critical": false
+        },
+        {
+          "question": "What is the purpose of a List of Major Deliverables?",
+          "answer": "- Defines what the project **is expected to produce**\n- Provides scope and boundaries\n- Reduces rework cycle",
+          "critical": false
+        },
+        {
+          "question": "What is a Project Charter and what does it contain?",
+          "answer": "**Definition:** A document that formally authorizes a project and gives PM authority.\n\n**Contains:**\n- Project title and description\n- PM assigned and authority level\n- Project objective statement\n- Business case (why?)\n- Product description/deliverables",
+          "critical": false
+        },
+        {
+          "question": "What 4 areas should a project framework encompass?",
+          "answer": "1. **Planning** (what tools, who develops plan)\n2. **Tracking** (meetings, progress assessment)\n3. **Practices** (project file, change approval)\n4. **Relationships** (communication, conflict resolution)",
+          "critical": false
+        },
+        {
+          "question": "What are the key activities in Project Planning?",
+          "answer": "1. Develop **Work Breakdown Structure (WBS)**\n2. Approximate **duration of tasks**\n3. Generate **Gantt Chart**",
+          "critical": false
+        },
+        {
+          "question": "What is a Work Breakdown Structure (WBS)?",
+          "answer": "A tool for identifying and presenting project work in a **hierarchical and logically structured manner**.\n\n**Purpose:** Ensure all work required to meet objectives is properly identified, defined, and assigned.",
+          "critical": false
+        },
+        {
+          "question": "What are the 4 key elements of WBS?",
+          "answer": "1. Sequence is **NOT** important\n2. Completeness **IS** important\n3. Verb/noun symbolizes task & activity\n4. Each breakdown needs minimum of **2 tasks**",
+          "critical": false
+        },
+        {
+          "question": "What approach is used to develop a WBS?",
+          "answer": "**Top-down approach:**\n1. Identify 4 to 7 major components\n2. Group by: product deliverables, life cycle phases, functional responsibilities, or geographical location\n3. Validate using **bottom-up approach**\n4. WBS is a **team process** (not PM alone)",
+          "critical": false
+        },
+        {
+          "question": "Who assigns the duration of tasks in a project?",
+          "answer": "Durations are assigned by the **owners** of the tasks (not the PM).\n\n**Key principles:**\n- Avoid padding — use most likely duration\n- Document all assumptions\n- Document number of persons and training requirements",
+          "critical": false
+        },
+        {
+          "question": "Explain the relationship: Effort → Duration → Calendar Time",
+          "answer": "- **Effort** — total work required (person-hours); for charging purposes\n- **Duration** — time to complete task; for schedule purposes (considers productivity & wait time)\n- **Calendar Time** — real elapsed time; for tracking (considers non-working days, weekends, holidays)\n\n**Formula:** Effort ÷ Resources = Duration × Resource Availability = Calendar Time",
+          "critical": false
+        },
+        {
+          "question": "What is a Gantt Chart and what is its purpose?",
+          "answer": "**Definition:** A simple representation of a project showing time taken and resources required for each activity.\n\n**Purpose:**\n- Useful **communication tool**\n- Easy to understand\n- Provides overview of responsibility and progress",
+          "critical": false
+        },
+        {
+          "question": "What are the 4 main activities in Project Execution, Monitoring & Control?",
+          "answer": "1. **Monitor** the environment (collect info & update status)\n2. **Manage** change (analyze variance)\n3. **Track** progress (take adaptive action)\n4. **Communicate** progress (report status)",
+          "critical": false
+        },
+        {
+          "question": "What is variance in project management?",
+          "answer": "When actual activities **deviate from planned activities**.\n\nAfter identifying causes and impacts, the PM must plan for **adaptive action**.",
+          "critical": false
+        },
+        {
+          "question": "What should you do when planning for adaptive action?",
+          "answer": "- Involve team members in planning\n- Review project change control process\n- Re-visit all assumptions (schedule, resource, scope)\n- Check status data for accuracy\n- Implement contingency plan\n- Hold key milestones while re-arranging tasks\n- Re-plan/re-estimate schedule or resources",
+          "critical": false
+        },
+        {
+          "question": "What should you do when taking adaptive action?",
+          "answer": "- Implement new plan\n- Communicate changes to team\n- Get buy-in from project team\n- Document all changes\n\n**Remember:** Changes in one aspect (scope/schedule/resource) **will affect others** — monitor carefully!",
+          "critical": false
+        },
+        {
+          "question": "How often should project status be reported and what should be included?",
+          "answer": "**Frequency:** At least **once a month**\n\n**Include:**\n- Overall % of completion (emphasize milestones)\n- Major tasks completed this period\n- Project analysis, variance, and adaptive action\n- Major tasks for next period\n- Outstanding issues (updated schedules, milestones, costs)",
+          "critical": false
+        },
+        {
+          "question": "What are the key considerations before project closure?",
+          "answer": "- **Announce** end of project\n- **Conduct** final project review\n- **Debrief** key learning\n- **Deliver** acknowledgements and rewards\n- **Closing ritual** (celebration)\n- **Complete paperwork** (contract, payment, schedule, lessons learned, close file)",
+          "critical": false
+        },
+        {
+          "question": "What is the purpose of conducting a project review?",
+          "answer": "- Highlight **what went right AND what went wrong**\n- Purpose is **NOT finger pointing** but to minimize future problems\n- Essential for **continuous improvement**\n- Identify success elements\n- Avoid future problems\n- **Capture key learning** for future projects",
+          "critical": false
+        },
+        {
+          "question": "What steps are involved in closing the project file?",
+          "answer": "- Complete all final review documents\n- Bundle and label all status reports\n- Send all project files for archiving\n- **PM is responsible** for ensuring proper storage",
+          "critical": false
+        },
+        {
+          "question": "What does PERT stand for and what is its purpose?",
+          "answer": "- **PERT = Program Evaluation and Review Technique**\n- Used when task durations are **uncertain** or variable\n- Uses **probabilistic time estimates** to calculate expected project duration\n- Best for R&D, new product development, IoT prototyping",
+          "critical": false
+        },
+        {
+          "question": "What are the 3 time estimates used in PERT?",
+          "answer": "1. **Optimistic (O)** — Best-case scenario (everything goes perfectly)\n2. **Most Likely (M)** — Normal scenario (most probable duration)\n3. **Pessimistic (P)** — Worst-case scenario (everything goes wrong)",
+          "critical": false
+        },
+        {
+          "question": "What is the formula for calculating Expected Time (TE) in PERT?",
+          "answer": "**TE = (O + 4M + P) / 6**\n\nWhere:\n- O = Optimistic time\n- M = Most Likely time\n- P = Pessimistic time",
+          "critical": false
+        },
+        {
+          "question": "What are the formulas for Variance and Standard Deviation in PERT?",
+          "answer": "- **Standard Deviation (σ) = (P - O) / 6**\n- **Variance (σ²) = [(P - O) / 6]²**",
+          "critical": false
+        },
+        {
+          "question": "Given: Optimistic = 3 days, Most Likely = 5 days, Pessimistic = 13 days. Calculate TE and σ.",
+          "answer": "- **TE = (3 + 4×5 + 13) / 6 = (3 + 20 + 13) / 6 = 36 / 6 = 6 days**\n- **σ = (13 - 3) / 6 = 10 / 6 ≈ 1.67 days**\n- **σ² ≈ 2.78**",
+          "critical": false
+        },
+        {
+          "question": "What does CPM stand for and what is its purpose?",
+          "answer": "- **CPM = Critical Path Method**\n- Used when task durations are **deterministic** and well-known\n- Identifies the **critical path** — the longest path that determines project duration\n- Best for construction, manufacturing, well-defined projects",
+          "critical": false
+        },
+        {
+          "question": "What are the key features of CPM?",
+          "answer": "- Uses **single time estimate** for each activity (deterministic)\n- Identifies **critical activities** — activities with zero slack/float\n- Calculates **ES, EF, LS, LF** (earliest/latest start/finish times)\n- Determines **slack/float** — amount of time an activity can be delayed without delaying the project",
+          "critical": false
+        },
+        {
+          "question": "What is calculated in the Forward Pass of CPM?",
+          "answer": "- **Earliest Start (ES)** and **Earliest Finish (EF)**\n- Calculated **left to right** through the network diagram\n- **ES = max(EF of predecessors)**\n- **EF = ES + Duration**",
+          "critical": false
+        },
+        {
+          "question": "What is calculated in the Backward Pass of CPM?",
+          "answer": "- **Latest Start (LS)** and **Latest Finish (LF)**\n- Calculated **right to left** through the network diagram\n- **LF = min(LS of successors)**\n- **LS = LF - Duration**",
+          "critical": false
+        },
+        {
+          "question": "What is the formula for calculating Slack/Float in CPM?",
+          "answer": "**Slack = LS - ES** or **Slack = LF - EF**\n\nActivities with **zero slack** are on the **critical path**.",
+          "critical": false
+        },
+        {
+          "question": "What is the critical path in a project?",
+          "answer": "- The **longest path** through the network diagram\n- The sequence of tasks that determines the **minimum project duration**\n- Activities on the critical path have **zero slack/float**\n- If any activity on this path is delayed, the **entire project is delayed**",
+          "critical": false
+        },
+        {
+          "question": "What are the key differences between PERT and CPM?",
+          "answer": "| Aspect | PERT | CPM |\n|---|---|---|\n| Time Estimates | 3 estimates (O, M, P) | 1 estimate (deterministic) |\n| Uncertainty | High uncertainty | Low uncertainty |\n| Focus | Probability of completion | Critical path identification |\n| Best For | R&D, new projects, IoT prototyping | Construction, manufacturing |\n| Complexity | More complex | Simpler |",
+          "critical": false
+        },
+        {
+          "question": "What are the 4 types of dependencies in a network diagram?",
+          "answer": "1. **Finish-to-Start (FS)** — Task A must finish before Task B starts (most common)\n2. **Start-to-Start (SS)** — Task A must start before Task B can start\n3. **Finish-to-Finish (FF)** — Task A must finish before Task B can finish\n4. **Start-to-Finish (SF)** — Task A must start before Task B can finish (rare)",
+          "critical": false
+        },
+        {
+          "question": "What is slack/float in project management?",
+          "answer": "The amount of time an activity can be **delayed without delaying the project**.\n\nActivities **not** on the critical path have slack. Activities on the critical path have **zero slack**.",
+          "critical": false
+        },
+        {
+          "question": "When should you use PERT for an IoT project?",
+          "answer": "- Developing **new sensor technology** with unknown performance\n- **Wireless protocol selection** with uncertain range/reliability\n- **Cloud integration** with third-party services\n- **Regulatory certification** with unpredictable timelines",
+          "critical": false
+        },
+        {
+          "question": "When should you use CPM for an IoT project?",
+          "answer": "- **Hardware assembly** with known component lead times\n- **Software testing** with established test suites\n- **Documentation** with clear requirements\n- **Packaging and shipping** with standard processes",
+          "critical": false
+        },
+        {
+          "question": "What is the hybrid approach for IoT projects?",
+          "answer": "Many IoT projects use **PERT for R&D phases** and **CPM for production phases**:\n- **Design/Prototype phase:** PERT (high uncertainty)\n- **Development phase:** PERT for new tech, CPM for standard tasks\n- **Testing phase:** CPM (well-defined test procedures)\n- **Production/Deployment:** CPM (standardized processes)",
+          "critical": false
+        }
+      ]
+    },
+    {
+      "id": "ege353-lab-1-5-qa",
+      "title": "EGE353 Lab 1–5 Q&A & Command Reference",
+      "course": "EGE353",
+      "path": "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 1-5 Q&A.md",
+      "cardCount": 69,
+      "cards": [
+        {
+          "question": "What does `source /opt/ros/humble/setup.bash` do?",
+          "answer": "Loads the system ROS 2 environment so `ros2` commands and system packages work in that terminal.",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 run turtlesim turtlesim_node` do?",
+          "answer": "Starts the turtlesim simulation node (**subscriber**).",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 run turtlesim turtle_teleop_key` do?",
+          "answer": "Starts keyboard teleop — **publisher** of velocity commands to `/turtle1/cmd_vel`.",
+          "critical": false
+        },
+        {
+          "question": "Is `turtle_teleop_key` a publisher or subscriber?",
+          "answer": "**Publisher** — publishes to `/turtle1/cmd_vel`; does not subscribe.",
+          "critical": false
+        },
+        {
+          "question": "What topic does turtlesim subscribe to for movement?",
+          "answer": "`/turtle1/cmd_vel` (cmd = command, vel = velocity).",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 node list` / `ros2 topic list` do?",
+          "answer": "Lists all running nodes / all active topics.",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 service list` / `ros2 action list` do?",
+          "answer": "Lists available services / actions.",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 topic echo /turtle1/cmd_vel` do?",
+          "answer": "Displays live messages on that topic (`linear.x`, `angular.z`, etc.).",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 topic echo /turtle1/pose` do?",
+          "answer": "Shows turtle position and orientation in real time.",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 topic pub` do? What does `--rate 1` mean?",
+          "answer": "Publishes messages from CLI. `--once` = single message; `--rate 1` = **1 Hz** (1 message per second).\n\n```bash\nros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist \\\n \"{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}\"\n\nros2 topic pub --rate 1 /turtle1/cmd_vel geometry_msgs/msg/Twist \\\n \"{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}\"\n```",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 topic hz /turtle1/cmd_vel` do?",
+          "answer": "Reports average publishing frequency of that topic.",
+          "critical": false
+        },
+        {
+          "question": "Frequency of `/cmd_vel` from keyboard teleop?",
+          "answer": "**Event-based** — publishes when a key is pressed, not at a fixed rate. (Course sheet may also cite **10 Hz** in other contexts — confirm with lab.)",
+          "critical": false
+        },
+        {
+          "question": "What does `rqt_graph` do?",
+          "answer": "Opens GUI showing nodes, topics, and pub/sub connections. Refresh after changes. Open in new terminal; Ctrl+C to stop. Lab 5 equivalent: `ros2 run rqt_graph rqt_graph`.",
+          "critical": false
+        },
+        {
+          "question": "`/turtle1/cmd_vel` field meanings?",
+          "answer": "| Field | Effect |\n|-------|--------|\n| `linear.x > 0` | Forward |\n| `linear.x < 0` | Backward |\n| `angular.z > 0` | Turn left (anti-clockwise) |\n| `angular.z < 0` | Turn right (clockwise) |",
+          "critical": false
+        },
+        {
+          "question": "Linear vs angular velocity?",
+          "answer": "Linear = straight-line motion (m/s); angular = rotation (rad/s), usually `angular.z` for yaw.",
+          "critical": false
+        },
+        {
+          "question": "What is theta? Coordinate system?",
+          "answer": "| Axis / value | Meaning |\n|--------------|---------|\n| X | Increases right (0 → 13 in window) |\n| Y | Increases upward (0 → 13) |\n| Theta = 0 | Facing **East** (3 o'clock) |\n| Theta = π (3.14 rad) | Facing **West** |\n| Theta **+** | Anti-clockwise |\n| Theta **−** | Clockwise |",
+          "critical": false
+        },
+        {
+          "question": "Teleop key bindings",
+          "answer": "| Key(s) | Action |\n|--------|--------|\n| `i` / `,` | Forward / backward |\n| `j` / `l` | Rotate left / right (in place) |\n| `u`, `m` | Anti-clockwise diagonal |\n| `o`, `.` | Clockwise diagonal |\n| **Capital** letters | Translation relative to robot front |",
+          "critical": false
+        },
+        {
+          "question": "What does `git clone` do? Where do you run it?",
+          "answer": "Copies a remote Git repository locally. Run from workspace **`src/`** folder.",
+          "critical": false
+        },
+        {
+          "question": "What does `colcon build --packages-select teleop_cpp_ros2` do?",
+          "answer": "Builds only that package (reads source → compiles C++ → executable).",
+          "critical": false
+        },
+        {
+          "question": "What does `source install/setup.bash` do?",
+          "answer": "Loads underlay + overlay so your packages are available to `ros2 run`.",
+          "critical": false
+        },
+        {
+          "question": "Why don't teleop and turtlesim connect at first?",
+          "answer": "Topic names differ — teleop publishes `/cmd_vel`, turtlesim listens on `/turtle1/cmd_vel`.",
+          "critical": false
+        },
+        {
+          "question": "Remap teleop to turtlesim?",
+          "answer": "ros2 run teleop_cpp_ros2 teleop --ros-args --remap /cmd_vel:=/turtle1/cmd_vel",
+          "critical": false
+        },
+        {
+          "question": "Twist axes (x, y, z)?",
+          "answer": "**X** forward/back (`linear.x`); **Y** strafe on holonomic robots (`linear.y`); **Z** yaw (`angular.z`).",
+          "critical": false
+        },
+        {
+          "question": "Holonomic vs non-holonomic robots?",
+          "answer": "**Holonomic** — move sideways and rotate simultaneously. **Omni wheel** (3×, 90° to travel); **Mecanum wheel** (4×, 45°). Control via **angle** and **amplitude** (speed).",
+          "critical": false
+        },
+        {
+          "question": "When must you run `colcon build`?",
+          "answer": "After any change to source code, `CMakeLists.txt`, or `package.xml`.",
+          "critical": false
+        },
+        {
+          "question": "Topic vs service vs action — when use service?",
+          "answer": "**Topic** = continuous pub/sub stream. **Service** = one-time synchronous request/response (spawn/kill) — **one server only**. **Action** = long async task with feedback.",
+          "critical": false
+        },
+        {
+          "question": "`ros2 service list` vs `ros2 service list -t`?",
+          "answer": "List service names / list with **types** included.",
+          "critical": false
+        },
+        {
+          "question": "`ros2 service type /clear`?",
+          "answer": "Shows service type (e.g. `std_srvs/srv/Empty`).",
+          "critical": false
+        },
+        {
+          "question": "`ros2 interface show turtlesim/srv/Spawn`?",
+          "answer": "Shows request and response fields before calling.",
+          "critical": false
+        },
+        {
+          "question": "Spawn / kill a turtle?",
+          "answer": "ros2 service call /spawn turtlesim/srv/Spawn \"{x: 2, y: 2, theta: 0.2, name: ''}\"\nros2 service call /kill turtlesim/srv/Kill \"{name: 'turtle1'}\"",
+          "critical": false
+        },
+        {
+          "question": "Control turtle2 with teleop?",
+          "answer": "ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel",
+          "critical": false
+        },
+        {
+          "question": "Parameters — list / get / set / dump?",
+          "answer": "List all params on nodes; read one; change at runtime; save to YAML.",
+          "critical": false
+        },
+        {
+          "question": "Load saved parameters at startup?",
+          "answer": "ros2 run turtlesim turtlesim_node --ros-args --params-file ./turtlesim.yaml",
+          "critical": false
+        },
+        {
+          "question": "What is `rqt` Service Caller used for?",
+          "answer": "GUI to call services (e.g. `/turtle1/set_pen`) without typing `ros2 service call`.",
+          "critical": false
+        },
+        {
+          "question": "Three main rosbag commands?",
+          "answer": "`record`, `play`, `info`.",
+          "critical": false
+        },
+        {
+          "question": "Record multiple topics?",
+          "answer": "ros2 bag record -o bagfile1 /turtle1/cmd_vel /turtle1/pose",
+          "critical": false
+        },
+        {
+          "question": "Replay in a loop?",
+          "answer": "`-l` loops forever; robot redraws same path automatically.",
+          "critical": false
+        },
+        {
+          "question": "`ros2 bag info bagfile1`?",
+          "answer": "Duration, total messages, count per topic.",
+          "critical": false
+        },
+        {
+          "question": "Why does `/turtle1/pose` have far more messages than `/cmd_vel` in a bag?",
+          "answer": "`cmd_vel` only when keys pressed (event-based); `pose` publishes **continuously** at fixed rate even if turtle is still → pose count ≫ cmd_vel count.",
+          "critical": false
+        },
+        {
+          "question": "Which node moves the turtle?",
+          "answer": "`turtle_teleop_key` (pub) → `/turtle1/cmd_vel` → `turtlesim_node` (sub).",
+          "critical": false
+        },
+        {
+          "question": "Why remap teleop for Gazebo?",
+          "answer": "Teleop publishes `/turtle1/cmd_vel`; Gazebo diff-drive demo listens on `/demo/cmd_demo`.\n\n```\nBefore remap: teleop → /turtle1/cmd_vel Gazebo listens → /demo/cmd_demo (no link)\nAfter remap: Keyboard → teleop → /demo/cmd_demo → Gazebo robot → moves\n```",
+          "critical": false
+        },
+        {
+          "question": "Gazebo remap + start world?",
+          "answer": "ros2 run turtlesim turtle_teleop_key --ros-args --remap /turtle1/cmd_vel:=/demo/cmd_demo\n\ngazebo --verbose /opt/ros/humble/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world",
+          "critical": false
+        },
+        {
+          "question": "When demoing bag playback, what does `rqt_graph` show?",
+          "answer": "e.g. rosbag player → `/turtle1/cmd_vel` → `/turtlesim` (active pub/sub chain).",
+          "critical": false
+        },
+        {
+          "question": "Overlay vs underlay (Lab 5 Task 1)?",
+          "answer": "T1 sources overlay → custom compiled turtlesim. T2 sources only underlay → system turtlesim.",
+          "critical": false
+        },
+        {
+          "question": "`rosdep install -i --from-path src --rosdistro humble -y`?",
+          "answer": "Installs missing system dependencies for packages in `src/`.",
+          "critical": false
+        },
+        {
+          "question": "Create a C++ package with a node?",
+          "answer": "ros2 pkg create --build-type ament_cmake --node-name my_node my_package",
+          "critical": false
+        },
+        {
+          "question": "Talker topic, nodes, type, frequency?",
+          "answer": "Topic `/topic`; nodes `minimal_publisher` / `minimal_subscriber`; type `std_msgs/msg/String`; ~**2 Hz** (500 ms timer).",
+          "critical": false
+        },
+        {
+          "question": "Task 4 — record then demo?",
+          "answer": "Record: `ros2 bag record -o bagtalker /topic` while talker runs.\nDemo: `ros2 bag play -l bagtalker` + listener + `ros2 run rqt_graph rqt_graph` (**no live talker**).",
+          "critical": false
+        },
+        {
+          "question": "Task 5 vs Task 4?",
+          "answer": "One bag, **two topics** (`/upcounter` ~2 Hz, `/downcounter` ~1 Hz), **two listeners** (`Countup_Listener`, `Countdown_Listener`).",
+          "critical": false
+        },
+        {
+          "question": "Why must every `.cpp` node appear in `CMakeLists.txt`?",
+          "answer": "`add_executable` = build target; `install(TARGETS ...)` = available to `ros2 run`.",
+          "critical": false
+        },
+        {
+          "question": "What files define a ROS 2 package?",
+          "answer": "`package.xml` (metadata, dependencies) and `CMakeLists.txt` (build/install rules).",
+          "critical": false
+        },
+        {
+          "question": "Other talker/listener examples in robotics?",
+          "answer": "Camera driver (publisher), image display or detector (subscriber).",
+          "critical": false
+        },
+        {
+          "question": "`ros2 pkg executables cpp_pubsub`?",
+          "answer": "Lists runnable executables installed for that package.",
+          "critical": false
+        },
+        {
+          "question": "What command opens the ROS node/topic graph GUI?",
+          "answer": "`rqt_graph` or `ros2 run rqt_graph rqt_graph`",
+          "critical": false
+        },
+        {
+          "question": "What does `ros2 topic hz /topic` show?",
+          "answer": "Average publish frequency (Hz) of that topic",
+          "critical": false
+        },
+        {
+          "question": "Topic vs service — main difference?",
+          "answer": "Topic = continuous stream (pub/sub); service = one request, one response (one server)",
+          "critical": false
+        },
+        {
+          "question": "What is an Action (vs topic/service)?",
+          "answer": "Long-running async task with goal and feedback",
+          "critical": false
+        },
+        {
+          "question": "Why avoid multiple publishers on one topic?",
+          "answer": "Subscriber can't tell which node sent the message — conflicts possible",
+          "critical": false
+        },
+        {
+          "question": "What does `git clone` do? Where to run it?",
+          "answer": "Copy remote repo locally; run from workspace `src/`",
+          "critical": false
+        },
+        {
+          "question": "Overlay vs underlay?",
+          "answer": "Underlay = base ROS install; overlay = your workspace; overlay overrides underlay",
+          "critical": false
+        },
+        {
+          "question": "Why does pose have more bag messages than cmd_vel?",
+          "answer": "pose publishes continuously; cmd_vel only when keys pressed",
+          "critical": false
+        },
+        {
+          "question": "Talker topic, type, rate (Lab 5 Task 3)?",
+          "answer": "`/topic`; `std_msgs/msg/String`; ~2 Hz",
+          "critical": false
+        },
+        {
+          "question": "Task 4 demo — which nodes run?",
+          "answer": "Bag player + listener + rqt_graph (no live talker)",
+          "critical": false
+        },
+        {
+          "question": "Task 5 topics and rates?",
+          "answer": "`/upcounter` ~2 Hz; `/downcounter` ~1 Hz",
+          "critical": false
+        },
+        {
+          "question": "`ros2 bag play -l bagname` — what does `-l` do?",
+          "answer": "Loop playback forever",
+          "critical": false
+        },
+        {
+          "question": "Remap teleop to Gazebo robot cmd topic?",
+          "answer": "`--ros-args --remap /turtle1/cmd_vel:=/demo/cmd_demo`",
+          "critical": false
+        },
+        {
+          "question": "Spawn a turtle via service?",
+          "answer": "`ros2 service call /spawn turtlesim/srv/Spawn \"{x: 2, y: 2, theta: 0.2, name: ''}\"`",
+          "critical": false
+        },
+        {
+          "question": "Theta = 0 means facing which direction?",
+          "answer": "East (3 o'clock); π rad = West; + = anti-clockwise",
+          "critical": false
+        },
+        {
+          "question": "Holonomic robot?",
+          "answer": "Can move sideways and rotate simultaneously (omni/mecanum wheels)",
+          "critical": false
+        }
+      ]
+    }
+  ]
+}
