@@ -9,3 +9,11 @@
 # OS
 .DS_Store
 Thumbs.db
+
+# Code Composer Studio (EGE320 lab builds)
+99-ATTACHMENTS/EGE320/**/Debug/
+99-ATTACHMENTS/EGE320/**/Release/
+99-ATTACHMENTS/EGE320/**/.metadata/
+99-ATTACHMENTS/EGE320/**/RemoteSystemsTempFiles/
+99-ATTACHMENTS/EGE320/**/.clangd
+99-ATTACHMENTS/EGE320/**/.theia/
