@@ -39,6 +39,8 @@ python ingest.py --process-inbox
 
 Output lands in `00-INBOX/_processing/` then copies to `03-RESOURCES/<module>/` or `Media/`.
 
-**After `ingest.py` finishes:** agent must run the **post-ingest cleanup pass** — structure the `.md` (headings, tables, code blocks, summary, links). MarkItDown output alone is not done. See [[AGENTS.md]] §5.
+**PDF diagrams:** `ingest.py pdf` renders pages that mention figures/circuits/plots (or contain substantial visuals) to `99-ATTACHMENTS/<COURSE>/<slug>/` and adds a `## Figures` section to the note. Agents embed these inline during cleanup where questions reference them; skip logos/decorative shots.
+
+**After `ingest.py` finishes:** agent must run the **post-ingest cleanup pass** — structure the `.md` (headings, tables, code blocks, summary, figure embeds, links). MarkItDown output alone is not done. See [[AGENTS.md]] §5.
 
 **Agents:** see [[AGENTS.md]] §5.

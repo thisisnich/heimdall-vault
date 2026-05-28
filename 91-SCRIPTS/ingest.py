@@ -41,6 +41,20 @@ SUPPORTED_DROP = {
     ".txt", ".md",
 }
 
+# Pages whose text mentions a figure/diagram, or pages with substantial visuals.
+DIAGRAM_CUES = re.compile(
+    r"\b("
+    r"figure|fig\.|diagram|circuit|sketch|constellation|vector diagram|"
+    r"spectral|waveform|modulated signal|time domain|frequency domain|"
+    r"refer to|shown below|shown above|see below|see the circuit|"
+    r"draw the|plot below|graph below|illustration"
+    r")\b",
+    re.IGNORECASE,
+)
+
+MIN_FIGURE_PX = 120  # skip logos / icons smaller than this
+PAGE_RENDER_DPI = 150
+
 
 def today() -> str:
     return date.today().isoformat()
@@ -176,6 +190,18 @@ def transcribe_audio(path: Path) -> str:
         return f"_Whisper error: {e}_\n"
 
 
+def figures_section(figures: list[dict]) -> str:
+    if not figures:
+        return ""
+    lines = ["## Figures", ""]
+    for fig in figures:
+        rel = fig["vault_path"].replace("\\", "/")
+        caption = fig.get("caption") or fig["filename"]
+        lines.append(f"![[{rel}|{caption}]]")
+        lines.append("")
+    return "\n".join(lines) + "\n"
+
+
 def write_note(
     out_path: Path,
     body: str,
@@ -185,18 +211,99 @@ def write_note(
     tool: str,
     course: str | None,
     title: str,
+    figures: list[dict] | None = None,
 ) -> Path:
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    figs = figures_section(figures or [])
     content = (
         frontmatter(note_type, source_kind, course, title)
         + ingest_block(ingest_source, tool)
         + "## Summary\n\n\n"
+        + figs
         + "## Raw\n\n"
         + body.strip()
         + "\n"
     )
     out_path.write_text(content, encoding="utf-8")
     return out_path
+
+
+def _page_has_large_images(page) -> bool:
+    for info in page.get_images(full=True):
+        try:
+            xref = info[0]
+            w, h = page.parent.extract_image(xref)["width"], page.parent.extract_image(xref)["height"]
+            if w >= MIN_FIGURE_PX and h >= MIN_FIGURE_PX:
+                return True
+        except (IndexError, KeyError, TypeError):
+            continue
+    return False
+
+
+def _page_needs_figure(page) -> bool:
+    text = page.get_text("text") or ""
+    if DIAGRAM_CUES.search(text):
+        return True
+    if _page_has_large_images(page):
+        return True
+    # Vector drawings (circuits drawn in PDF, not embedded bitmaps)
+    try:
+        if len(page.get_drawings()) >= 8:
+            return True
+    except AttributeError:
+        pass
+    return False
+
+
+def extract_pdf_figures(pdf_path: Path, course: str | None, slug: str) -> list[dict]:
+    """Render or extract diagram pages from a PDF into 99-ATTACHMENTS."""
+    try:
+        import fitz  # pymupdf
+    except ImportError:
+        print("  (pymupdf not installed — skip figure extraction)")
+        return []
+
+    dest_dir = ATTACHMENTS / (course.upper() if course else "Media") / slug
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    figures: list[dict] = []
+
+    doc = fitz.open(pdf_path)
+    try:
+        for page_index, page in enumerate(doc):
+            if not _page_needs_figure(page):
+                continue
+
+            page_num = page_index + 1
+            filename = f"{slug}-p{page_num:02d}.png"
+            out_path = dest_dir / filename
+
+            # Page screenshot — captures circuits, plots, and composite layouts
+            pix = page.get_pixmap(dpi=PAGE_RENDER_DPI, alpha=False)
+            pix.save(str(out_path))
+
+            vault_rel = out_path.relative_to(VAULT_ROOT).as_posix()
+            caption = f"Page {page_num}"
+            preview = (page.get_text("text") or "").strip().splitlines()
+            for line in preview[:6]:
+                line = line.strip()
+                if line and len(line) > 8 and not line.lower().startswith("official"):
+                    caption = f"Page {page_num} — {line[:80]}"
+                    break
+
+            figures.append(
+                {
+                    "page": page_num,
+                    "filename": filename,
+                    "path": out_path,
+                    "vault_path": vault_rel,
+                    "caption": caption,
+                }
+            )
+            print(f"  figure: {vault_rel}")
+    finally:
+        doc.close()
+
+    return figures
 
 
 def copy_attachment(src: Path, course: str | None) -> Path:
@@ -210,12 +317,16 @@ def copy_attachment(src: Path, course: str | None) -> Path:
 
 def file_pdf(path: Path, course: str | None, title: str | None) -> Path:
     title = title or path.stem
+    slug = slugify(title)
     body = convert_with_markitdown(path)
     mod = resolve_module(course)
     out_dir = mod if mod else INBOX_PROCESSING
-    out = out_dir / f"{slugify(title)}-slides.md"
+    out = out_dir / f"{slug}-slides.md"
     copy_attachment(path, course)
-    return write_note(out, body, "lecture", "pdf", path.name, "markitdown", course, title)
+    figures = extract_pdf_figures(path, course, slug)
+    return write_note(
+        out, body, "lecture", "pdf", path.name, "markitdown", course, title, figures
+    )
 
 
 def file_image(path: Path, course: str | None, title: str | None) -> Path:

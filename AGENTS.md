@@ -200,21 +200,26 @@ Additional fields when applicable:
 
 1. **Keep** the `[!ingest]` callout block unchanged (re-run ingest replaces it).
 2. **Write `## Summary`** — 2–5 sentences: topic, key tasks, links to related vault notes.
-3. **Restructure body** — replace PDF line-break junk with:
+3. **Figures from PDFs** — `ingest.py` auto-screenshots pages that reference diagrams/circuits/plots or contain substantial visuals (saved under `99-ATTACHMENTS/<COURSE>/<slug>/`). During cleanup:
+   - Keep the auto-generated `## Figures` section **or** move embeds inline next to the question they support (`![[99-ATTACHMENTS/.../slug-p02.png|caption]]`).
+   - **Do not** extract logos, headers, or decorative branding — ingest skips text-only pages; drop any false-positive page shots during cleanup.
+   - Standalone photo ingests (`ingest.py image`) and non-diagram PDF pages: leave as-is.
+4. **Restructure body** — replace PDF line-break junk with:
    - Proper `#` / `##` headings
    - Tables (wiring, specs, MCQ options)
    - Fenced code blocks for scripts
    - Remove form-feed (`\f`), page headers/footers, duplicate titles
-4. **Set frontmatter** — correct `type` (`lecture` | `lab` | `assignment` | `tutorial`), `course`, `module`, `tags`, `status: draft`.
-5. **Link** — PDF in `99-ATTACHMENTS/`, project note in `01-PROJECTS/` if assignment, existing tutorial/lab note if duplicate topic.
-6. **Raw section** — either delete after structuring, or collapse to `## Raw (archive)` with only content not captured above. Do not leave an unedited MarkItDown dump as the only body.
-7. **Inbox** — move originals to `99-ATTACHMENTS/<course>/`; clear `00-INBOX/` (see `00-INBOX/README.md`).
+5. **Set frontmatter** — correct `type` (`lecture` | `lab` | `assignment` | `tutorial`), `course`, `module`, `tags`, `status: draft`.
+6. **Link** — PDF in `99-ATTACHMENTS/`, project note in `01-PROJECTS/` if assignment, existing tutorial/lab note if duplicate topic.
+7. **Raw section** — either delete after structuring, or collapse to `## Raw (archive)` with only content not captured above. Do not leave an unedited MarkItDown dump as the only body.
+8. **Inbox** — move originals to `99-ATTACHMENTS/<course>/`; clear `00-INBOX/` (see `00-INBOX/README.md`).
 
 Do **not** consider ingest complete until the cleanup pass is done.
 
 ### Tools
 
 - **MarkItDown** — PDF, PPTX, DOCX, images, URLs
+- **PyMuPDF** — PDF diagram page screenshots during `ingest.py pdf` (see `91-SCRIPTS/ingest.py`)
 - **yt-dlp** — YouTube transcripts
 - **Apple Voice Memos** — user copies auto-transcript to `.txt` → `ingest.py transcript` (see `91-SCRIPTS/VOICE-MEMOS-WORKFLOW.md`)
 - **Whisper** (optional) — only if user explicitly wants PC audio transcription; `91-SCRIPTS/.env`
@@ -386,6 +391,7 @@ The PA service should expose tools: `vault_search`, `vault_read`, `vault_write`,
 | Date | Change |
 |------|--------|
 | 2026-05-21 | Post-ingest cleanup pass required after MarkItDown |
+| 2026-05-28 | PDF diagram page screenshots via PyMuPDF in ingest.py |
 
 When you change vault conventions, update this file and add a row above.
 

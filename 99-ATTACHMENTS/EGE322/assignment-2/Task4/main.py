@@ -1,53 +1,21 @@
 import socket
 import gc
-import time
 import BME280
 from machine import Pin, I2C
 
+i2c = I2C(scl=Pin(22), sda=Pin(21), freq=10000)
 led1 = Pin(2, Pin.OUT)
-led2 = Pin(4, Pin.OUT)  # Lab 2 breadboard uses GPIO 5 — change to Pin(5) if wired there
-
-# Track UI state (GPIO readback can lie on some pins; assignment logic still uses .value())
-led1_on = False
-led2_on = False
-
-
-def setup_i2c():
-    # Fresh bus after boot.py WiFi — reusing a stale bus often causes ENODEV
-    try:
-        i2c.deinit()
-    except (NameError, OSError):
-        pass
-    time.sleep_ms(200)
-    bus = I2C(scl=Pin(22), sda=Pin(21), freq=10000)
-    devices = bus.scan()
-    print('I2C devices:', ['0x%02x' % d for d in devices])
-    return bus, devices
-
-
-def setup_bme(bus, devices):
-    for addr in (0x76, 0x77):
-        if addr in devices:
-            print('BME280 at', hex(addr))
-            return BME280.BME280(i2c=bus, address=addr)
-    raise OSError(
-        'BME280 not found. Check wiring: SDA=GPIO21, SCL=GPIO22, 3V3, GND. '
-        'Scan: %s' % ['0x%02x' % d for d in devices]
-    )
-
-
-i2c, _devices = setup_i2c()
-bme = setup_bme(i2c, _devices)
-
+led2 = Pin(4, Pin.OUT)
 
 def web_page():
+    bme = BME280.BME280(i2c=i2c)
     temp = bme.temperature
     pres = bme.pressure
     hum = bme.humidity
-    led1_state = "ON" if led1_on else "OFF"
-    led2_state = "ON" if led2_on else "OFF"
-    led1_dot = "#22c55e" if led1_on else "#d1d5db"
-    led2_dot = "#ef4444" if led2_on else "#d1d5db"
+    led1_state = "ON" if led1.value() == 1 else "OFF"
+    led2_state = "ON" if led2.value() == 1 else "OFF"
+    led1_dot = "#22c55e" if led1.value() == 1 else "#d1d5db"
+    led2_dot = "#ef4444" if led2.value() == 1 else "#d1d5db"
     html = """<!DOCTYPE html>
 <html>
 <head>
@@ -233,66 +201,47 @@ def web_page():
 </html>""".format(temp, pres, hum, led1_dot, led1_state, led2_dot, led2_state)
     return html
 
-
-def send_html(conn, html):
-    body = html.encode('utf-8')
-    conn.send('HTTP/1.1 200 OK\r\n')
-    conn.send('Content-Type: text/html; charset=utf-8\r\n')
-    conn.send('Connection: close\r\n')
-    conn.send('Content-Length: %d\r\n\r\n' % len(body))
-    conn.send(body)
-
-
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.bind(('', 80))
 s.listen(5)
 print('Web server running on port 80')
-
 while True:
-    conn = None
     try:
-        if gc.mem_free() < 80000:
+        if gc.mem_free() < 102000:
             gc.collect()
         conn, addr = s.accept()
+        conn.settimeout(3.0)
         print('Got a connection from %s' % str(addr))
         request = conn.recv(1024)
-        if not request:
-            conn.close()
-            continue
+        conn.settimeout(None)
+        request = str(request)
 
-        # Ignore browser favicon probes (extra connections every page load)
-        if b'favicon.ico' in request:
-            conn.send(b'HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n')
-            conn.close()
-            continue
-
-        if b'led1=on' in request:
+        if '/?led1=on' in request:
             print('LED1 ON')
-            led1_on = True
             led1.value(1)
-        elif b'led1=off' in request:
+        if '/?led1=off' in request:
             print('LED1 OFF')
-            led1_on = False
             led1.value(0)
-        if b'led2=on' in request:
-            print('LED2 ON, pin reads', led2.value())
-            led2_on = True
+        if '/?led2=on' in request:
+            print('LED2 ON')
             led2.value(1)
-            print('LED2 after set, pin reads', led2.value())
-        elif b'led2=off' in request:
+        if '/?led2=off' in request:
             print('LED2 OFF')
-            led2_on = False
             led2.value(0)
 
-        send_html(conn, web_page())
+        response = web_page()
+        conn.send('HTTP/1.1 200 OK\n')
+        conn.send('Content-Type: text/html\n')
+        conn.send('Connection: close\n\n')
+
+        # Send in chunks instead of all at once
+        chunk_size = 512
+        for i in range(0, len(response), chunk_size):
+            conn.send(response[i:i + chunk_size])
+
         conn.close()
-        conn = None
+        print('Response sent OK')
     except OSError as e:
+        conn.close()
         print('Connection closed:', e)
-        if conn:
-            try:
-                conn.close()
-            except OSError:
-                pass
-            conn = None
