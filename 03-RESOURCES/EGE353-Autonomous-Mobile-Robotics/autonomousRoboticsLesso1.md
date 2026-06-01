@@ -1,4 +1,4 @@
-﻿---
+---
 type: lecture
 course: EGE353
 module: EGE353-Autonomous-Mobile-Robotics
@@ -19,13 +19,13 @@ tags: [EGE353, lesson-1, module-overview, SLAM, ROS]
 
 > See [[EGE353 Assessment Breakdown|Assessment Breakdown]] and [[EGE353 Weekly Lesson Plan - E2|Weekly Lesson Plan]] for current dates.
 
-| Week | Assessment | Weight |
-|------|------------|--------|
-| 4–5 | Practical 1: ROS bags and packages | 20% |
-| 6 | Test 1: Proctored Quiz-1 | 10% |
-| 11–13 | Practical 2: Dockers | 20% |
-| 14 | Test 2: Proctored Quiz-2 | 15% |
-| 15–17 | Project Part A + B (design + SLAM) | 35% |
+| Week  | Assessment                         | Weight |
+| ----- | ---------------------------------- | ------ |
+| 4–5   | Practical 1: ROS bags and packages | 20%    |
+| 6     | Test 1: Proctored Quiz-1           | 10%    |
+| 11–13 | Practical 2: Dockers               | 20%    |
+| 14    | Test 2: Proctored Quiz-2           | 15%    |
+| 15–17 | Project Part A + B (design + SLAM) | 35%    |
 
 ### Weekly Timetable (E2)
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 5 Notes.md",
+                "file": "SCHOOL/01-NYPY3/📅 Schedule & Assessments Dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EGE353 Lab 5 Notes"
+              "title": "📅 Schedule & Assessments Dashboard"
             }
           }
         ]
@@ -168,8 +168,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -177,8 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,46 +187,49 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "098fddb7f77f2d64",
   "lastOpenFiles": [
-    "01-PROJECTS/EGE322-Assignment-2/~$signment_2.docx",
-    "01-PROJECTS/EGE322-Assignment-2/Assignment_2.docx",
-    "91-SCRIPTS/build-ege322-assignment2-doc.py",
-    "99-ATTACHMENTS/EGE322/assignment-2/bme280 - Copy(1).py",
-    "99-ATTACHMENTS/EGE322/assignment-2/boot_1.py",
-    "99-ATTACHMENTS/EGE322/assignment-2/boot_2.py",
-    "99-ATTACHMENTS/EGE322/assignment-2/bme280_WebServer_1(1).py",
-    "99-ATTACHMENTS/EGE322/assignment-2/web_server_led_on-off(1).py",
-    "03-RESOURCES/EGE322-IOT-System-Project/iot-assignment-2-2026b-1-slides.md",
-    "99-ATTACHMENTS/EGE322/IOT Assignment 2 2026b-1.pdf",
-    "99-ATTACHMENTS/EGE322/assignment-2/Task4/main.py",
-    "99-ATTACHMENTS/EGE322/assignment-2/Task4/boot.py",
-    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 5 Demo Study Guide.md",
-    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 1-5 Q&A.md",
-    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/ros2-revision-notes-slides.md",
-    "meetings/2026-05-22-meeting-with-john-2026-05-22.md",
-    "03-RESOURCES/Media/lkg0ixv4d2e-youtube.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-lesson7c.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-lesson6c.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-transceiver-block-diagram-roles-of-adc-source-channe.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-8-master-evm-error-vector-magnitude-to-optimize-.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-7-constellation-diagram-error-iq-imbalance-quadr.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-6-bpsk-qpsk-8psk-16psk-explained-how-to-boost-da.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-5-visualizing-digital-signals-qpsk-to-64qam-with.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-3-ask-fsk-psk-explained-with-time-diagrams-ampli.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-2-how-to-represent-signal-by-equation-constellat.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-1-how-to-describe-data-rate-throughput-by-bit-ra.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-communication-2-digital-modulation-amplitude-ask-fre.md",
-    "01-PROJECTS/EGE321-ASSN1/EGE321 Assignment 1b — Model Answers.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/assignment-1b-slides.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/lesson-5c-slides.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/lesson-4c-slides.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/lesson-3c-slides.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/lesson-2c-slides.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/lesson-1c-slides.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/tutorial-5c-solution-slides.md"
+    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/autonomousRoboticsLesso1.md",
+    "SCHOOL/01-NYPY3/📅 Schedule & Assessments Dashboard.md",
+    "SCHOOL/02-AP-Studies/AP-Studies/AP_Study_Resources.md",
+    "SCHOOL/02-AP-Studies/AP-Studies/AP_Computer_Science_A_Study_Plan.md",
+    "SCHOOL/02-AP-Studies/AP-Studies/AP_Calculus_BC_Study_Plan.md",
+    "SCHOOL/02-AP-Studies/AP-Studies/AP Studies Index.md",
+    "SCHOOL/02-AP-Studies/AP-Studies",
+    "SCHOOL/02-AP-Studies/02-AP-Studies - Index.md",
+    "SCHOOL/03-Archive/03-Archive - Index.md",
+    "SCHOOL/01-NYPY3/NYPY3 - Main Index.md",
+    "SCHOOL/01-NYPY3/NYP Timetable S1 2026.md",
+    "SCHOOL/01-NYPY3/01-NYPY3 - Index.md",
+    "SCHOOL/02-AP-Studies",
+    "SCHOOL/03-Archive",
+    "SCHOOL/SCHOOL - Index.md",
+    "SCHOOL/01-NYPY3",
+    "SCHOOL",
+    "Resources-RAW/inbox/inbox - Index.md",
+    "Resources-RAW/Resources - Index.md",
+    "Resources-RAW/inbox",
+    "Resources-RAW",
+    "Projects/Projects - Index.md",
+    "Projects",
+    "PARA - Index.md",
+    "Obsidian Skills - Guide.md",
+    "Lazy Method - Workflow.md",
+    "EGE321 Wireless Communication & Networking - MOC.md",
+    "Custom Hubs - Dashboard.md",
+    "Areas/Areas - Index.md",
+    "Areas",
+    "03-RESOURCES/HSX302-Healthy-Resilient-Families/HSX302 - Index.md",
+    "03-RESOURCES/FGX312-Japanese-Culture-Society/FGX312 - Index.md",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 - Index.md",
+    "03-RESOURCES/EGE322-IOT-System-Project/EGE322 - Index.md",
+    "03-RESOURCES/EGE321-Wireless-Communication/Lesson2c(1).md",
+    "99-ATTACHMENTS/EGE322/_inbox-archive/Lab2/Lab3/Servo1.py",
+    "99-ATTACHMENTS/EGE320/ege320-tutorial-6/ege320-tutorial-6-p02.png",
+    "99-ATTACHMENTS/EGE320/ege320-tutorial-6/ege320-tutorial-6-p01.png"
   ]
 }

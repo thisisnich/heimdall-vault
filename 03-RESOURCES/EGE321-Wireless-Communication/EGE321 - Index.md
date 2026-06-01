@@ -76,9 +76,9 @@ status: Active
 
 ### Related NYPY3 Courses
 **[[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Index|EGE320: Embedded Systems]]** — Wireless module integration  
-**[[EGE322 IoT System Project - MOC|EGE322: IoT Project]] — Wireless sensor networks  
-**[[EGE353 Autonomous Mobile Robotics - MOC|EGE353: Robotics]] — Robot communication systems  
-**[[EGE351 Automation Systems & Control - MOC|EGE351: Automation]] — Industrial wireless control
+**[[03-RESOURCES/EGE322-IOT-System-Project/EGE322 - Index|EGE322: IoT Project]]** — Wireless sensor networks  
+**[[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 - Index|EGE353: Robotics]]** — Robot communication systems  
+**[[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 - Index|EGE351: Automation]]** — Industrial wireless control
 
 ### Common Technologies
 - **Communication protocols** — Shared across all technical courses

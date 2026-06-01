@@ -27,8 +27,10 @@ status: Active
 ### Project Management
 **[[Chap2_ProjectMgt|Chapter 2: Project Management]]** — WBS, Gantt charts, project phases
 
-### Core Tutorials & Guides
-**[[Week 1|Week 1: Introduction]]** — Course overview and IoT fundamentals  
+### Weekly Materials
+**[[Week 1|Week 1: Introduction]]** — Course overview and IoT fundamentals
+
+### Core Tutorials & Guides  
 **[[Tutorials|Tutorial Collection]]** — Programming guides and exercises  
 **[[ESP32_Programming_Guide|ESP32 Programming Guide]]** — Comprehensive ESP32 development  
 **[[Python Programming Exercises|Python Exercises]]** — Programming practice problems
@@ -69,9 +71,9 @@ status: Active
 
 ### Related NYPY3 Courses
 **[[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Index|EGE320: Embedded Systems]]** — Hardware fundamentals  
-**[[EGE353 Autonomous Mobile Robotics - MOC|EGE353: Robotics]]** — Sensor integration  
-**[[EGE321 Wireless Communication & Networking - MOC|EGE321: Wireless Comm]]** — Network protocols  
-**[[EGE351 Automation Systems & Control - MOC|EGE351: Automation]]** — Control systems
+**[[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 - Index|EGE353: Robotics]]** — Sensor integration  
+**[[03-RESOURCES/EGE321-Wireless-Communication/EGE321 - Index|EGE321: Wireless Comm]]** — Network protocols  
+**[[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 - Index|EGE351: Automation]]** — Control systems
 
 ### Common Technologies
 - **Embedded programming** — Shared with all technical courses

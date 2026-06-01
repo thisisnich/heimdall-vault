@@ -9,13 +9,16 @@ updated: 2026-05-17 12:49
 
 ## Sections
 
-- 👤 **[[people/|People]]** — 0 file(s)
+- 🎓 **[[SCHOOL/SCHOOL - Index|SCHOOL Hub]]** — Academic studies by priority
+- �️ **[[PARA - Index|PARA System]]** — Projects, Areas, Resources, Archive
+- 📥 **[[Resources-RAW/inbox/|Inbox]]** — Raw capture and processing
+- 🔄 **[[Lazy Method - Workflow|Lazy Method]]** — Knowledge processing workflow
+- � **[[people/|People]]** — 0 file(s)
 - 🎯 **[[goals/|Goals]]** — 0 file(s)
 - 💡 **[[ideas/|Ideas & Projects]]** — 0 file(s)
 - 📍 **[[places/|Places]]** — 0 file(s)
 - 📓 **[[journal/|Journal]]** — 0 file(s)
 - 📚 **[[wiki/|Wiki / Facts]]** — 0 file(s)
-- 🎓 **[[AP-Studies/AP Studies Index|AP Studies]]** — 3 file(s)
 
 ## Memory Table Counts
 

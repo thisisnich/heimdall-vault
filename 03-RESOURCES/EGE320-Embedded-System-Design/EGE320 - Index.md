@@ -28,6 +28,10 @@ status: Active
 ### Module Introduction
 **[[ch0|Module Overview]]** — Course introduction, instructor info, learning outcomes
 
+### Weekly Materials
+**[[week1|Week 1: Tiva C Series Lab]]** — Hardware platform introduction  
+**[[week2|Week 2: Tutorial 2]]** — C programming concepts and exercises
+
 ### Core Chapters
 **[[EGE320-Chapter1|Chapter 1: Overview of Embedded System Design]]** — Fundamentals and concepts  
 **[[EGE320-Chapter3_v2|Chapter 3: Advanced Topics]]** — Advanced embedded systems concepts
@@ -69,9 +73,9 @@ status: Active
 ## 🔗 Cross-Course Connections
 
 ### Related NYPY3 Courses
-**[[EGE322 IoT System Project - MOC|EGE322: IoT Systems]]** — Embedded systems in IoT applications  
-**[[EGE353 Autonomous Mobile Robotics - MOC|EGE353: Robotics]]** — Embedded systems in robotics  
-**[[EGE351 Automation Systems & Control - MOC|EGE351: Automation]]** — Industrial embedded systems
+**[[03-RESOURCES/EGE322-IOT-System-Project/EGE322 - Index|EGE322: IoT Systems]]** — Embedded systems in IoT applications  
+**[[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 - Index|EGE353: Robotics]]** — Embedded systems in robotics  
+**[[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 - Index|EGE351: Automation]]** — Industrial embedded systems
 
 ### Common Technologies
 - **Microcontroller programming** — Shared with IoT and robotics

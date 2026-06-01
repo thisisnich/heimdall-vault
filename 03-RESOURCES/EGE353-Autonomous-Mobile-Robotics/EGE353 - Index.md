@@ -74,9 +74,9 @@ status: Active
 
 ### Related NYPY3 Courses
 **[[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Index|EGE320: Embedded Systems]]** — Hardware integration  
-**[[EGE322 IoT System Project - MOC|EGE322: IoT Project]]** — Sensor and actuator integration  
-**[[EGE321 Wireless Communication & Networking - MOC|EGE321: Wireless Comm]]** — Wireless sensor networks  
-**[[EGE351 Automation Systems & Control - MOC|EGE351: Automation]]** — Control systems integration
+**[[03-RESOURCES/EGE322-IOT-System-Project/EGE322 - Index|EGE322: IoT Project]]** — Sensor and actuator integration  
+**[[03-RESOURCES/EGE321-Wireless-Communication/EGE321 - Index|EGE321: Wireless Comm]]** — Wireless sensor networks  
+**[[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 - Index|EGE351: Automation]]** — Control systems integration
 
 ### Common Technologies
 - **Embedded programming** — Microcontroller integration

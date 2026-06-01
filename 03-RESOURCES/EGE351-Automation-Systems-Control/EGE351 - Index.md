@@ -81,9 +81,9 @@ status: Active
 
 ### Related NYPY3 Courses
 **[[03-RESOURCES/EGE320-Embedded-System-Design/EGE320 - Index|EGE320: Embedded Systems]]** — Hardware integration  
-**[[EGE322 IoT System Project - MOC|EGE322: IoT Project]] — Industrial IoT applications  
-**[[EGE353 Autonomous Mobile Robotics - MOC|EGE353: Robotics]] — Robot control systems  
-**[[EGE321 Wireless Communication & Networking - MOC|EGE321: Wireless Comm]] — Wireless automation
+**[[03-RESOURCES/EGE322-IOT-System-Project/EGE322 - Index|EGE322: IoT Project]]** — Industrial IoT applications  
+**[[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 - Index|EGE353: Robotics]]** — Robot control systems  
+**[[03-RESOURCES/EGE321-Wireless-Communication/EGE321 - Index|EGE321: Wireless Comm]]** — Wireless automation
 
 ### Common Technologies
 - **Control algorithms** — Shared with robotics and embedded systems

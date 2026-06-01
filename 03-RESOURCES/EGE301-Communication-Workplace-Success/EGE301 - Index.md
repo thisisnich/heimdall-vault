@@ -78,10 +78,10 @@ status: Active
 ## 🔗 Cross-Course Connections
 
 ### Related NYPY3 Courses
-**[[EGE322 IoT System Project - MOC|EGE322: IoT Project]]** — Team project management  
-**[[EGE351 Automation Systems & Control - MOC|EGE351: Automation]]** — Industrial workplace skills  
-**[[EGE353 Autonomous Mobile Robotics - MOC|EGE353: Robotics]]** — Technical team communication  
-**[[EGE321 Wireless Communication & Networking - MOC|EGE321: Wireless Comm]]** — Professional networking
+**[[03-RESOURCES/EGE322-IOT-System-Project/EGE322 - Index|EGE322: IoT Project]]** — Team project management  
+**[[03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 - Index|EGE351: Automation]]** — Industrial workplace skills  
+**[[03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 - Index|EGE353: Robotics]]** — Technical team communication  
+**[[03-RESOURCES/EGE321-Wireless-Communication/EGE321 - Index|EGE321: Wireless Comm]]** — Professional networking
 
 ### Workplace Applications
 - **Project Management** — Team coordination and leadership
