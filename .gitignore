@@ -2,6 +2,7 @@
 91-SCRIPTS/.env
 91-SCRIPTS/.venv/
 91-SCRIPTS/__pycache__/
+99-ATTACHMENTS/EGE322/assignment-3/config.py
 
 # Inbox processed drops (optional — remove if you want to track)
 00-INBOX/_drop/processed/

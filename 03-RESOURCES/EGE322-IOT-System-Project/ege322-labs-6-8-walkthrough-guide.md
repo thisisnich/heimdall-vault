@@ -32,7 +32,7 @@ flowchart LR
 |-------|-----|----------|
 | IoT cloud platform | 6, 7 | ThingSpeak stores sensor data in **channels/fields** |
 | REST API (HTTP POST) | 6, 7 | **Request-response** — ESP32 sends data, server replies once |
-| WiFi on ESP32 | 7, 8 | `network.WLAN(STA_IF)` + credentials file |
+| WiFi on ESP32 | 7, 8 | **`boot.py`** connects on boot; `main.py` assumes WiFi up |
 | DHT22 + OLED | 7 | Read sensor locally, optional cloud upload |
 | MQTT publish | 8 | **Uplink** — ESP32 pushes temp/hum to cloud feeds |
 | MQTT subscribe | 8 | **Downlink** — dashboard switch controls ESP32 LED |
@@ -65,9 +65,23 @@ flowchart LR
 
 Install missing libs in Thonny → **Tools → Manage packages** (on the ESP32 interpreter), or copy `.py` files to the board.
 
-### Credential files (never commit to Git)
+### ESP32 file layout (`boot.py` + `main.py`)
 
-Create these on the ESP32 only — keep API keys private.
+Keep your existing **`boot.py`** on the board — it runs automatically on every power-up/reset **before** `main.py`.
+
+| File | Role |
+|------|------|
+| **`boot.py`** | WiFi connect, `esp.osdebug(None)`, `gc.collect()`, shared pin/I2C init — **leave on ESP32, edit rarely** |
+| **`main.py`** | Lab-specific app (ThingSpeak POST or Adafruit MQTT) — **swap or edit per lab** |
+| `credential.py` / `wifi_credentials.py` | Optional — skip if SSID/password already live in `boot.py` |
+
+**Workflow:** Edit `main.py` for each lab → soft reboot (Thonny **Ctrl+D** or EN button) → `boot.py` connects WiFi → `main.py` runs.
+
+> Do not duplicate `station.connect()` in `main.py` if `boot.py` already handles WiFi.
+
+### Secrets (never commit to Git)
+
+WiFi password, ThingSpeak Write API Key, Adafruit IO Key — store on the ESP32 only (in `boot.py` or a local credentials module).
 
 ---
 
@@ -107,7 +121,7 @@ Open your channel and click each tab once so you know where things live:
 Paste in Chrome address bar (replace `YOUR_WRITE_KEY`):
 
 ```
-	http://api.thingspeak.com/update?api_key=2EIDLLVI722CKFIE&field1=25
+http://api.thingspeak.com/update?api_key=YOUR_WRITE_KEY&field1=25
 ```
 
 - Browser shows a number (entry ID) → success
@@ -193,40 +207,37 @@ while True:
 
 **OLED glitch fix (Lab exercise 3):** Always `oled.fill(0)` before drawing new text so old digits don't ghost.
 
-## Step 4 — WiFi credentials
+## Step 4 — Confirm WiFi via `boot.py`
 
-Save as `wifi_credentials.py` on ESP32:
+Your **`boot.py`** already connects WiFi on boot. After reset, Thonny shell should show something like:
 
-```python
-ssid = 'YOUR_WIFI_NAME'
-password = 'YOUR_WIFI_PASSWORD'
+```
+Connecting to WiFi...
+Connection successful!
+IP: 192.168.x.x
 ```
 
-Connect ESP32 to **2.4 GHz** WiFi. Test in shell:
+If that fails, fix SSID/password in **`boot.py`** (not in `main.py`). ESP32 needs **2.4 GHz** WiFi.
+
+Optional sanity check in Thonny shell (after reboot):
 
 ```python
-import network, wifi_credentials
-sta = network.WLAN(network.STA_IF)
-sta.active(True)
-sta.connect(wifi_credentials.ssid, wifi_credentials.password)
-while not sta.isconnected(): pass
-print(sta.ifconfig())
+import network
+print(network.WLAN(network.STA_IF).ifconfig())
 ```
 
 ## Step 5 — Full Lab 7 script
 
-Save as `main.py` (or `thingspeak_post.py`):
+Save as **`main.py`** only — WiFi is handled by `boot.py`:
 
 ```python
-import network
-import wifi_credentials
 import urequests
 import dht
 import time
 from machine import Pin, I2C
 from ssd1306 import SSD1306_I2C
 
-# --- config ---
+# --- config (lab-specific — safe to edit here) ---
 THINGSPEAK_WRITE_API_KEY = 'PASTE_YOUR_WRITE_KEY'
 UPDATE_MS = 5000
 
@@ -251,18 +262,6 @@ def show_oled(t, h):
     oled.show()
 
 
-def connect_wifi():
-    sta = network.WLAN(network.STA_IF)
-    if sta.isconnected():
-        return
-    sta.active(True)
-    sta.connect(wifi_credentials.ssid, wifi_credentials.password)
-    while not sta.isconnected():
-        time.sleep(0.2)
-    print('WiFi OK:', sta.ifconfig()[0])
-
-
-connect_wifi()
 last = time.ticks_ms()
 headers = {'Content-Type': 'application/json'}
 
@@ -283,7 +282,7 @@ while True:
     time.sleep(0.1)
 ```
 
-Run → Thonny prints uploads → refresh ThingSpeak **Private View** (~15 s).
+**Run:** Soft reboot (**Ctrl+D**) so `boot.py` → `main.py` chain executes. Thonny prints uploads → refresh ThingSpeak **Private View** (~15 s).
 
 ## Step 6 — Lab 7 reflection (know for test)
 
@@ -336,30 +335,31 @@ Lab 8 uses **different pins** than Lab 7:
 
 OLED is optional in Lab 8 — focus on MQTT + LED control.
 
-## Step 4 — Credentials file
+## Step 4 — Adafruit credentials
 
-Save as `credential.py` on ESP32:
+WiFi stays in **`boot.py`**. Add Adafruit-only secrets at the top of **`main.py`** (or a small `adafruit_config.py` if you prefer):
 
 ```python
-ssid = 'YOUR_WIFI_NAME'
-password = 'YOUR_WIFI_PASSWORD'
-adafruit_username = b'your_adafruit_username'
-adafruit_IO_key = b'your_active_io_key'
+ADAFRUIT_USERNAME = b'your_adafruit_username'
+ADAFRUIT_IO_KEY = b'your_active_io_key'
 ```
+
+Get **Active Key** from io.adafruit.com → profile → **My Key**.
 
 ## Step 5 — Full Lab 8 script
 
-Save as `main.py`:
+Save as **`main.py`** — assumes `boot.py` already connected WiFi:
 
 ```python
 from machine import Pin
-import network
 import time
 import os
-import sys
 import dht
 from umqtt.robust import MQTTClient
-import credential
+
+# --- Adafruit config (WiFi is in boot.py) ---
+ADAFRUIT_USERNAME = b'your_adafruit_username'
+ADAFRUIT_IO_KEY = b'your_active_io_key'
 
 # --- hardware (Lab 8 pins) ---
 sensor = dht.DHT22(Pin(16))
@@ -382,43 +382,26 @@ def cb(topic, msg):
         print('Callback error:', e)
 
 
-def connect_wifi():
-    ap = network.WLAN(network.AP_IF)
-    ap.active(False)
-    wifi = network.WLAN(network.STA_IF)
-    wifi.active(True)
-    wifi.connect(credential.ssid, credential.password)
-    for _ in range(20):
-        if wifi.isconnected():
-            print('WiFi OK:', wifi.ifconfig()[0])
-            return
-        time.sleep(1)
-    print('WiFi failed')
-    sys.exit()
-
-
 def connect_mqtt():
     client_id = b'esp32_' + bytes(str(int.from_bytes(os.urandom(3), 'little')), 'utf-8')
     client = MQTTClient(
         client_id=client_id,
         server=b'io.adafruit.com',
-        user=credential.adafruit_username,
-        password=credential.adafruit_IO_key,
+        user=ADAFRUIT_USERNAME,
+        password=ADAFRUIT_IO_KEY,
         ssl=False,
     )
     client.connect()
     client.set_callback(cb)
 
-    user = credential.adafruit_username
-    temp_feed = b'%s/feeds/temp' % user
-    hum_feed = b'%s/feeds/hum' % user
-    light_feed = b'%s/feeds/light' % user
+    temp_feed = b'%s/feeds/temp' % ADAFRUIT_USERNAME
+    hum_feed = b'%s/feeds/hum' % ADAFRUIT_USERNAME
+    light_feed = b'%s/feeds/light' % ADAFRUIT_USERNAME
 
     client.subscribe(light_feed)  # downlink
     return client, temp_feed, hum_feed
 
 
-connect_wifi()
 client, temp_feed, hum_feed = connect_mqtt()
 accum = 0.0
 
@@ -442,9 +425,11 @@ while True:
         break
 ```
 
+**Run:** Soft reboot (**Ctrl+D**) — `boot.py` connects WiFi, then `main.py` opens MQTT.
+
 ## Step 6 — Test uplink then downlink
 
-1. **Run script** → Thonny shows `Published T=… H=…`
+1. After reboot → Thonny shows `Published T=… H=…`
 2. Open Adafruit dashboard → gauges should move within ~10 s
 3. **Toggle the Light switch** → ESP32 LED should follow
 4. If LED doesn't respond: check feed name `light`, callback registered, `check_msg()` in loop
@@ -457,7 +442,7 @@ while True:
 | Purpose of `cb()`? | Runs when subscribed topic gets a message (downlink handler) |
 | How message controls LED? | Decode msg → if `'1'`/`'on'` → `led.value(1)` else off |
 | Feed names must match? | MQTT topic = `username/feeds/feedname` — typo = no data |
-| Why `credential.py`? | Keeps secrets out of main code / Git |
+| Why separate config from `boot.py`? | WiFi in `boot.py` (shared); Adafruit keys in `main.py` (lab-specific) |
 | Why publish every 10 s? | Rate limits, bandwidth, power; sensor doesn't change instantly |
 | Why `check_msg()` in loop? | MQTT is async — must poll for incoming commands |
 
@@ -507,7 +492,8 @@ Cover these after Labs 6–8 (see [[iot-data-collection-mqtt-rest-api-cloud-serv
 |---------|-----|
 | DHT22 `OSError` | Wait 2 s between reads; check 3.3 V; add 10 kΩ pull-up DATA→3.3V |
 | OLED blank | Run `i2c.scan()` — expect `0x3c`; try swapping SDA/SCL |
-| WiFi won't connect | 2.4 GHz only; check SSID/password; move closer to router |
+| WiFi won't connect | Fix SSID/password in **`boot.py`**; 2.4 GHz only; soft reboot after edit |
+| `main.py` runs but no WiFi | `boot.py` must run first — use **Ctrl+D** reboot, not only F5 Run on `main.py` |
 | ThingSpeak `0` response | Rate limit — wait 15 s; check API key |
 | Adafruit gauges flat | Wrong username/key; feed names mismatch; script not publishing |
 | Switch doesn't toggle LED | Feed must be `light`; `subscribe()` before loop; `check_msg()` every loop |
@@ -528,7 +514,7 @@ Cover these after Labs 6–8 (see [[iot-data-collection-mqtt-rest-api-cloud-serv
 - [ ] MQTT subscribe + callback (downlink)
 
 ## ESP32 skills
-- [ ] WiFi STA mode + credentials file
+- [ ] `boot.py` WiFi on boot + `main.py` lab app
 - [ ] DHT22 read with `measure()`
 - [ ] OLED I2C display
 - [ ] GPIO LED control from cloud

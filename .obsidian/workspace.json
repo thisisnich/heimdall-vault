@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7b9e562070f10215",
+        "id": "494ddf62fb47f40e",
         "type": "tabs",
         "children": [
           {
-            "id": "098fddb7f77f2d64",
+            "id": "e471af971df259df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SCHOOL/01-NYPY3/📅 Schedule & Assessments Dashboard.md",
+                "file": "01-PROJECTS/EGE322-Assignment-3/EGE322 Assignment 3 — MQTT Dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📅 Schedule & Assessments Dashboard"
+              "title": "EGE322 Assignment 3 — MQTT Dashboard"
             }
           }
         ]
@@ -168,8 +168,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
@@ -177,7 +177,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,49 +188,56 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Create new base": false
     }
   },
-  "active": "098fddb7f77f2d64",
+  "active": "e471af971df259df",
   "lastOpenFiles": [
-    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/autonomousRoboticsLesso1.md",
-    "SCHOOL/01-NYPY3/📅 Schedule & Assessments Dashboard.md",
-    "SCHOOL/02-AP-Studies/AP-Studies/AP_Study_Resources.md",
-    "SCHOOL/02-AP-Studies/AP-Studies/AP_Computer_Science_A_Study_Plan.md",
-    "SCHOOL/02-AP-Studies/AP-Studies/AP_Calculus_BC_Study_Plan.md",
-    "SCHOOL/02-AP-Studies/AP-Studies/AP Studies Index.md",
-    "SCHOOL/02-AP-Studies/AP-Studies",
-    "SCHOOL/02-AP-Studies/02-AP-Studies - Index.md",
-    "SCHOOL/03-Archive/03-Archive - Index.md",
-    "SCHOOL/01-NYPY3/NYPY3 - Main Index.md",
-    "SCHOOL/01-NYPY3/NYP Timetable S1 2026.md",
-    "SCHOOL/01-NYPY3/01-NYPY3 - Index.md",
-    "SCHOOL/02-AP-Studies",
-    "SCHOOL/03-Archive",
-    "SCHOOL/SCHOOL - Index.md",
-    "SCHOOL/01-NYPY3",
-    "SCHOOL",
-    "Resources-RAW/inbox/inbox - Index.md",
-    "Resources-RAW/Resources - Index.md",
-    "Resources-RAW/inbox",
-    "Resources-RAW",
-    "Projects/Projects - Index.md",
-    "Projects",
-    "PARA - Index.md",
-    "Obsidian Skills - Guide.md",
-    "Lazy Method - Workflow.md",
-    "EGE321 Wireless Communication & Networking - MOC.md",
-    "Custom Hubs - Dashboard.md",
-    "Areas/Areas - Index.md",
-    "Areas",
-    "03-RESOURCES/HSX302-Healthy-Resilient-Families/HSX302 - Index.md",
-    "03-RESOURCES/FGX312-Japanese-Culture-Society/FGX312 - Index.md",
-    "03-RESOURCES/EGE351-Automation-Systems-Control/EGE351 - Index.md",
-    "03-RESOURCES/EGE322-IOT-System-Project/EGE322 - Index.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/Lesson2c(1).md",
-    "99-ATTACHMENTS/EGE322/_inbox-archive/Lab2/Lab3/Servo1.py",
-    "99-ATTACHMENTS/EGE320/ege320-tutorial-6/ege320-tutorial-6-p02.png",
-    "99-ATTACHMENTS/EGE320/ege320-tutorial-6/ege320-tutorial-6-p01.png"
+    "99-ATTACHMENTS/EGE322/assignment-3/__pycache__/config.cpython-314.pyc",
+    "99-ATTACHMENTS/EGE322/assignment-3/__pycache__",
+    "99-ATTACHMENTS/EGE322/assignment-3/config.py",
+    "99-ATTACHMENTS/EGE322/assignment-3/screenshots/README.md",
+    "01-PROJECTS/EGE322-Assignment-3/partner-guide-screenshot-map.md",
+    "99-ATTACHMENTS/EGE322/assignment-3/screenshots",
+    "03-RESOURCES/EGE322-IOT-System-Project/ege322-assignment-3-iot-dashboard-2026b-slides.md",
+    "99-ATTACHMENTS/EGE322/assignment-3/config.example.py",
+    "99-ATTACHMENTS/EGE322/assignment-3",
+    "03-RESOURCES/EGE351-Automation-Systems-Control/Lab procedures.md",
+    "03-RESOURCES/EGE322-IOT-System-Project/ege322-labs-6-8-walkthrough-guide.md",
+    "99-ATTACHMENTS/EGE322/ege322-lab-8-mqtt-adafruit-io/main.py",
+    "01-PROJECTS/EGE322-Assignment-2/Assignment_2.zip",
+    "01-PROJECTS/EGE322-Assignment-2/Part 4.zip",
+    "01-PROJECTS/EGE322-Assignment-2/Part 4/main.py",
+    "01-PROJECTS/EGE322-Assignment-2/Part 4/boot.py",
+    "03-RESOURCES/EGE322-IOT-System-Project/ege322-lab-6-introduction-to-thingspeak-slides.md",
+    "Pg20c.jpg.md",
+    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-lesson7c.md",
+    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-lesson6c.md",
+    "99-ATTACHMENTS/EGE321/lesson7c/lesson7c-slide-26.png",
+    "99-ATTACHMENTS/EGE321/lesson7c/lesson7c-slide-25.png",
+    "99-ATTACHMENTS/EGE321/lesson7c/lesson7c-slide-24.png",
+    "99-ATTACHMENTS/EGE321/lesson7c/Slide26.PNG",
+    "99-ATTACHMENTS/EGE321/lesson7c/Slide25.PNG",
+    "99-ATTACHMENTS/EGE321/lesson7c/Slide24.PNG",
+    "99-ATTACHMENTS/EGE321/lesson7c/Slide23.PNG",
+    "99-ATTACHMENTS/EGE321/lesson7c/Slide22.PNG",
+    "99-ATTACHMENTS/EGE321/lesson7c/Slide21.PNG",
+    "99-ATTACHMENTS/EGE321/lesson7c/Slide20.PNG",
+    "03-RESOURCES/EGE321-Wireless-Communication/lesson-7c-digital-modulation-part-ii-slides.md",
+    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-8-master-evm-error-vector-magnitude-to-optimize-.md",
+    "03-RESOURCES/EGE322-IOT-System-Project/ege322-lab-8-mqtt-adafruit-io-slides.md",
+    "03-RESOURCES/EGE322-IOT-System-Project/ege322-lab-7-esp32-thingspeak-slides.md",
+    "03-RESOURCES/EGE320-Embedded-System-Design/ege320-lab-5-touchscreen-interaction-slides.md",
+    "03-RESOURCES/EGE322-IOT-System-Project/iot-data-collection-mqtt-rest-api-cloud-services-slides.md",
+    "03-RESOURCES/EGE320-Embedded-System-Design/ege320-lab-6-digital-output-slides.md",
+    "03-RESOURCES/EGE320-Embedded-System-Design/ege320-tutorial-6-slides.md",
+    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 5 Notes.md",
+    "03-RESOURCES/EGE322-IOT-System-Project/iot-assignment-2-2026b-1-slides.md",
+    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 5 Demo Study Guide.md",
+    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 1-5 Q&A.md",
+    "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/ros2-revision-notes-slides.md",
+    "meetings/2026-05-22-meeting-with-john-2026-05-22.md",
+    "03-RESOURCES/Media/lkg0ixv4d2e-youtube.md",
+    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-transceiver-block-diagram-roles-of-adc-source-channe.md"
   ]
 }
