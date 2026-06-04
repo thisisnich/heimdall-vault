@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-PROJECTS/EGE322-Assignment-3/EGE322 Assignment 3 — MQTT Dashboard.md",
+                "file": "03-RESOURCES/EGE320-Embedded-System-Design/ege320-equiz1-cheat-sheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EGE322 Assignment 3 — MQTT Dashboard"
+              "title": "ege320-equiz1-cheat-sheet"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -193,6 +194,24 @@
   },
   "active": "e471af971df259df",
   "lastOpenFiles": [
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab7/lab7_1.3/main.c",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab7/lab7_1.3",
+    "99-ATTACHMENTS/EGE320/EGE320_E2/lab7",
+    "03-RESOURCES/EGE320-Embedded-System-Design/ege320-lab-7-digital-input-slides.md",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p12.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p11.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p10.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p09.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p08.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p07.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p06.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p05.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p04.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input/ege320-lab-7-digital-input-p03.png",
+    "99-ATTACHMENTS/EGE320/ege320-lab-7-digital-input",
+    "99-ATTACHMENTS/EGE320/EGE320 - Lab7 Digital Input.pdf",
+    "00-INBOX/EGE320 - Lab7 Digital Input.pdf",
+    "01-PROJECTS/EGE322-Assignment-3/EGE322 Assignment 3 — MQTT Dashboard.md",
     "99-ATTACHMENTS/EGE322/assignment-3/__pycache__/config.cpython-314.pyc",
     "99-ATTACHMENTS/EGE322/assignment-3/__pycache__",
     "99-ATTACHMENTS/EGE322/assignment-3/config.py",
@@ -201,28 +220,12 @@
     "99-ATTACHMENTS/EGE322/assignment-3/screenshots",
     "03-RESOURCES/EGE322-IOT-System-Project/ege322-assignment-3-iot-dashboard-2026b-slides.md",
     "99-ATTACHMENTS/EGE322/assignment-3/config.example.py",
-    "99-ATTACHMENTS/EGE322/assignment-3",
     "03-RESOURCES/EGE351-Automation-Systems-Control/Lab procedures.md",
     "03-RESOURCES/EGE322-IOT-System-Project/ege322-labs-6-8-walkthrough-guide.md",
-    "99-ATTACHMENTS/EGE322/ege322-lab-8-mqtt-adafruit-io/main.py",
-    "01-PROJECTS/EGE322-Assignment-2/Assignment_2.zip",
-    "01-PROJECTS/EGE322-Assignment-2/Part 4.zip",
-    "01-PROJECTS/EGE322-Assignment-2/Part 4/main.py",
-    "01-PROJECTS/EGE322-Assignment-2/Part 4/boot.py",
     "03-RESOURCES/EGE322-IOT-System-Project/ege322-lab-6-introduction-to-thingspeak-slides.md",
     "Pg20c.jpg.md",
     "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-lesson7c.md",
     "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-lesson6c.md",
-    "99-ATTACHMENTS/EGE321/lesson7c/lesson7c-slide-26.png",
-    "99-ATTACHMENTS/EGE321/lesson7c/lesson7c-slide-25.png",
-    "99-ATTACHMENTS/EGE321/lesson7c/lesson7c-slide-24.png",
-    "99-ATTACHMENTS/EGE321/lesson7c/Slide26.PNG",
-    "99-ATTACHMENTS/EGE321/lesson7c/Slide25.PNG",
-    "99-ATTACHMENTS/EGE321/lesson7c/Slide24.PNG",
-    "99-ATTACHMENTS/EGE321/lesson7c/Slide23.PNG",
-    "99-ATTACHMENTS/EGE321/lesson7c/Slide22.PNG",
-    "99-ATTACHMENTS/EGE321/lesson7c/Slide21.PNG",
-    "99-ATTACHMENTS/EGE321/lesson7c/Slide20.PNG",
     "03-RESOURCES/EGE321-Wireless-Communication/lesson-7c-digital-modulation-part-ii-slides.md",
     "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-mod-8-master-evm-error-vector-magnitude-to-optimize-.md",
     "03-RESOURCES/EGE322-IOT-System-Project/ege322-lab-8-mqtt-adafruit-io-slides.md",
@@ -236,8 +239,6 @@
     "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 5 Demo Study Guide.md",
     "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/EGE353 Lab 1-5 Q&A.md",
     "03-RESOURCES/EGE353-Autonomous-Mobile-Robotics/ros2-revision-notes-slides.md",
-    "meetings/2026-05-22-meeting-with-john-2026-05-22.md",
-    "03-RESOURCES/Media/lkg0ixv4d2e-youtube.md",
-    "03-RESOURCES/EGE321-Wireless-Communication/2026-05-25-digital-transceiver-block-diagram-roles-of-adc-source-channe.md"
+    "meetings/2026-05-22-meeting-with-john-2026-05-22.md"
   ]
 }
