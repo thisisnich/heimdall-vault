@@ -30,7 +30,7 @@ status: Active
 
 ### Assessment Materials
 **[[ICA 1 Assignment|ICA 1: Family Analysis]]** — Individual family assessment project  
-**[[ICA 1 Draft - 241439P|ICA 1 Draft]]** — Work in progress submission  
+**[[ICA 1 Draft - 241439P|ICA 1 Draft]]** — Reviewed; [[99-ATTACHMENTS/HSX302/241439P_Nicholas.docx|Word submission ready]]  
 **[[Word Format Prompt|Formatting Guidelines]] — Document structure requirements
 
 ---
