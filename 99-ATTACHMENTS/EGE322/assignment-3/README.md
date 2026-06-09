@@ -55,9 +55,15 @@ Keys sent: `temperature`, `humidity`, `counter`, `pressure`, `co2`, `battery`, `
 
 ---
 
-## ESP32 — DHT22 + counter (Lab 7 wiring)
+## ESP32 — assignment guide (no sensor)
 
-Copy `main_thingsboard.py` → ESP32 `main.py`. WiFi in **`boot.py`** only → **Ctrl+D** reboot.
+Copy **`main.py`** in this folder → ESP32 `main.py`. Paste access token in `ACCESS_TOKEN`. WiFi in **`boot.py`** only → **Ctrl+D** reboot.
+
+Simulated `counter` / `temperature` / `humidity` every 2 s (matches exploration guide).
+
+## ESP32 — DHT22 + counter (Lab 7 wiring, optional)
+
+Copy `main_thingsboard.py` → ESP32 `main.py` instead. WiFi in **`boot.py`** only → **Ctrl+D** reboot.
 
 | DHT22 | ESP32 | OLED (optional) | ESP32 |
 |-------|-------|-----------------|-------|
